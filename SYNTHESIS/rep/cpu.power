@@ -13,7 +13,7 @@ Report : power
         -sort_mode dynamic_power
 Design : cpu
 Version: N-2017.09-SP3
-Date   : Mon Apr  5 17:38:41 2021
+Date   : Mon Apr  5 19:53:47 2021
 ****************************************
 
 
@@ -31,19 +31,50 @@ Wire Load Model Mode: enclosed
 Design        Wire Load Model            Library
 ------------------------------------------------
 cpu                    280000            saed32sram_tt1p05v25c
-pc_DATA_W32            ForQA             saed32sram_tt1p05v25c
 sram_ADDR_W9_DATA_W32  140000            saed32sram_tt1p05v25c
 control_unit           ForQA             saed32sram_tt1p05v25c
 mux_2_DATA_W5          ForQA             saed32sram_tt1p05v25c
 alu_control            ForQA             saed32sram_tt1p05v25c
-mux_2_DATA_W32_3       ForQA             saed32sram_tt1p05v25c
+mux_2_DATA_W32_1       ForQA             saed32sram_tt1p05v25c
 alu_DATA_W32           8000              saed32sram_tt1p05v25c
 sram_ADDR_W10_DATA_W32 280000            saed32sram_tt1p05v25c
+branch_unit_DATA_W32   ForQA             saed32sram_tt1p05v25c
 mux_2_DATA_W32_0       ForQA             saed32sram_tt1p05v25c
-mux_2_DATA_W32_1       ForQA             saed32sram_tt1p05v25c
-mux_2_DATA_W32_2       ForQA             saed32sram_tt1p05v25c
+reg_arstn_en_DATA_W32_10
+                       8000              saed32sram_tt1p05v25c
+reg_arstn_en_DATA_W32_9
+                       8000              saed32sram_tt1p05v25c
+reg_arstn_en_DATA_W32_8
+                       ForQA             saed32sram_tt1p05v25c
+reg_arstn_en_DATA_W32_7
+                       ForQA             saed32sram_tt1p05v25c
 register_file_DATA_W32 16000             saed32sram_tt1p05v25c
-reg_arstn_en_32_s00000000
+reg_arstn_en_DATA_W32_6
+                       8000              saed32sram_tt1p05v25c
+reg_arstn_en_DATA_W32_5
+                       8000              saed32sram_tt1p05v25c
+reg_arstn_en_DATA_W32_4
+                       8000              saed32sram_tt1p05v25c
+reg_arstn_en_DATA_W10  ForQA             saed32sram_tt1p05v25c
+reg_arstn_en_DATA_W32_3
+                       8000              saed32sram_tt1p05v25c
+reg_arstn_en_DATA_W32_2
+                       8000              saed32sram_tt1p05v25c
+reg_arstn_en_DATA_W5_1 ForQA             saed32sram_tt1p05v25c
+reg_arstn_en_DATA_W6   ForQA             saed32sram_tt1p05v25c
+reg_arstn_en_DATA_W32_1
+                       8000              saed32sram_tt1p05v25c
+reg_arstn_en_DATA_W32_0
+                       8000              saed32sram_tt1p05v25c
+reg_arstn_en_DATA_W5_0 ForQA             saed32sram_tt1p05v25c
+reg_arstn_en_DATA_W2   ForQA             saed32sram_tt1p05v25c
+SNPS_CLOCK_GATE_HIGH_reg_arstn_en_DATA_W32_0_9
+                       ForQA             saed32sram_tt1p05v25c
+SNPS_CLOCK_GATE_HIGH_reg_arstn_en_DATA_W32_0_8
+                       ForQA             saed32sram_tt1p05v25c
+SNPS_CLOCK_GATE_HIGH_reg_arstn_en_DATA_W32_8
+                       ForQA             saed32sram_tt1p05v25c
+SNPS_CLOCK_GATE_HIGH_reg_arstn_en_DATA_W32_0_7
                        ForQA             saed32sram_tt1p05v25c
 SNPS_CLOCK_GATE_HIGH_register_file_DATA_W32_0
                        ForQA             saed32sram_tt1p05v25c
@@ -109,7 +140,27 @@ SNPS_CLOCK_GATE_HIGH_register_file_DATA_W32_2
                        ForQA             saed32sram_tt1p05v25c
 SNPS_CLOCK_GATE_HIGH_register_file_DATA_W32_1
                        ForQA             saed32sram_tt1p05v25c
-SNPS_CLOCK_GATE_HIGH_reg_arstn_en_32_s00000000
+SNPS_CLOCK_GATE_HIGH_reg_arstn_en_DATA_W32_0_6
+                       ForQA             saed32sram_tt1p05v25c
+SNPS_CLOCK_GATE_HIGH_reg_arstn_en_DATA_W32_0_5
+                       ForQA             saed32sram_tt1p05v25c
+SNPS_CLOCK_GATE_HIGH_reg_arstn_en_DATA_W32_0_4
+                       ForQA             saed32sram_tt1p05v25c
+SNPS_CLOCK_GATE_HIGH_reg_arstn_en_DATA_W10
+                       ForQA             saed32sram_tt1p05v25c
+SNPS_CLOCK_GATE_HIGH_reg_arstn_en_DATA_W32_0_3
+                       ForQA             saed32sram_tt1p05v25c
+SNPS_CLOCK_GATE_HIGH_reg_arstn_en_DATA_W32_0_2
+                       ForQA             saed32sram_tt1p05v25c
+SNPS_CLOCK_GATE_HIGH_reg_arstn_en_DATA_W5_0_1
+                       ForQA             saed32sram_tt1p05v25c
+SNPS_CLOCK_GATE_HIGH_reg_arstn_en_DATA_W6
+                       ForQA             saed32sram_tt1p05v25c
+SNPS_CLOCK_GATE_HIGH_reg_arstn_en_DATA_W32_0_1
+                       ForQA             saed32sram_tt1p05v25c
+SNPS_CLOCK_GATE_HIGH_reg_arstn_en_DATA_W32_0_0
+                       ForQA             saed32sram_tt1p05v25c
+SNPS_CLOCK_GATE_HIGH_reg_arstn_en_DATA_W5_0_0
                        ForQA             saed32sram_tt1p05v25c
 
 
@@ -131,240 +182,747 @@ Power-specific unit information :
                              Total      Static   Toggle   Switching
 Net                          Net Load   Prob.    Rate     Power      Attrs
 --------------------------------------------------------------------------------
-n212                         1037.719   0.500    0.0010      0.5720  d
-current_pc[2]                 13.916    0.190    0.0026      0.0201  
-immediate_extended[8]         28.702    0.505    0.0010      0.0158  
-immediate_extended[9]         23.075    0.508    0.0010      0.0129  
-instruction[18]               21.862    0.494    0.0010      0.0120  
-immediate_extended[10]        21.148    0.501    0.0010      0.0119  
-instruction[19]               20.772    0.494    0.0010      0.0114  
-immediate_extended[6]         20.139    0.502    0.0010      0.0111  
-instruction[20]               20.204    0.495    0.0010      0.0111  
-instruction[23]               19.275    0.503    0.0010      0.0106  
-immediate_extended[7]         18.936    0.503    0.0010      0.0105  
-instruction[24]               18.185    0.504    0.0010      0.0101  
-instruction[25]               17.617    0.498    0.0010      0.0097  
-current_pc[3]                 13.433    0.170    0.0013      0.0095  
-regfile_waddr[1]              14.568    0.508    0.0011      0.0087  
-regfile_waddr[2]              14.675    0.495    0.0011      0.0087  
-alu_out[10]                   96.225    0.015    0.0002      0.0081  
-alu_out[11]                   96.225    0.015    0.0002      0.0081  
-program_counter/updated_pc[2]
-                               5.528    0.810    0.0026      0.0080  
-instruction[17]               14.340    0.508    0.0010      0.0080  
-alu_out[2]                    81.884    0.015    0.0002      0.0069  
-alu_out[3]                    81.884    0.015    0.0002      0.0069  
-alu_out[4]                    81.884    0.015    0.0002      0.0069  
-alu_out[5]                    81.884    0.015    0.0002      0.0069  
-alu_out[6]                    81.884    0.015    0.0002      0.0069  
-alu_out[7]                    81.884    0.015    0.0002      0.0069  
-alu_out[8]                    81.884    0.015    0.0002      0.0069  
-alu_out[0]                    81.571    0.015    0.0002      0.0069  
-alu_out[1]                    81.571    0.015    0.0002      0.0069  
-alu_out[12]                   81.571    0.015    0.0002      0.0069  
-alu_out[13]                   81.571    0.015    0.0002      0.0069  
-alu_out[14]                   81.571    0.015    0.0002      0.0069  
-alu_out[15]                   81.571    0.015    0.0002      0.0069  
-alu_out[16]                   81.571    0.015    0.0002      0.0069  
-alu_out[17]                   81.571    0.015    0.0002      0.0069  
-alu_out[18]                   81.571    0.015    0.0002      0.0069  
-alu_out[19]                   81.571    0.015    0.0002      0.0069  
-alu_out[20]                   81.571    0.015    0.0002      0.0069  
-alu_out[21]                   81.571    0.015    0.0002      0.0069  
-alu_out[22]                   81.571    0.015    0.0002      0.0069  
-alu_out[23]                   81.571    0.015    0.0002      0.0069  
-alu_out[24]                   81.571    0.015    0.0002      0.0069  
-alu_out[25]                   81.571    0.015    0.0002      0.0069  
-alu_out[26]                   81.571    0.015    0.0002      0.0069  
-alu_out[27]                   81.571    0.015    0.0002      0.0069  
-alu_out[28]                   81.571    0.015    0.0002      0.0069  
-alu_out[29]                   81.571    0.015    0.0002      0.0069  
-alu_out[30]                   81.571    0.015    0.0002      0.0069  
-alu_out[31]                   81.571    0.015    0.0002      0.0069  
-regfile_waddr[3]              11.639    0.494    0.0011      0.0069  
-immediate_extended[1]         11.983    0.496    0.0010      0.0066  
-regfile_waddr[0]              11.023    0.508    0.0011      0.0066  
-instruction[16]               11.827    0.508    0.0010      0.0066  
-instruction[22]               11.759    0.498    0.0010      0.0065  
-immediate_extended[3]         11.758    0.497    0.0010      0.0064  
-immediate_extended[4]         10.857    0.510    0.0010      0.0059  
-regfile_waddr[4]               9.367    0.495    0.0011      0.0055  
-instruction[21]                9.247    0.509    0.0010      0.0050  
-alu_control[2]                16.526    0.061    0.0005      0.0049  
-alu_control[1]                18.852    0.046    0.0004      0.0045  
-immediate_extended[5]          7.637    0.507    0.0010      0.0042  
-current_pc[4]                  9.380    0.140    0.0006      0.0032  
-immediate_extended[0]          5.528    0.508    0.0010      0.0031  
-alu_control[0]                 9.090    0.061    0.0006      0.0030  
-immediate_extended[2]          5.277    0.511    0.0010      0.0029  
-reg_dst                       30.737    0.015    0.0002      0.0029  
-program_counter/updated_pc[3]
-                               2.745    0.205    0.0015      0.0023  
-instruction[29]                2.921    0.499    0.0010      0.0016  
-alu_out[9]                    17.340    0.015    0.0002      0.0015  
-instruction[31]                2.588    0.499    0.0010      0.0014  
-instruction[27]                2.602    0.500    0.0010      0.0014  
-instruction[26]                2.447    0.496    0.0010      0.0014  
-instruction[28]                2.437    0.498    0.0010      0.0013  
-instruction[30]                2.425    0.495    0.0010      0.0013  
-immediate_extended[12]         2.274    0.507    0.0010      0.0013  
-immediate_extended[13]         2.274    0.490    0.0010      0.0013  
-alu_control[3]                14.867    0.015    0.0002      0.0013  
-immediate_extended_31          2.274    0.497    0.0010      0.0012  
-immediate_extended[14]         2.274    0.500    0.0010      0.0012  
-immediate_extended[11]         2.274    0.504    0.0010      0.0012  
-program_counter/updated_pc[4]
-                               2.745    0.168    0.0007      0.0011  
-current_pc[5]                  4.918    0.090    0.0002      0.0007  
-program_counter/updated_pc[5]
-                               2.745    0.103    0.0003      0.0004  
-current_pc[6]                  4.557    0.029    0.66e-4     0.0002  
-rdata_ext_2[23]                0.103    0.499    0.0023      0.0001  
-rdata_ext_2[8]                 0.103    0.502    0.0023      0.0001  
-rdata_ext_2[16]                0.103    0.503    0.0023      0.0001  
-rdata_ext_2[5]                 0.103    0.498    0.0023      0.0001  
-rdata_ext_2[14]                0.103    0.501    0.0023      0.0001  
-rdata_ext_2[9]                 0.103    0.497    0.0023      0.0001  
-rdata_ext_2[4]                 0.103    0.500    0.0023      0.0001  
-rdata_ext_2[13]                0.103    0.501    0.0023      0.0001  
-rdata_ext_2[17]                0.103    0.495    0.0023      0.0001  
-rdata_ext_2[30]                0.103    0.496    0.0023      0.0001  
-rdata_ext_2[19]                0.103    0.499    0.0023      0.0001  
-rdata_ext_2[0]                 0.103    0.504    0.0023      0.0001  
-rdata_ext_2[6]                 0.103    0.503    0.0023      0.0001  
-rdata_ext_2[7]                 0.103    0.503    0.0023      0.0001  
-rdata_ext_2[27]                0.103    0.496    0.0023      0.0001  
-rdata_ext_2[1]                 0.103    0.507    0.0023      0.0001  
-rdata_ext_2[31]                0.103    0.499    0.0023      0.0001  
-rdata_ext_2[21]                0.103    0.496    0.0023      0.0001  
-rdata_ext_2[22]                0.103    0.499    0.0023      0.0001  
-rdata_ext_2[18]                0.103    0.503    0.0023      0.0001  
-rdata_ext_2[20]                0.103    0.498    0.0023      0.0001  
-rdata_ext_2[12]                0.103    0.503    0.0023      0.0001  
-rdata_ext_2[11]                0.103    0.502    0.0023      0.0001  
+n222                         1631.640   0.500    0.0010      0.8994  d
+clk                           57.430    0.500    0.0200      0.6332  d
+arst_n                       1037.795   0.500    0.0010      0.5721  d
+immediate_extended_ID_EX[15] 157.484    0.153    0.0006      0.0542  
+instruction_ID_EX[8]          28.722    0.500    0.0010      0.0158  d
+instruction_ID_EX[9]          25.618    0.500    0.0010      0.0141  d
+instruction_ID_EX[6]          20.033    0.500    0.0010      0.0110  d
+instruction_ID_EX[7]          18.714    0.500    0.0010      0.0103  d
+instruction_IF_ID[23]         21.812    0.171    0.0007      0.0088  
+instruction_IF_ID[18]         21.812    0.173    0.0007      0.0088  
+enable                        15.789    0.500    0.0010      0.0087  d
+instruction_ID_EX[10]         15.605    0.500    0.0010      0.0086  d
+instruction_IF_ID[24]         20.722    0.176    0.0007      0.0083  
+instruction_IF_ID[19]         20.722    0.171    0.0007      0.0083  
+instruction_IF_ID[25]         20.154    0.172    0.0007      0.0082  
+instruction_IF_ID[20]         20.154    0.179    0.0007      0.0081  
+alu_control[1]                13.969    0.689    0.0009      0.0073  
+instruction_ID_EX[1]          12.387    0.500    0.0010      0.0068  d
+alu_operand_2[0]             149.006    0.010    0.78e-4     0.0064  
+instruction_ID_EX[4]          11.568    0.500    0.0010      0.0064  d
+reg_dst_ID_EX                 15.093    0.055    0.0007      0.0061  
+alu_operand_2[1]             153.851    0.008    0.72e-4     0.0061  
+current_pc[9]                 10.940    0.500    0.0010      0.0060  d
+instruction_IF_ID[17]         14.290    0.174    0.0007      0.0057  
+reg_write_MEM_WB              18.162    0.048    0.0006      0.0056  
+instruction_IF_ID[22]         14.290    0.171    0.0007      0.0056  
+regfile_waddr_MEM_WB[2]       14.675    0.145    0.0007      0.0055  
+regfile_waddr_MEM_WB[1]       14.568    0.148    0.0007      0.0055  
+alu_src_ID_EX                 77.266    0.017    0.0001      0.0055  
+alu_op_ID_EX[1]               11.261    0.327    0.0008      0.0052  
+current_pc[10]                 8.970    0.500    0.0010      0.0049  d
+instruction_IF_ID[30]         12.179    0.168    0.0007      0.0049  
+instruction_IF_ID[21]         11.777    0.172    0.0007      0.0048  
+instruction_IF_ID[27]         11.631    0.176    0.0007      0.0048  
+instruction_IF_ID[16]         11.777    0.173    0.0007      0.0047  
+instruction_ID_EX[5]           8.216    0.500    0.0010      0.0045  d
+updated_pc_ID_EX[30]           8.146    0.500    0.0010      0.0045  d
+regfile_waddr_MEM_WB[3]       11.639    0.149    0.0007      0.0045  
+instruction_IF_ID[29]         11.038    0.173    0.0007      0.0045  
+updated_pc_ID_EX[28]           7.865    0.500    0.0010      0.0043  d
+updated_pc_ID_EX[29]           7.865    0.500    0.0010      0.0043  d
+regfile_waddr_MEM_WB[0]       11.023    0.152    0.0007      0.0042  
+alu_operand_2[2]              95.393    0.010    0.81e-4     0.0042  
+alu_operand_2[3]              94.769    0.010    0.79e-4     0.0041  
+alu_operand_2[5]              90.728    0.010    0.79e-4     0.0039  
+alu_operand_2[6]              92.003    0.010    0.77e-4     0.0039  
+regfile_wdata[2]              81.571    0.011    0.86e-4     0.0039  
+regfile_wdata[10]             81.571    0.010    0.85e-4     0.0038  
+regfile_wdata[20]             81.571    0.010    0.85e-4     0.0038  
+regfile_wdata[7]              81.571    0.011    0.85e-4     0.0038  
+regfile_wdata[17]             81.571    0.010    0.84e-4     0.0038  
+regfile_wdata[28]             81.571    0.010    0.84e-4     0.0038  
+regfile_wdata[18]             81.571    0.010    0.83e-4     0.0038  
+regfile_wdata[29]             81.571    0.010    0.83e-4     0.0038  
+regfile_wdata[3]              81.571    0.010    0.83e-4     0.0037  
+alu_operand_2[4]              91.531    0.009    0.74e-4     0.0037  
+regfile_wdata[0]              81.571    0.010    0.83e-4     0.0037  
+regfile_wdata[11]             81.571    0.010    0.83e-4     0.0037  
+regfile_wdata[15]             81.571    0.010    0.83e-4     0.0037  
+regfile_wdata[22]             81.571    0.010    0.83e-4     0.0037  
+regfile_wdata[19]             81.571    0.010    0.82e-4     0.0037  
+regfile_wdata[27]             81.571    0.010    0.82e-4     0.0037  
+regfile_wdata[13]             81.571    0.010    0.82e-4     0.0037  
+regfile_wdata[16]             81.571    0.010    0.82e-4     0.0037  
+regfile_wdata[21]             81.571    0.010    0.82e-4     0.0037  
+alu_control[2]                20.668    0.030    0.0003      0.0037  
+regfile_wdata[25]             81.571    0.010    0.81e-4     0.0037  
+regfile_wdata[24]             81.571    0.010    0.81e-4     0.0037  
+regfile_wdata[5]              81.571    0.010    0.81e-4     0.0036  
+regfile_wdata[8]              81.571    0.010    0.81e-4     0.0036  
+instruction_IF_ID[28]          9.071    0.170    0.0007      0.0036  
+regfile_wdata[6]              81.571    0.010    0.81e-4     0.0036  
+regfile_wdata[9]              81.571    0.011    0.81e-4     0.0036  
+regfile_wdata[12]             81.571    0.009    0.81e-4     0.0036  
+regfile_wdata[23]             81.571    0.010    0.81e-4     0.0036  
+regfile_wdata[30]             81.571    0.010    0.81e-4     0.0036  
+regfile_waddr_MEM_WB[4]        9.367    0.149    0.0007      0.0036  
+regfile_wdata[4]              81.571    0.010    0.80e-4     0.0036  
+regfile_wdata[26]             81.571    0.010    0.80e-4     0.0036  
+regfile_wdata[31]             81.571    0.010    0.80e-4     0.0036  
+alu_operand_2[7]              87.513    0.009    0.75e-4     0.0036  
+regfile_wdata[1]              81.571    0.009    0.80e-4     0.0036  
+regfile_wdata[14]             81.571    0.010    0.80e-4     0.0036  
+immediate_extended_ID_EX[7]   10.136    0.153    0.0006      0.0036  
+immediate_extended_ID_EX[1]   10.136    0.151    0.0006      0.0035  
+immediate_extended_ID_EX[8]   10.136    0.151    0.0006      0.0035  
+immediate_extended_ID_EX[3]   10.136    0.151    0.0006      0.0035  
+immediate_extended_ID_EX[4]   10.136    0.150    0.0006      0.0035  
+immediate_extended_ID_EX[10]  10.136    0.147    0.0006      0.0035  
+immediate_extended_ID_EX[2]   10.136    0.148    0.0006      0.0035  
+immediate_extended_ID_EX[12]  10.136    0.149    0.0006      0.0035  
+alu_operand_2[10]             83.463    0.009    0.76e-4     0.0035  
+alu_operand_2[8]              86.732    0.010    0.73e-4     0.0035  
+immediate_extended_ID_EX[5]   10.136    0.150    0.0006      0.0035  
+immediate_extended_ID_EX[13]  10.136    0.146    0.0006      0.0035  
+immediate_extended_ID_EX[11]  10.136    0.148    0.0006      0.0035  
+immediate_extended_ID_EX[9]   10.136    0.151    0.0006      0.0035  
+immediate_extended_ID_EX[14]  10.136    0.146    0.0006      0.0034  
+immediate_extended_ID_EX[6]   10.136    0.144    0.0006      0.0034  
+instruction_IF_ID[26]          8.495    0.176    0.0007      0.0034  
+instruction_ID_EX[3]           6.131    0.500    0.0010      0.0034  d
+alu_operand_2[9]              82.791    0.010    0.73e-4     0.0034  
+alu_operand_2[11]             78.223    0.009    0.76e-4     0.0033  
+alu_operand_2[12]             79.726    0.009    0.74e-4     0.0032  
+instruction_ID_EX[0]           5.533    0.500    0.0010      0.0031  d
+instruction_IF_ID[31]          7.643    0.172    0.0007      0.0030  
+instruction_ID_EX[2]           5.282    0.500    0.0010      0.0029  d
+alu_operand_2[13]             71.847    0.009    0.73e-4     0.0029  
+alu_operand_2[14]             69.713    0.010    0.74e-4     0.0028  
+alu_operand_2[15]             64.001    0.010    0.76e-4     0.0027  
+instruction[4]                 2.527    0.502    0.0019      0.0027  
+alu_control[0]                17.171    0.025    0.0003      0.0026  
+instruction[9]                 2.527    0.499    0.0019      0.0026  
+instruction[11]                2.527    0.499    0.0019      0.0026  
+alu_operand_2[17]             63.078    0.010    0.76e-4     0.0026  
+instruction[15]                2.527    0.497    0.0019      0.0026  
+instruction[27]                2.527    0.505    0.0019      0.0026  
+instruction[18]                2.527    0.498    0.0019      0.0026  
+instruction[16]                2.527    0.499    0.0019      0.0026  
+instruction[26]                2.527    0.499    0.0019      0.0026  
+instruction[3]                 2.527    0.504    0.0019      0.0026  
+instruction[28]                2.527    0.496    0.0019      0.0026  
+instruction[20]                2.527    0.502    0.0019      0.0026  
+instruction[7]                 2.527    0.502    0.0019      0.0026  
+instruction[29]                2.527    0.503    0.0019      0.0026  
+instruction[10]                2.527    0.502    0.0019      0.0026  
+instruction[30]                2.527    0.494    0.0019      0.0026  
+instruction[22]                2.527    0.499    0.0019      0.0026  
+instruction[13]                2.527    0.495    0.0019      0.0026  
+instruction[1]                 2.527    0.502    0.0019      0.0026  
+instruction[17]                2.527    0.496    0.0019      0.0026  
+instruction[0]                 2.527    0.503    0.0019      0.0026  
+instruction[21]                2.527    0.499    0.0019      0.0026  
+instruction[19]                2.527    0.494    0.0019      0.0026  
+instruction[25]                2.527    0.502    0.0019      0.0026  
+instruction[24]                2.527    0.505    0.0019      0.0026  
+instruction[23]                2.527    0.493    0.0019      0.0026  
+instruction[2]                 2.527    0.505    0.0019      0.0026  
+instruction[5]                 2.527    0.504    0.0019      0.0026  
+alu_operand_2[16]             61.164    0.010    0.77e-4     0.0026  
+instruction[8]                 2.527    0.497    0.0019      0.0026  
+instruction[14]                2.527    0.496    0.0019      0.0026  
+instruction[6]                 2.527    0.490    0.0019      0.0026  
+instruction[31]                2.527    0.494    0.0019      0.0026  
+instruction[12]                2.527    0.499    0.0018      0.0026  
+updated_pc_ID_EX[31]           4.593    0.500    0.0010      0.0025  d
+alu_operand_2[18]             58.200    0.010    0.76e-4     0.0024  
+alu_operand_2[19]             56.949    0.010    0.77e-4     0.0024  
+immediate_extended_ID_EX[0]    6.803    0.152    0.0006      0.0024  
+updated_pc_ID_EX[16]           8.142    0.154    0.0005      0.0023  
+alu_operand_2[20]             53.439    0.010    0.77e-4     0.0023  
+updated_pc_ID_EX[8]            8.142    0.149    0.0005      0.0023  
+updated_pc_ID_EX[4]            8.142    0.148    0.0005      0.0023  
+updated_pc_ID_EX[3]            8.142    0.149    0.0005      0.0022  
+updated_pc_ID_EX[5]            8.142    0.150    0.0005      0.0022  
+updated_pc_ID_EX[10]           8.142    0.148    0.0005      0.0022  
+updated_pc_ID_EX[14]           8.142    0.152    0.0005      0.0022  
+updated_pc_ID_EX[11]           8.142    0.152    0.0005      0.0022  
+updated_pc_ID_EX[6]            8.142    0.147    0.0005      0.0022  
+updated_pc_ID_EX[12]           8.142    0.152    0.0005      0.0022  
+updated_pc_ID_EX[25]           7.860    0.151    0.0005      0.0022  
+updated_pc_ID_EX[15]           8.142    0.147    0.0005      0.0022  
+updated_pc_ID_EX[27]           7.860    0.147    0.0005      0.0022  
+updated_pc_ID_EX[22]           7.860    0.146    0.0005      0.0022  
+updated_pc_ID_EX[20]           7.860    0.147    0.0005      0.0022  
+updated_pc_ID_EX[7]            8.142    0.150    0.0005      0.0022  
+updated_pc_ID_EX[9]            8.142    0.144    0.0005      0.0022  
+updated_pc_ID_EX[21]           7.860    0.147    0.0005      0.0022  
+updated_pc_ID_EX[17]           7.860    0.144    0.0005      0.0022  
+updated_pc_ID_EX[23]           7.860    0.149    0.0005      0.0021  
+updated_pc_ID_EX[13]           8.142    0.144    0.0005      0.0021  
+updated_pc_ID_EX[24]           7.860    0.149    0.0005      0.0021  
+updated_pc_ID_EX[18]           7.860    0.148    0.0005      0.0021  
+updated_pc_ID_EX[19]           7.860    0.147    0.0005      0.0021  
+updated_pc_ID_EX[26]           7.860    0.146    0.0005      0.0021  
+alu_operand_2[21]             49.561    0.010    0.75e-4     0.0021  
+immediate_extended[1]          5.056    0.172    0.0007      0.0021  
+immediate_extended[2]          5.056    0.175    0.0007      0.0021  
+immediate_extended[0]          5.056    0.175    0.0007      0.0021  
+immediate_extended[4]          5.056    0.175    0.0007      0.0021  
+immediate_extended[7]          5.056    0.177    0.0007      0.0021  
+immediate_extended[12]         5.056    0.175    0.0007      0.0020  
+immediate_extended[10]         5.056    0.171    0.0007      0.0020  
+immediate_extended_31          5.056    0.175    0.0007      0.0020  
+immediate_extended[3]          5.056    0.171    0.0007      0.0020  
+immediate_extended[8]          5.056    0.175    0.0007      0.0020  
+immediate_extended[13]         5.056    0.170    0.0007      0.0020  
+immediate_extended[11]         5.056    0.172    0.0007      0.0020  
+immediate_extended[5]          5.056    0.173    0.0007      0.0020  
+immediate_extended[14]         5.056    0.171    0.0007      0.0020  
+immediate_extended[9]          5.056    0.176    0.0007      0.0020  
+immediate_extended[6]          5.056    0.166    0.0007      0.0020  
+alu_operand_2[22]             46.971    0.010    0.77e-4     0.0020  
+regfile_waddr[3]               2.527    0.501    0.0014      0.0019  
+regfile_waddr[4]               2.527    0.502    0.0014      0.0019  
+regfile_waddr[0]               2.527    0.505    0.0013      0.0019  
+regfile_waddr[1]               2.527    0.490    0.0013      0.0019  
+regfile_waddr[2]               2.527    0.494    0.0013      0.0019  
+alu_operand_2[23]             43.903    0.010    0.77e-4     0.0019  
+alu_operand_2[25]             41.908    0.010    0.76e-4     0.0018  
+alu_operand_2[24]             39.833    0.010    0.76e-4     0.0017  
+dram_data[7]                   2.527    0.501    0.0011      0.0015  
+dram_data[9]                   2.527    0.506    0.0011      0.0015  
+dram_data[21]                  2.527    0.508    0.0011      0.0015  
+dram_data[13]                  2.527    0.502    0.0011      0.0015  
+dram_data[19]                  2.527    0.499    0.0011      0.0015  
+dram_data[6]                   2.527    0.506    0.0011      0.0015  
+dram_data[31]                  2.527    0.503    0.0011      0.0015  
+dram_data[23]                  2.527    0.505    0.0011      0.0015  
+dram_data[28]                  2.527    0.498    0.0011      0.0015  
+dram_data[20]                  2.527    0.501    0.0011      0.0015  
+dram_data[22]                  2.527    0.492    0.0011      0.0015  
+dram_data[29]                  2.527    0.503    0.0011      0.0015  
+dram_data[2]                   2.527    0.507    0.0011      0.0015  
+dram_data[30]                  2.527    0.493    0.0011      0.0015  
+dram_data[26]                  2.527    0.496    0.0011      0.0015  
+dram_data[27]                  2.527    0.503    0.0011      0.0015  
+dram_data[3]                   2.527    0.510    0.0011      0.0015  
+dram_data[16]                  2.527    0.500    0.0011      0.0015  
+dram_data[12]                  2.527    0.503    0.0011      0.0015  
+dram_data[1]                   2.527    0.501    0.0011      0.0015  
+dram_data[5]                   2.527    0.496    0.0011      0.0015  
+dram_data[14]                  2.527    0.504    0.0011      0.0015  
+dram_data[17]                  2.527    0.505    0.0011      0.0015  
+dram_data[24]                  2.527    0.495    0.0011      0.0015  
+dram_data[8]                   2.527    0.505    0.0011      0.0015  
+dram_data[11]                  2.527    0.504    0.0011      0.0015  
+dram_data[4]                   2.527    0.498    0.0011      0.0015  
+dram_data[0]                   2.527    0.496    0.0011      0.0015  
+dram_data[18]                  2.527    0.505    0.0011      0.0015  
+dram_data[25]                  2.527    0.494    0.0010      0.0015  
+dram_data[10]                  2.527    0.500    0.0010      0.0015  
+mem_2_reg_MEM_WB              79.878    0.004    0.33e-4     0.0015  
+dram_data[15]                  2.527    0.498    0.0010      0.0014  
+instruction_ID_EX[16]          2.582    0.500    0.0010      0.0014  d
+instruction_ID_EX[17]          2.582    0.500    0.0010      0.0014  d
+instruction_ID_EX[18]          2.582    0.500    0.0010      0.0014  d
+instruction_ID_EX[19]          2.582    0.500    0.0010      0.0014  d
+instruction_ID_EX[20]          2.582    0.500    0.0010      0.0014  d
+updated_pc[0]                  2.527    0.500    0.0010      0.0014  d
+updated_pc[1]                  2.527    0.500    0.0010      0.0014  d
+updated_pc[2]                  2.527    0.500    0.0010      0.0014  d
+updated_pc[3]                  2.527    0.500    0.0010      0.0014  d
+updated_pc[4]                  2.527    0.500    0.0010      0.0014  d
+updated_pc[5]                  2.527    0.500    0.0010      0.0014  d
+updated_pc[6]                  2.527    0.500    0.0010      0.0014  d
+updated_pc[7]                  2.527    0.500    0.0010      0.0014  d
+updated_pc[8]                  2.527    0.500    0.0010      0.0014  d
+updated_pc[9]                  2.527    0.500    0.0010      0.0014  d
+updated_pc[10]                 2.527    0.500    0.0010      0.0014  d
+updated_pc[11]                 2.527    0.500    0.0010      0.0014  d
+updated_pc[12]                 2.527    0.500    0.0010      0.0014  d
+updated_pc[13]                 2.527    0.500    0.0010      0.0014  d
+updated_pc[14]                 2.527    0.500    0.0010      0.0014  d
+updated_pc[15]                 2.527    0.500    0.0010      0.0014  d
+updated_pc[16]                 2.527    0.500    0.0010      0.0014  d
+updated_pc[17]                 2.527    0.500    0.0010      0.0014  d
+updated_pc[18]                 2.527    0.500    0.0010      0.0014  d
+updated_pc[19]                 2.527    0.500    0.0010      0.0014  d
+updated_pc[20]                 2.527    0.500    0.0010      0.0014  d
+updated_pc[21]                 2.527    0.500    0.0010      0.0014  d
+updated_pc[22]                 2.527    0.500    0.0010      0.0014  d
+updated_pc[23]                 2.527    0.500    0.0010      0.0014  d
+updated_pc[24]                 2.527    0.500    0.0010      0.0014  d
+updated_pc[25]                 2.527    0.500    0.0010      0.0014  d
+updated_pc[26]                 2.527    0.500    0.0010      0.0014  d
+updated_pc[27]                 2.527    0.500    0.0010      0.0014  d
+updated_pc[28]                 2.527    0.500    0.0010      0.0014  d
+updated_pc[29]                 2.527    0.500    0.0010      0.0014  d
+updated_pc[30]                 2.527    0.500    0.0010      0.0014  d
+updated_pc[31]                 2.527    0.500    0.0010      0.0014  d
+updated_pc_ID_EX[2]            4.817    0.145    0.0005      0.0013  
+instruction_ID_EX[11]          2.279    0.500    0.0010      0.0013  d
+instruction_ID_EX[12]          2.279    0.500    0.0010      0.0013  d
+instruction_ID_EX[13]          2.279    0.500    0.0010      0.0013  d
+instruction_ID_EX[14]          2.279    0.500    0.0010      0.0013  d
+instruction_ID_EX[15]          2.279    0.500    0.0010      0.0013  d
+alu_operand_2[27]             28.611    0.010    0.76e-4     0.0012  
+alu_operand_2[26]             28.523    0.010    0.76e-4     0.0012  
+regfile_waddr_EX_MEM[4]        2.527    0.176    0.0008      0.0011  
+regfile_waddr_EX_MEM[3]        2.527    0.174    0.0008      0.0011  
+regfile_waddr_EX_MEM[0]        2.527    0.177    0.0008      0.0011  
+regfile_waddr_EX_MEM[2]        2.527    0.168    0.0008      0.0011  
+reg_write_ID_EX                2.527    0.066    0.0008      0.0011  
+regfile_waddr_EX_MEM[1]        2.527    0.172    0.0008      0.0011  
+reg_write                      2.527    0.670    0.0008      0.0011  
+alu_operand_2[28]             25.975    0.010    0.76e-4     0.0011  
+reg_dst                        2.527    0.659    0.0007      0.0010  
+alu_operand_2[31]             22.455    0.010    0.76e-4     0.0009  
+alu_operand_2[30]             21.907    0.010    0.76e-4     0.0009  
+mem_write_EX_MEM              42.847    0.995    0.39e-4     0.0009  
+alu_operand_2[29]             21.279    0.010    0.77e-4     0.0009  
+alu_out_EX_MEM[10]            17.020    0.012    0.93e-4     0.0009  
+reg_write_EX_MEM               2.274    0.056    0.0007      0.0009  
+alu_out_EX_MEM[11]            17.020    0.012    0.92e-4     0.0009  
+updated_pc_IF_ID[16]           2.527    0.178    0.0006      0.0008  
+updated_pc_IF_ID[8]            2.527    0.174    0.0006      0.0008  
+updated_pc_IF_ID[22]           2.527    0.173    0.0006      0.0008  
+updated_pc_IF_ID[31]           2.527    0.178    0.0006      0.0008  
+updated_pc_IF_ID[4]            2.527    0.176    0.0006      0.0008  
+updated_pc_IF_ID[25]           2.527    0.177    0.0006      0.0008  
+alu_out_EX_MEM[9]             16.170    0.012    0.91e-4     0.0008  
+updated_pc_IF_ID[27]           2.527    0.170    0.0006      0.0008  
+updated_pc_IF_ID[20]           2.527    0.170    0.0006      0.0008  
+updated_pc_IF_ID[21]           2.527    0.172    0.0006      0.0008  
+updated_pc_IF_ID[17]           2.527    0.172    0.0006      0.0008  
+updated_pc_IF_ID[23]           2.527    0.173    0.0006      0.0008  
+updated_pc_IF_ID[29]           2.527    0.176    0.0006      0.0008  
+updated_pc_IF_ID[24]           2.527    0.173    0.0006      0.0008  
+updated_pc_IF_ID[10]           2.527    0.172    0.0006      0.0008  
+updated_pc_IF_ID[1]            2.527    0.177    0.0006      0.0008  
+updated_pc_IF_ID[14]           2.527    0.176    0.0006      0.0008  
+updated_pc_IF_ID[3]            2.527    0.174    0.0006      0.0008  
+updated_pc_IF_ID[6]            2.527    0.173    0.0006      0.0008  
+updated_pc_IF_ID[2]            2.527    0.171    0.0006      0.0008  
+updated_pc_IF_ID[11]           2.527    0.177    0.0006      0.0008  
+updated_pc_IF_ID[18]           2.527    0.172    0.0006      0.0008  
+updated_pc_IF_ID[0]            2.527    0.173    0.0006      0.0008  
+dram_data_MEM_WB[6]            2.274    0.177    0.0006      0.0008  
+updated_pc_IF_ID[28]           2.527    0.178    0.0006      0.0008  
+updated_pc_IF_ID[5]            2.527    0.177    0.0006      0.0008  
+updated_pc_IF_ID[30]           2.527    0.173    0.0006      0.0008  
+dram_data_MEM_WB[21]           2.274    0.177    0.0006      0.0008  
+updated_pc_IF_ID[12]           2.527    0.176    0.0006      0.0008  
+updated_pc_IF_ID[19]           2.527    0.172    0.0006      0.0008  
+dram_data_MEM_WB[4]            2.274    0.177    0.0006      0.0008  
+updated_pc_IF_ID[7]            2.527    0.175    0.0006      0.0008  
+updated_pc_IF_ID[15]           2.527    0.172    0.0006      0.0008  
+dram_data_MEM_WB[9]            2.274    0.176    0.0006      0.0008  
+dram_data_MEM_WB[8]            2.274    0.176    0.0006      0.0008  
+dram_data_MEM_WB[17]           2.274    0.177    0.0006      0.0008  
+dram_data_MEM_WB[23]           2.274    0.177    0.0006      0.0008  
+updated_pc_IF_ID[13]           2.527    0.169    0.0006      0.0008  
+updated_pc_IF_ID[26]           2.527    0.170    0.0006      0.0008  
+updated_pc_IF_ID[9]            2.527    0.169    0.0006      0.0008  
+dram_data_MEM_WB[18]           2.274    0.176    0.0006      0.0008  
+dram_data_MEM_WB[7]            2.274    0.175    0.0006      0.0008  
+dram_data_MEM_WB[3]            2.274    0.177    0.0006      0.0008  
+dram_data_MEM_WB[20]           2.274    0.176    0.0006      0.0008  
+dram_data_MEM_WB[19]           2.274    0.173    0.0006      0.0008  
+dram_data_MEM_WB[27]           2.274    0.172    0.0006      0.0008  
+dram_data_MEM_WB[29]           2.274    0.173    0.0006      0.0008  
+dram_data_MEM_WB[22]           2.274    0.173    0.0006      0.0008  
+dram_data_MEM_WB[28]           2.274    0.170    0.0006      0.0008  
+dram_data_MEM_WB[5]            2.274    0.170    0.0006      0.0008  
+dram_data_MEM_WB[30]           2.274    0.173    0.0006      0.0008  
+dram_data_MEM_WB[11]           2.274    0.178    0.0006      0.0008  
+dram_data_MEM_WB[13]           2.274    0.177    0.0006      0.0008  
+dram_data_MEM_WB[2]            2.274    0.180    0.0006      0.0008  
+dram_data_MEM_WB[10]           2.274    0.173    0.0006      0.0008  
+dram_data_MEM_WB[31]           2.274    0.175    0.0006      0.0008  
+dram_data_MEM_WB[14]           2.274    0.175    0.0006      0.0008  
+dram_data_MEM_WB[1]            2.274    0.169    0.0006      0.0008  
+dram_data_MEM_WB[26]           2.274    0.177    0.0006      0.0008  
+dram_data_MEM_WB[12]           2.274    0.173    0.0006      0.0008  
+dram_data_MEM_WB[16]           2.274    0.171    0.0006      0.0008  
+dram_data_MEM_WB[0]            2.274    0.173    0.0006      0.0008  
+dram_data_MEM_WB[24]           2.274    0.171    0.0006      0.0008  
+dram_data_MEM_WB[25]           2.274    0.170    0.0006      0.0008  
+dram_data_MEM_WB[15]           2.274    0.173    0.0006      0.0008  
+alu_control[3]                15.191    0.005    0.60e-4     0.0005  
+alu_out[2]                     5.433    0.015    0.0001      0.0004  
+alu_out[3]                     5.578    0.014    0.0001      0.0004  
+alu_out[5]                     5.433    0.014    0.0001      0.0004  
+alu_out[11]                    5.433    0.014    0.0001      0.0004  
+alu_out[28]                    5.449    0.014    0.0001      0.0004  
+alu_out[21]                    5.433    0.014    0.0001      0.0004  
+alu_out[27]                    5.433    0.014    0.0001      0.0004  
+alu_out[12]                    5.433    0.014    0.0001      0.0004  
+alu_out[23]                    5.156    0.014    0.0001      0.0004  
+alu_out[29]                    5.117    0.014    0.0001      0.0004  
+alu_out[15]                    5.117    0.014    0.0001      0.0004  
+alu_out[22]                    5.117    0.014    0.0001      0.0004  
+alu_out[4]                     5.117    0.013    0.0001      0.0004  
+alu_out[0]                     4.975    0.014    0.0001      0.0004  
+alu_out[24]                    5.049    0.014    0.0001      0.0004  
+alu_out[13]                    5.117    0.013    0.0001      0.0004  
+alu_out[6]                     4.953    0.014    0.0001      0.0004  
+alu_out[20]                    4.975    0.014    0.0001      0.0004  
+alu_out[26]                    4.975    0.014    0.0001      0.0004  
+alu_out[8]                     5.117    0.014    0.0001      0.0004  
+alu_out[1]                     5.130    0.012    0.0001      0.0004  
+alu_out[16]                    4.975    0.014    0.0001      0.0004  
+alu_out[19]                    4.975    0.014    0.0001      0.0004  
+alu_out[10]                    4.975    0.013    0.0001      0.0004  
+alu_out[17]                    4.953    0.014    0.0001      0.0004  
+alu_out[18]                    4.953    0.014    0.0001      0.0004  
+alu_out[30]                    4.965    0.014    0.0001      0.0004  
+alu_out[25]                    4.953    0.014    0.0001      0.0004  
+alu_out[7]                     4.975    0.013    0.0001      0.0004  
+alu_out[9]                     4.953    0.014    0.0001      0.0004  
+alu_out[14]                    4.953    0.014    0.0001      0.0004  
+regfile_data_1_ID_EX[0]       89.458    0.001    0.63e-5     0.0003  
+regfile_data_1_ID_EX[2]       88.262    0.001    0.57e-5     0.0003  
+regfile_data_1_ID_EX[1]       93.823    0.001    0.53e-5     0.0003  
+alu_op_1_                      2.527    0.976    0.0002      0.0003  
+regfile_data_1_ID_EX[8]       76.920    0.001    0.61e-5     0.0003  
+regfile_data_1_ID_EX[4]       85.776    0.001    0.53e-5     0.0003  
+regfile_data_1_ID_EX[3]       88.954    0.000    0.51e-5     0.0002  
+regfile_data_1_ID_EX[10]      69.989    0.001    0.61e-5     0.0002  
+regfile_data_1_ID_EX[9]       72.289    0.001    0.57e-5     0.0002  
+regfile_data_1_ID_EX[5]       84.122    0.000    0.47e-5     0.0002  
+regfile_data_1_ID_EX[7]       81.966    0.000    0.47e-5     0.0002  
+alu_src                        2.527    0.018    0.0001      0.0002  
+alu_op_ID_EX[0]                8.702    0.005    0.43e-4     0.0002  
+regfile_data_1_ID_EX[11]      69.064    0.001    0.53e-5     0.0002  
+regfile_data_1_ID_EX[6]       81.304    0.001    0.45e-5     0.0002  
+alu_out[31]                    2.527    0.014    0.0001      0.0002  
+regfile_data_1_ID_EX[14]      62.498    0.001    0.53e-5     0.0002  
+regfile_data_1_ID_EX[13]      64.834    0.001    0.49e-5     0.0002  
+regfile_data_1_ID_EX[15]      62.529    0.001    0.47e-5     0.0002  
+regfile_data_1_ID_EX[12]      66.142    0.000    0.43e-5     0.0002  
+regfile_data_1_ID_EX[16]      60.362    0.000    0.47e-5     0.0002  
+jump                           6.226    0.005    0.45e-4     0.0002  
+regfile_data_1_ID_EX[20]      47.906    0.001    0.57e-5     0.0002  
+regfile_data_1_ID_EX[17]      55.283    0.001    0.49e-5     0.0001  
+regfile_data_1_ID_EX[19]      54.361    0.000    0.49e-5     0.0001  
+regfile_data_1_ID_EX[18]      52.951    0.000    0.49e-5     0.0001  
+alu_out_EX_MEM[2]              2.598    0.013    0.98e-4     0.0001  
+alu_out_EX_MEM[6]              2.598    0.012    0.96e-4     0.0001  
+alu_out_EX_MEM[3]              2.598    0.012    0.95e-4     0.0001  
+alu_out_EX_MEM[5]              2.598    0.013    0.95e-4     0.0001  
+alu_out_EX_MEM[0]              2.527    0.012    0.96e-4     0.0001  
+regfile_data_1_ID_EX[21]      51.470    0.000    0.47e-5     0.0001  
+alu_out_EX_MEM[7]              2.598    0.012    0.92e-4     0.0001  
+rdata_ext_2[30]                0.103    0.500    0.0023      0.0001  
+rdata_ext_2[12]                0.103    0.505    0.0023      0.0001  
+rdata_ext_2[5]                 0.103    0.497    0.0023      0.0001  
+rdata_ext_2[26]                0.103    0.498    0.0023      0.0001  
+rdata_ext_2[6]                 0.103    0.500    0.0023      0.0001  
 rdata_ext_2[25]                0.103    0.495    0.0023      0.0001  
-rdata_ext_2[2]                 0.103    0.502    0.0023      0.0001  
-rdata_ext_2[29]                0.103    0.498    0.0023      0.0001  
-rdata_ext_2[10]                0.103    0.498    0.0023      0.0001  
-rdata_ext_2[15]                0.103    0.501    0.0023      0.0001  
-rdata_ext_2[26]                0.103    0.497    0.0023      0.0001  
-rdata_ext_2[24]                0.103    0.499    0.0023      0.0001  
+rdata_ext_2[17]                0.103    0.502    0.0023      0.0001  
+regfile_data_1_ID_EX[23]      46.674    0.001    0.51e-5     0.0001  
+rdata_ext_2[1]                 0.103    0.505    0.0023      0.0001  
+rdata_ext_2[24]                0.103    0.502    0.0023      0.0001  
 rdata_ext_2[28]                0.103    0.496    0.0023      0.0001  
-rdata_ext_2[3]                 0.103    0.494    0.0023      0.0001  
-program_counter/updated_pc[6]
-                               2.745    0.034    0.77e-4     0.0001  
-rdata_ext[28]                  0.103    0.490    0.0019      0.0001  
-rdata_ext[5]                   0.103    0.505    0.0019      0.0001  
-rdata_ext[12]                  0.103    0.498    0.0019      0.0001  
-rdata_ext[23]                  0.103    0.502    0.0019      0.0001  
-rdata_ext[31]                  0.103    0.503    0.0019      0.0001  
-rdata_ext[1]                   0.103    0.503    0.0019      0.0001  
-rdata_ext[14]                  0.103    0.504    0.0019      0.0001  
-rdata_ext[24]                  0.103    0.496    0.0019      0.0001  
+rdata_ext_2[14]                0.103    0.496    0.0023      0.0001  
+rdata_ext_2[21]                0.103    0.500    0.0023      0.0001  
+rdata_ext_2[29]                0.103    0.498    0.0023      0.0001  
+alu_out_EX_MEM[4]              2.598    0.012    0.91e-4     0.0001  
+rdata_ext_2[8]                 0.103    0.495    0.0023      0.0001  
+rdata_ext_2[23]                0.103    0.501    0.0023      0.0001  
+rdata_ext_2[19]                0.103    0.498    0.0023      0.0001  
+rdata_ext_2[22]                0.103    0.500    0.0023      0.0001  
+alu_out_EX_MEM[17]             2.527    0.012    0.93e-4     0.0001  
+alu_out_EX_MEM[20]             2.527    0.012    0.93e-4     0.0001  
+alu_out_EX_MEM[29]             2.527    0.012    0.93e-4     0.0001  
+rdata_ext_2[15]                0.103    0.502    0.0023      0.0001  
+rdata_ext_2[13]                0.103    0.498    0.0023      0.0001  
+rdata_ext_2[18]                0.103    0.504    0.0023      0.0001  
+rdata_ext_2[4]                 0.103    0.498    0.0023      0.0001  
+alu_out_EX_MEM[15]             2.527    0.012    0.93e-4     0.0001  
+alu_out_EX_MEM[18]             2.527    0.012    0.93e-4     0.0001  
+alu_out_EX_MEM[19]             2.527    0.012    0.93e-4     0.0001  
+alu_out_EX_MEM[21]             2.527    0.012    0.93e-4     0.0001  
+alu_out_EX_MEM[23]             2.527    0.012    0.93e-4     0.0001  
+alu_out_EX_MEM[24]             2.527    0.012    0.93e-4     0.0001  
+alu_out_EX_MEM[26]             2.527    0.012    0.93e-4     0.0001  
+alu_out_EX_MEM[27]             2.527    0.012    0.93e-4     0.0001  
+alu_out_EX_MEM[28]             2.527    0.012    0.93e-4     0.0001  
+rdata_ext_2[3]                 0.103    0.506    0.0023      0.0001  
+rdata_ext_2[16]                0.103    0.498    0.0023      0.0001  
+rdata_ext_2[10]                0.103    0.501    0.0023      0.0001  
+alu_out_EX_MEM[16]             2.527    0.012    0.93e-4     0.0001  
+alu_out_EX_MEM[22]             2.527    0.012    0.93e-4     0.0001  
+alu_out_EX_MEM[25]             2.527    0.012    0.93e-4     0.0001  
+alu_out_EX_MEM[30]             2.527    0.012    0.93e-4     0.0001  
+alu_out_EX_MEM[31]             2.527    0.012    0.93e-4     0.0001  
+rdata_ext_2[9]                 0.103    0.498    0.0023      0.0001  
+rdata_ext_2[27]                0.103    0.501    0.0023      0.0001  
+alu_out_EX_MEM[12]             2.527    0.011    0.93e-4     0.0001  
+rdata_ext_2[7]                 0.103    0.498    0.0023      0.0001  
+rdata_ext_2[2]                 0.103    0.503    0.0023      0.0001  
+rdata_ext_2[0]                 0.103    0.499    0.0023      0.0001  
+rdata_ext_2[31]                0.103    0.502    0.0023      0.0001  
+rdata_ext_2[11]                0.103    0.501    0.0023      0.0001  
+alu_out_EX_MEM[8]              2.598    0.012    0.90e-4     0.0001  
+rdata_ext_2[20]                0.103    0.496    0.0022      0.0001  
+alu_out_EX_MEM[14]             2.527    0.012    0.92e-4     0.0001  
+alu_out_EX_MEM[13]             2.527    0.012    0.91e-4     0.0001  
+alu_out_EX_MEM[1]              2.527    0.011    0.90e-4     0.0001  
+alu_out_MEM_WB[2]              2.577    0.010    0.84e-4     0.0001  
+alu_out_MEM_WB[10]             2.577    0.010    0.83e-4     0.0001  
+alu_out_MEM_WB[6]              2.577    0.010    0.82e-4     0.0001  
+alu_out_MEM_WB[5]              2.577    0.010    0.81e-4     0.0001  
+alu_out_MEM_WB[14]             2.577    0.010    0.81e-4     0.0001  
+alu_out_MEM_WB[17]             2.577    0.010    0.81e-4     0.0001  
+alu_out_MEM_WB[20]             2.577    0.010    0.81e-4     0.0001  
+alu_out_MEM_WB[29]             2.577    0.010    0.81e-4     0.0001  
+regfile_data_1_ID_EX[24]      40.880    0.001    0.51e-5     0.0001  
+alu_out_MEM_WB[0]              2.577    0.009    0.81e-4     0.0001  
+alu_out_MEM_WB[15]             2.577    0.010    0.81e-4     0.0001  
+alu_out_MEM_WB[18]             2.577    0.010    0.81e-4     0.0001  
+alu_out_MEM_WB[19]             2.577    0.010    0.81e-4     0.0001  
+alu_out_MEM_WB[21]             2.577    0.010    0.81e-4     0.0001  
+alu_out_MEM_WB[23]             2.577    0.010    0.81e-4     0.0001  
+alu_out_MEM_WB[24]             2.577    0.010    0.81e-4     0.0001  
+alu_out_MEM_WB[26]             2.577    0.010    0.81e-4     0.0001  
+alu_out_MEM_WB[27]             2.577    0.010    0.81e-4     0.0001  
+alu_out_MEM_WB[28]             2.577    0.010    0.81e-4     0.0001  
+alu_out_MEM_WB[3]              2.577    0.010    0.80e-4     0.0001  
+alu_out_MEM_WB[12]             2.577    0.009    0.80e-4     0.0001  
+alu_out_MEM_WB[16]             2.577    0.010    0.80e-4     0.0001  
+alu_out_MEM_WB[22]             2.577    0.010    0.80e-4     0.0001  
+alu_out_MEM_WB[25]             2.577    0.010    0.80e-4     0.0001  
+alu_out_MEM_WB[30]             2.577    0.010    0.80e-4     0.0001  
+alu_out_MEM_WB[31]             2.577    0.010    0.80e-4     0.0001  
+alu_out_MEM_WB[9]              2.577    0.010    0.80e-4     0.0001  
+alu_out_MEM_WB[7]              2.577    0.010    0.79e-4     0.0001  
+alu_out_MEM_WB[11]             2.577    0.010    0.79e-4     0.0001  
+alu_out_MEM_WB[4]              2.577    0.010    0.78e-4     0.0001  
+alu_out_MEM_WB[1]              2.577    0.009    0.78e-4     0.0001  
+alu_out_MEM_WB[13]             2.577    0.010    0.78e-4     0.0001  
+regfile_data_1_ID_EX[29]      32.355    0.001    0.61e-5     0.0001  
+alu_out_MEM_WB[8]              2.577    0.010    0.76e-4     0.0001  
+rdata_ext[26]                  0.103    0.502    0.0019      0.0001  
 rdata_ext[30]                  0.103    0.503    0.0019      0.0001  
-rdata_ext[0]                   0.103    0.503    0.0019      0.0001  
-rdata_ext[25]                  0.103    0.498    0.0019      0.0001  
-rdata_ext[18]                  0.103    0.501    0.0019      0.0001  
-rdata_ext[7]                   0.103    0.502    0.0019      0.0001  
+rdata_ext[23]                  0.103    0.505    0.0019      0.0001  
+rdata_ext[27]                  0.103    0.496    0.0019      0.0001  
+rdata_ext[5]                   0.103    0.500    0.0019      0.0001  
+rdata_ext[21]                  0.103    0.505    0.0019      0.0001  
+rdata_ext[0]                   0.103    0.496    0.0019      0.0001  
+rdata_ext[9]                   0.103    0.502    0.0019      0.0001  
+rdata_ext[8]                   0.103    0.498    0.0019      0.0001  
+rdata_ext[24]                  0.103    0.502    0.0019      0.0001  
+rdata_ext[16]                  0.103    0.501    0.0019      0.0001  
+rdata_ext[7]                   0.103    0.499    0.0019      0.0001  
+rdata_ext[3]                   0.103    0.500    0.0019      0.0001  
+rdata_ext[25]                  0.103    0.495    0.0019      0.0001  
+rdata_ext[17]                  0.103    0.503    0.0019      0.0001  
+rdata_ext[14]                  0.103    0.504    0.0019      0.0001  
+rdata_ext[10]                  0.103    0.499    0.0019      0.0001  
+rdata_ext[29]                  0.103    0.505    0.0019      0.0001  
+rdata_ext[11]                  0.103    0.499    0.0019      0.0001  
+rdata_ext[18]                  0.103    0.500    0.0019      0.0001  
+rdata_ext[12]                  0.103    0.499    0.0019      0.0001  
+rdata_ext[13]                  0.103    0.494    0.0019      0.0001  
+rdata_ext[6]                   0.103    0.501    0.0019      0.0001  
+rdata_ext[19]                  0.103    0.496    0.0019      0.0001  
+rdata_ext[22]                  0.103    0.506    0.0019      0.0001  
+rdata_ext[20]                  0.103    0.503    0.0019      0.0001  
+rdata_ext[4]                   0.103    0.500    0.0019      0.0001  
+rdata_ext[31]                  0.103    0.505    0.0019      0.0001  
+rdata_ext[2]                   0.103    0.492    0.0019      0.0001  
 rdata_ext[15]                  0.103    0.498    0.0019      0.0001  
-rdata_ext[29]                  0.103    0.503    0.0019      0.0001  
-rdata_ext[13]                  0.103    0.498    0.0019      0.0001  
-rdata_ext[27]                  0.103    0.502    0.0019      0.0001  
-rdata_ext[10]                  0.103    0.500    0.0019      0.0001  
-rdata_ext[2]                   0.103    0.504    0.0019      0.0001  
-rdata_ext[21]                  0.103    0.499    0.0019      0.0001  
-rdata_ext[16]                  0.103    0.498    0.0019      0.0001  
-rdata_ext[6]                   0.103    0.504    0.0019      0.0001  
-rdata_ext[9]                   0.103    0.498    0.0019      0.0001  
-rdata_ext[22]                  0.103    0.502    0.0019      0.0001  
-rdata_ext[8]                   0.103    0.497    0.0019      0.0001  
-rdata_ext[26]                  0.103    0.501    0.0019      0.0001  
-rdata_ext[20]                  0.103    0.500    0.0019      0.0001  
-rdata_ext[3]                   0.103    0.508    0.0019      0.0001  
-rdata_ext[4]                   0.103    0.502    0.0019      0.0001  
-rdata_ext[17]                  0.103    0.506    0.0019      0.0001  
-rdata_ext[11]                  0.103    0.500    0.0019      0.0001  
-rdata_ext[19]                  0.103    0.502    0.0018      0.0001  
-current_pc[7]                  4.557    0.003    0.51e-5  1.288e-05  
-program_counter/updated_pc[7]
-                               2.745    0.003    0.56e-5  8.498e-06  
-alu_operand_2[14]             42.632    0.000    0.24e-6  5.737e-06  
-alu_operand_2[20]             42.177    0.000    0.24e-6  5.676e-06  
-alu_operand_2[22]             42.177    0.000    0.24e-6  5.676e-06  
-alu_operand_2[19]             41.996    0.000    0.24e-6  5.652e-06  
-alu_operand_2[28]             41.936    0.000    0.24e-6  5.644e-06  
-alu_operand_2[10]             41.828    0.000    0.24e-6  5.629e-06  
-alu_operand_2[18]             41.828    0.000    0.24e-6  5.629e-06  
-alu_operand_2[25]             41.828    0.000    0.24e-6  5.629e-06  
-alu_operand_2[9]              41.533    0.000    0.24e-6  5.590e-06  
-alu_operand_2[13]             41.293    0.000    0.24e-6  5.557e-06  
-alu_operand_2[17]             41.293    0.000    0.24e-6  5.557e-06  
-alu_operand_2[12]             40.336    0.000    0.24e-6  5.428e-06  
-alu_operand_2[31]             40.057    0.000    0.24e-6  5.391e-06  
-alu_operand_2[15]             39.532    0.000    0.24e-6  5.320e-06  
-alu_operand_2[3]              39.131    0.000    0.24e-6  5.266e-06  
-alu_operand_2[4]              39.131    0.000    0.24e-6  5.266e-06  
-alu_operand_2[5]              39.131    0.000    0.24e-6  5.266e-06  
-alu_operand_2[6]              39.131    0.000    0.24e-6  5.266e-06  
-alu_operand_2[7]              39.131    0.000    0.24e-6  5.266e-06  
-alu_operand_2[8]              39.131    0.000    0.24e-6  5.266e-06  
-alu_operand_2[11]             39.131    0.000    0.24e-6  5.266e-06  
-alu_operand_2[16]             39.131    0.000    0.24e-6  5.266e-06  
-alu_operand_2[21]             39.131    0.000    0.24e-6  5.266e-06  
-alu_operand_2[23]             39.131    0.000    0.24e-6  5.266e-06  
-alu_operand_2[24]             39.131    0.000    0.24e-6  5.266e-06  
-alu_operand_2[26]             39.082    0.000    0.24e-6  5.260e-06  
-alu_operand_2[2]              37.088    0.000    0.24e-6  4.991e-06  
-alu_operand_2[29]             37.088    0.000    0.24e-6  4.991e-06  
-alu_operand_2[0]              35.605    0.000    0.24e-6  4.792e-06  
-alu_operand_2[30]             35.289    0.000    0.24e-6  4.749e-06  
-alu_operand_2[1]              35.049    0.000    0.24e-6  4.717e-06  
-alu_operand_2[27]             33.011    0.000    0.24e-6  4.443e-06  
-regfile_data_1[23]            21.222    0.000    0.24e-6  2.856e-06  
-regfile_data_1[16]            19.733    0.000    0.24e-6  2.656e-06  
-regfile_data_1[5]             19.276    0.000    0.24e-6  2.594e-06  
-regfile_data_1[6]             19.276    0.000    0.24e-6  2.594e-06  
-regfile_data_1[7]             19.239    0.000    0.24e-6  2.589e-06  
-regfile_data_1[12]            19.151    0.000    0.24e-6  2.577e-06  
-regfile_data_1[15]            19.107    0.000    0.24e-6  2.571e-06  
-regfile_data_1[2]             18.458    0.000    0.24e-6  2.484e-06  
-regfile_data_1[8]             18.458    0.000    0.24e-6  2.484e-06  
-regfile_data_1[24]            18.458    0.000    0.24e-6  2.484e-06  
-regfile_data_1[19]            18.211    0.000    0.24e-6  2.451e-06  
-regfile_data_1[21]            18.110    0.000    0.24e-6  2.437e-06  
-regfile_data_1[29]            18.110    0.000    0.24e-6  2.437e-06  
-regfile_data_1[3]             18.001    0.000    0.24e-6  2.423e-06  
-regfile_data_1[4]             18.001    0.000    0.24e-6  2.423e-06  
-regfile_data_1[11]            17.832    0.000    0.24e-6  2.400e-06  
-regfile_data_1[27]            17.832    0.000    0.24e-6  2.400e-06  
-regfile_data_1[1]             17.685    0.000    0.24e-6  2.380e-06  
-regfile_data_1[10]            17.216    0.000    0.24e-6  2.317e-06  
-regfile_data_1[13]            17.216    0.000    0.24e-6  2.317e-06  
-regfile_data_1[14]            17.216    0.000    0.24e-6  2.317e-06  
-regfile_data_1[18]            17.216    0.000    0.24e-6  2.317e-06  
-regfile_data_1[28]            17.009    0.000    0.24e-6  2.289e-06  
-regfile_data_1[22]            16.793    0.000    0.24e-6  2.260e-06  
-regfile_data_1[0]             16.779    0.000    0.24e-6  2.258e-06  
-regfile_data_1[20]            16.747    0.000    0.24e-6  2.254e-06  
-regfile_data_1[17]            16.680    0.000    0.24e-6  2.245e-06  
-regfile_data_1[25]            16.680    0.000    0.24e-6  2.245e-06  
-regfile_data_1[9]             16.419    0.000    0.24e-6  2.210e-06  
-regfile_data_1[31]            15.607    0.000    0.24e-6  2.100e-06  
-regfile_data_1[26]            14.516    0.000    0.24e-6  1.954e-06  
-regfile_data_1[30]            14.356    0.000    0.24e-6  1.932e-06  
-alu_op[0]                      0.000    0.000    0.0000      0.0000  d
-alu_op[1]                      0.000    1.000    0.0000      0.0000  d
-alu_src                        0.000    0.000    0.0000      0.0000  d
-branch                         0.000    0.000    0.0000      0.0000  d
-current_pc[8]                  4.557    0.000    0.0000      0.0000  
-current_pc[9]                 15.475    0.000    0.0000      0.0000  
-current_pc[10]                13.502    0.000    0.0000      0.0000  
-jump                           0.000    0.000    0.0000      0.0000  d
+rdata_ext[1]                   0.103    0.505    0.0018      0.0001  
+rdata_ext[28]                  0.103    0.503    0.0018      0.0001  
+regfile_data_1_ID_EX[25]      36.261    0.001    0.51e-5     0.0001  
+regfile_data_1_ID_EX[22]      43.545    0.000    0.41e-5  9.767e-05  
+regfile_data_1_ID_EX[27]      32.247    0.001    0.53e-5  9.403e-05  
+regfile_data_1_ID_EX[26]      31.842    0.001    0.51e-5  8.928e-05  
+regfile_data_1_ID_EX[28]      26.404    0.001    0.55e-5  7.995e-05  
+mem_2_reg                      2.527    0.006    0.52e-4  7.313e-05  
+regfile_data_2_EX_MEM[3]      20.115    0.001    0.65e-5  7.219e-05  
+branch                         2.527    0.005    0.50e-4  7.001e-05  
+mem_write                      2.527    0.006    0.49e-4  6.803e-05  
+regfile_data_2_EX_MEM[7]      20.115    0.001    0.61e-5  6.768e-05  
+regfile_data_2_EX_MEM[16]     20.115    0.001    0.61e-5  6.768e-05  
+regfile_data_2_EX_MEM[20]     20.115    0.001    0.61e-5  6.768e-05  
+regfile_data_2_EX_MEM[22]     20.115    0.001    0.61e-5  6.768e-05  
+regfile_data_2_EX_MEM[29]     20.115    0.001    0.61e-5  6.768e-05  
+regfile_data_2_EX_MEM[0]      20.115    0.001    0.59e-5  6.542e-05  
+regfile_data_2_EX_MEM[5]      20.115    0.001    0.59e-5  6.542e-05  
+regfile_data_2_EX_MEM[10]     20.115    0.001    0.59e-5  6.542e-05  
+regfile_data_2_EX_MEM[19]     20.115    0.001    0.59e-5  6.542e-05  
+mem_2_reg_ID_EX                2.527    0.005    0.46e-4  6.434e-05  
+regfile_data_2_EX_MEM[23]     20.115    0.001    0.57e-5  6.317e-05  
+regfile_data_2_EX_MEM[30]     20.115    0.001    0.57e-5  6.317e-05  
+regfile_data_2_EX_MEM[1]      20.115    0.001    0.55e-5  6.091e-05  
+regfile_data_2_EX_MEM[15]     20.115    0.001    0.55e-5  6.091e-05  
+regfile_data_2_EX_MEM[24]     20.115    0.001    0.55e-5  6.091e-05  
+regfile_data_2_EX_MEM[31]     20.115    0.001    0.55e-5  6.091e-05  
+mem_write_ID_EX                2.527    0.004    0.43e-4  5.924e-05  
+regfile_data_2_EX_MEM[4]      20.115    0.001    0.53e-5  5.865e-05  
+regfile_data_2_EX_MEM[6]      20.115    0.001    0.53e-5  5.865e-05  
+regfile_data_2_EX_MEM[8]      20.115    0.001    0.53e-5  5.865e-05  
+regfile_data_2_EX_MEM[25]     20.115    0.001    0.53e-5  5.865e-05  
+regfile_data_2_EX_MEM[27]     20.115    0.001    0.53e-5  5.865e-05  
+regfile_data_2_EX_MEM[2]      20.115    0.001    0.51e-5  5.640e-05  
+regfile_data_2_EX_MEM[9]      20.115    0.001    0.51e-5  5.640e-05  
+regfile_data_2_EX_MEM[14]     20.115    0.001    0.51e-5  5.640e-05  
+regfile_data_2_EX_MEM[17]     20.115    0.001    0.51e-5  5.640e-05  
+regfile_data_2_EX_MEM[26]     20.115    0.001    0.51e-5  5.640e-05  
+regfile_data_2_EX_MEM[28]     20.115    0.001    0.51e-5  5.640e-05  
+regfile_data_2_EX_MEM[21]     20.115    0.001    0.49e-5  5.414e-05  
+jump_ID_EX                     2.527    0.004    0.38e-4  5.329e-05  
+regfile_data_2_EX_MEM[13]     20.115    0.001    0.45e-5  4.963e-05  
+regfile_data_2_EX_MEM[18]     20.115    0.001    0.45e-5  4.963e-05  
+mem_2_reg_EX_MEM               2.274    0.005    0.39e-4  4.859e-05  
+regfile_data_2_EX_MEM[11]     20.115    0.000    0.41e-5  4.512e-05  
+regfile_data_1_ID_EX[30]      21.118    0.000    0.39e-5  4.500e-05  
+regfile_data_2_EX_MEM[12]     20.115    0.000    0.39e-5  4.286e-05  
+regfile_data_1_ID_EX[31]      12.735    0.000    0.39e-5  2.714e-05  
+regfile_data_2_ID_EX[3]        5.106    0.001    0.69e-5  1.947e-05  
+regfile_data_2_ID_EX[20]       5.106    0.001    0.67e-5  1.890e-05  
+regfile_data_2_ID_EX[7]        5.106    0.001    0.65e-5  1.832e-05  
+regfile_data_2_ID_EX[16]       5.106    0.001    0.65e-5  1.832e-05  
+regfile_data_2_ID_EX[0]        5.106    0.001    0.63e-5  1.775e-05  
+regfile_data_2_ID_EX[5]        5.106    0.001    0.63e-5  1.775e-05  
+regfile_data_2_ID_EX[10]       5.106    0.001    0.63e-5  1.775e-05  
+regfile_data_2_ID_EX[19]       5.106    0.001    0.63e-5  1.775e-05  
+regfile_data_2_ID_EX[22]       5.106    0.001    0.63e-5  1.775e-05  
+regfile_data_2_ID_EX[23]       5.106    0.001    0.63e-5  1.775e-05  
+regfile_data_2_ID_EX[29]       5.106    0.001    0.63e-5  1.775e-05  
+regfile_data_2_ID_EX[8]        5.106    0.001    0.59e-5  1.661e-05  
+regfile_data_2_ID_EX[27]       5.106    0.001    0.59e-5  1.661e-05  
+regfile_data_2_ID_EX[30]       5.106    0.001    0.59e-5  1.661e-05  
+regfile_data_2_ID_EX[1]        5.106    0.001    0.57e-5  1.603e-05  
+regfile_data_2_ID_EX[2]        5.106    0.001    0.57e-5  1.603e-05  
+regfile_data_2_ID_EX[15]       5.106    0.001    0.57e-5  1.603e-05  
+regfile_data_2_ID_EX[24]       5.106    0.001    0.57e-5  1.603e-05  
+regfile_data_2_ID_EX[31]       5.106    0.001    0.57e-5  1.603e-05  
+regfile_data_2_ID_EX[4]        5.106    0.001    0.55e-5  1.546e-05  
+regfile_data_2_ID_EX[6]        5.106    0.001    0.55e-5  1.546e-05  
+regfile_data_2_ID_EX[9]        5.106    0.001    0.55e-5  1.546e-05  
+regfile_data_2_ID_EX[14]       5.106    0.001    0.55e-5  1.546e-05  
+regfile_data_2_ID_EX[17]       5.106    0.001    0.55e-5  1.546e-05  
+regfile_data_2_ID_EX[25]       5.106    0.001    0.55e-5  1.546e-05  
+regfile_data_2_ID_EX[26]       5.106    0.001    0.55e-5  1.546e-05  
+regfile_data_2_ID_EX[18]       5.106    0.001    0.53e-5  1.489e-05  
+regfile_data_2_ID_EX[28]       5.106    0.001    0.53e-5  1.489e-05  
+regfile_data_2_ID_EX[21]       5.106    0.001    0.51e-5  1.432e-05  
+regfile_data_2_ID_EX[11]       5.106    0.001    0.45e-5  1.260e-05  
+regfile_data_2_ID_EX[13]       5.106    0.001    0.45e-5  1.260e-05  
+current_pc[2]                  0.023    0.500    0.0010   1.243e-05  d
+current_pc[3]                  0.023    0.500    0.0010   1.243e-05  d
+current_pc[4]                  0.023    0.500    0.0010   1.243e-05  d
+current_pc[5]                  0.023    0.500    0.0010   1.243e-05  d
+current_pc[6]                  0.023    0.500    0.0010   1.243e-05  d
+current_pc[7]                  0.023    0.500    0.0010   1.243e-05  d
+current_pc[8]                  0.023    0.500    0.0010   1.243e-05  d
+regfile_data_2_ID_EX[12]       5.106    0.000    0.41e-5  1.145e-05  
+regfile_data_2[3]              2.527    0.001    0.73e-5  1.020e-05  
+regfile_data_2[7]              2.527    0.001    0.73e-5  1.020e-05  
+regfile_data_2[16]             2.527    0.001    0.71e-5  9.920e-06  
+regfile_data_2[20]             2.527    0.001    0.71e-5  9.920e-06  
+regfile_data_1[8]              2.527    0.001    0.69e-5  9.637e-06  
+regfile_data_2[5]              2.527    0.001    0.69e-5  9.637e-06  
+regfile_data_2[29]             2.527    0.001    0.69e-5  9.637e-06  
+regfile_data_1[29]             2.527    0.001    0.67e-5  9.354e-06  
+regfile_data_2[19]             2.527    0.001    0.67e-5  9.354e-06  
+regfile_data_2[22]             2.527    0.001    0.67e-5  9.354e-06  
+regfile_data_1[0]              2.527    0.001    0.65e-5  9.070e-06  
+regfile_data_1[10]             2.527    0.001    0.65e-5  9.070e-06  
+regfile_data_2[0]              2.527    0.001    0.65e-5  9.070e-06  
+regfile_data_2[10]             2.527    0.001    0.65e-5  9.070e-06  
+regfile_data_2[23]             2.527    0.001    0.65e-5  9.070e-06  
+regfile_data_1[20]             2.527    0.001    0.63e-5  8.787e-06  
+regfile_data_2[2]              2.527    0.001    0.63e-5  8.787e-06  
+regfile_data_2[8]              2.527    0.001    0.63e-5  8.787e-06  
+regfile_data_2[9]              2.527    0.001    0.63e-5  8.787e-06  
+regfile_data_1[2]              2.527    0.001    0.61e-5  8.503e-06  
+regfile_data_1[9]              2.527    0.001    0.61e-5  8.503e-06  
+regfile_data_1[27]             2.527    0.001    0.61e-5  8.503e-06  
+regfile_data_2[1]              2.527    0.001    0.61e-5  8.503e-06  
+regfile_data_2[4]              2.527    0.001    0.61e-5  8.503e-06  
+regfile_data_2[15]             2.527    0.001    0.61e-5  8.503e-06  
+regfile_data_2[17]             2.527    0.001    0.61e-5  8.503e-06  
+regfile_data_2[24]             2.527    0.001    0.61e-5  8.503e-06  
+regfile_data_2[25]             2.527    0.001    0.61e-5  8.503e-06  
+regfile_data_2[27]             2.527    0.001    0.61e-5  8.503e-06  
+regfile_data_2[30]             2.527    0.001    0.61e-5  8.503e-06  
+regfile_data_2[31]             2.527    0.001    0.61e-5  8.503e-06  
+regfile_data_1[11]             2.527    0.001    0.59e-5  8.220e-06  
+regfile_data_1[14]             2.527    0.001    0.59e-5  8.220e-06  
+regfile_data_1[17]             2.527    0.001    0.59e-5  8.220e-06  
+regfile_data_1[26]             2.527    0.001    0.59e-5  8.220e-06  
+regfile_data_1[28]             2.527    0.001    0.59e-5  8.220e-06  
+regfile_data_2[6]              2.527    0.001    0.59e-5  8.220e-06  
+regfile_data_2[14]             2.527    0.001    0.59e-5  8.220e-06  
+regfile_data_2[18]             2.527    0.001    0.59e-5  8.220e-06  
+regfile_data_2[26]             2.527    0.001    0.59e-5  8.220e-06  
+regfile_data_1[4]              2.527    0.001    0.57e-5  7.936e-06  
+regfile_data_1[23]             2.527    0.001    0.57e-5  7.936e-06  
+regfile_data_1[25]             2.527    0.001    0.57e-5  7.936e-06  
+regfile_data_2[21]             2.527    0.001    0.57e-5  7.936e-06  
+regfile_data_2[28]             2.527    0.001    0.57e-5  7.936e-06  
+regfile_data_1[1]              2.527    0.001    0.55e-5  7.653e-06  
+regfile_data_1[13]             2.527    0.001    0.55e-5  7.653e-06  
+regfile_data_1[16]             2.527    0.001    0.55e-5  7.653e-06  
+regfile_data_1[18]             2.527    0.001    0.55e-5  7.653e-06  
+regfile_data_1[19]             2.527    0.001    0.55e-5  7.653e-06  
+regfile_data_1[24]             2.527    0.001    0.55e-5  7.653e-06  
+regfile_data_1[5]              2.527    0.001    0.53e-5  7.369e-06  
+regfile_data_1[15]             2.527    0.001    0.53e-5  7.369e-06  
+regfile_data_1[21]             2.527    0.001    0.53e-5  7.369e-06  
+regfile_data_1[3]              2.527    0.001    0.51e-5  7.086e-06  
+regfile_data_1[7]              2.527    0.001    0.51e-5  7.086e-06  
+regfile_data_2[13]             2.527    0.001    0.51e-5  7.086e-06  
+regfile_data_1[6]              2.527    0.001    0.49e-5  6.803e-06  
+regfile_data_2[11]             2.527    0.001    0.49e-5  6.803e-06  
+regfile_data_1[22]             2.527    0.001    0.47e-5  6.519e-06  
+regfile_data_2[12]             2.527    0.001    0.47e-5  6.519e-06  
+regfile_data_1[12]             2.527    0.001    0.43e-5  5.952e-06  
+regfile_data_1[30]             2.527    0.001    0.43e-5  5.952e-06  
+regfile_data_1[31]             2.527    0.001    0.43e-5  5.952e-06  
+branch_EX_MEM                  0.003    0.500    0.0010   1.759e-06  d
+branch_pc[2]                   0.003    0.500    0.0010   1.759e-06  d
+branch_pc[3]                   0.003    0.500    0.0010   1.759e-06  d
+branch_pc[4]                   0.003    0.500    0.0010   1.759e-06  d
+branch_pc[5]                   0.003    0.500    0.0010   1.759e-06  d
+branch_pc[6]                   0.003    0.500    0.0010   1.759e-06  d
+branch_pc[7]                   0.003    0.500    0.0010   1.759e-06  d
+branch_pc[8]                   0.003    0.500    0.0010   1.759e-06  d
+branch_pc[9]                   0.003    0.500    0.0010   1.759e-06  d
+branch_pc[10]                  0.003    0.500    0.0010   1.759e-06  d
+branch_pc[11]                  0.003    0.500    0.0010   1.759e-06  d
+branch_pc[12]                  0.003    0.500    0.0010   1.759e-06  d
+branch_pc[13]                  0.003    0.500    0.0010   1.759e-06  d
+branch_pc[14]                  0.003    0.500    0.0010   1.759e-06  d
+branch_pc[15]                  0.003    0.500    0.0010   1.759e-06  d
+branch_pc[16]                  0.003    0.500    0.0010   1.759e-06  d
+branch_pc[17]                  0.003    0.500    0.0010   1.759e-06  d
+branch_pc[18]                  0.003    0.500    0.0010   1.759e-06  d
+branch_pc[19]                  0.003    0.500    0.0010   1.759e-06  d
+branch_pc[20]                  0.003    0.500    0.0010   1.759e-06  d
+branch_pc[21]                  0.003    0.500    0.0010   1.759e-06  d
+branch_pc[22]                  0.003    0.500    0.0010   1.759e-06  d
+branch_pc[23]                  0.003    0.500    0.0010   1.759e-06  d
+branch_pc[24]                  0.003    0.500    0.0010   1.759e-06  d
+branch_pc[25]                  0.003    0.500    0.0010   1.759e-06  d
+branch_pc[26]                  0.003    0.500    0.0010   1.759e-06  d
+branch_pc[27]                  0.003    0.500    0.0010   1.759e-06  d
+branch_pc[28]                  0.003    0.500    0.0010   1.759e-06  d
+branch_pc[29]                  0.003    0.500    0.0010   1.759e-06  d
+branch_pc[30]                  0.003    0.500    0.0010   1.759e-06  d
+branch_pc[31]                  0.003    0.500    0.0010   1.759e-06  d
+branch_pc_EX_MEM               0.003    0.500    0.0010   1.759e-06  d
+instruction_ID_EX[21]          0.003    0.500    0.0010   1.759e-06  d
+instruction_ID_EX[22]          0.003    0.500    0.0010   1.759e-06  d
+instruction_ID_EX[23]          0.003    0.500    0.0010   1.759e-06  d
+instruction_ID_EX[24]          0.003    0.500    0.0010   1.759e-06  d
+instruction_ID_EX[25]          0.003    0.500    0.0010   1.759e-06  d
+jump_EX_MEM                    0.003    0.500    0.0010   1.759e-06  d
+jump_pc_EX_MEM                 0.003    0.500    0.0010   1.759e-06  d
+updated_pc_ID_EX[0]            0.003    0.500    0.0010   1.759e-06  d
+updated_pc_ID_EX[1]            0.003    0.500    0.0010   1.759e-06  d
+zero_flag                      0.003    0.500    0.0010   1.759e-06  d
+zero_flag_EX_MEM               0.003    0.500    0.0010   1.759e-06  d
 jump_pc[0]                     0.000    0.000    0.0000      0.0000  d
 jump_pc[1]                     0.000    0.000    0.0000      0.0000  d
-mem_2_reg                      0.000    0.000    0.0000      0.0000  d
-mem_read                       0.000    0.000    0.0000      0.0000  d
-mem_write                      0.000    0.000    0.0000      0.0000  d
 n1                             0.000    0.000    0.0000      0.0000  d
 n2                             0.000    0.000    0.0000      0.0000  d
 n3                             0.000    0.000    0.0000      0.0000  d
@@ -457,16 +1015,23 @@ n89                            0.000    0.000    0.0000      0.0000  d
 n90                            0.000    0.000    0.0000      0.0000  d
 n91                            0.000    0.000    0.0000      0.0000  d
 n92                            0.000    0.000    0.0000      0.0000  d
-n213                           0.000    0.000    0.0000      0.0000  d
-n214                           0.000    0.000    0.0000      0.0000  d
-n215                           0.000    0.000    0.0000      0.0000  d
-n216                           0.000    0.000    0.0000      0.0000  d
-n217                           0.000    0.000    0.0000      0.0000  d
-n218                           0.000    0.000    0.0000      0.0000  d
-n219                           0.000    0.000    0.0000      0.0000  d
-n220                           0.000    0.000    0.0000      0.0000  d
-n221                           0.000    0.000    0.0000      0.0000  d
-n222                           0.000    0.000    0.0000      0.0000  d
+n93                            0.000    0.000    0.0000      0.0000  d
+n94                            0.000    0.000    0.0000      0.0000  d
+n95                            0.000    0.000    0.0000      0.0000  d
+n96                            0.000    0.000    0.0000      0.0000  d
+n97                            0.000    0.000    0.0000      0.0000  d
+n98                            0.000    0.000    0.0000      0.0000  d
+n99                            0.000    0.000    0.0000      0.0000  d
+n100                           0.000    0.000    0.0000      0.0000  d
+n101                           0.000    0.000    0.0000      0.0000  d
+n102                           0.000    0.000    0.0000      0.0000  d
+n103                           0.000    0.000    0.0000      0.0000  d
+n104                           0.000    0.000    0.0000      0.0000  d
+n105                           0.000    0.000    0.0000      0.0000  d
+n106                           0.000    0.000    0.0000      0.0000  d
+n107                           0.000    0.000    0.0000      0.0000  d
+n108                           0.000    0.000    0.0000      0.0000  d
+n109                           0.000    0.000    0.0000      0.0000  d
 n223                           0.000    0.000    0.0000      0.0000  d
 n224                           0.000    0.000    0.0000      0.0000  d
 n225                           0.000    0.000    0.0000      0.0000  d
@@ -514,79 +1079,10 @@ n266                           0.000    0.000    0.0000      0.0000  d
 n267                           0.000    0.000    0.0000      0.0000  d
 n268                           0.000    0.000    0.0000      0.0000  d
 n269                           0.000    0.000    0.0000      0.0000  d
-n270                           0.000    0.000    0.0000      0.0000  d
-n271                           0.000    0.000    0.0000      0.0000  d
-n272                           0.000    0.000    0.0000      0.0000  d
-n273                           0.000    0.000    0.0000      0.0000  d
-n274                           0.000    0.000    0.0000      0.0000  d
-n275                           0.000    0.000    0.0000      0.0000  d
-n276                           0.000    0.000    0.0000      0.0000  d
-n277                           0.000    0.000    0.0000      0.0000  d
-n278                           0.000    0.000    0.0000      0.0000  d
-n279                           0.000    0.000    0.0000      0.0000  d
-n280                           0.000    0.000    0.0000      0.0000  d
-n281                           0.000    0.000    0.0000      0.0000  d
-n282                           0.000    0.000    0.0000      0.0000  d
-n283                           0.000    0.000    0.0000      0.0000  d
-n284                           0.000    0.000    0.0000      0.0000  d
-n285                           0.000    0.000    0.0000      0.0000  d
-n286                           0.000    0.000    0.0000      0.0000  d
-n287                           0.000    0.000    0.0000      0.0000  d
-n288                           0.000    0.000    0.0000      0.0000  d
-n289                           0.000    0.000    0.0000      0.0000  d
-n290                           0.000    0.000    0.0000      0.0000  d
-n291                           0.000    0.000    0.0000      0.0000  d
-n292                           0.000    0.000    0.0000      0.0000  d
-n293                           0.000    0.000    0.0000      0.0000  d
-n294                           0.000    0.000    0.0000      0.0000  d
-n295                           0.000    0.000    0.0000      0.0000  d
-n296                           0.000    0.000    0.0000      0.0000  d
-n297                           0.000    0.000    0.0000      0.0000  d
-n298                           0.000    0.000    0.0000      0.0000  d
-n299                           0.000    0.000    0.0000      0.0000  d
-n300                           0.000    0.000    0.0000      0.0000  d
-n301                           0.000    0.000    0.0000      0.0000  d
-n302                           0.000    0.000    0.0000      0.0000  d
-n303                           0.000    0.000    0.0000      0.0000  d
-n304                           0.000    0.000    0.0000      0.0000  d
-n305                           0.000    0.000    0.0000      0.0000  d
-n306                           0.000    0.000    0.0000      0.0000  d
-n307                           0.000    0.000    0.0000      0.0000  d
-n308                           0.000    0.000    0.0000      0.0000  d
-n309                           0.000    0.000    0.0000      0.0000  d
-n310                           0.000    0.000    0.0000      0.0000  d
-n311                           0.000    0.000    0.0000      0.0000  d
-n312                           0.000    0.000    0.0000      0.0000  d
-n313                           0.000    0.000    0.0000      0.0000  d
-n314                           0.000    0.000    0.0000      0.0000  d
-n315                           0.000    0.000    0.0000      0.0000  d
-n316                           0.000    0.000    0.0000      0.0000  d
-n317                           0.000    0.000    0.0000      0.0000  d
-n318                           0.000    0.000    0.0000      0.0000  d
-n319                           0.000    0.000    0.0000      0.0000  d
-n320                           0.000    0.000    0.0000      0.0000  d
-n321                           0.000    0.000    0.0000      0.0000  d
-n322                           0.000    0.000    0.0000      0.0000  d
-n323                           0.000    0.000    0.0000      0.0000  d
-n324                           0.000    0.000    0.0000      0.0000  d
-n325                           0.000    0.000    0.0000      0.0000  d
-n326                           0.000    0.000    0.0000      0.0000  d
-n327                           0.000    0.000    0.0000      0.0000  d
-n328                           0.000    0.000    0.0000      0.0000  d
-n329                           0.000    0.000    0.0000      0.0000  d
-n330                           0.000    0.000    0.0000      0.0000  d
-n331                           0.000    0.000    0.0000      0.0000  d
-n332                           0.000    0.000    0.0000      0.0000  d
-n333                           0.000    0.000    0.0000      0.0000  d
-n334                           0.000    0.000    0.0000      0.0000  d
-n335                           0.000    0.000    0.0000      0.0000  d
-n336                           0.000    0.000    0.0000      0.0000  d
-n337                           0.000    0.000    0.0000      0.0000  d
-n338                           0.000    0.000    0.0000      0.0000  d
-n339                           0.000    0.000    0.0000      0.0000  d
 n_Logic0_                      0.000    0.000    0.0000      0.0000  d
+n_Logic1_                      0.000    1.000    0.0000      0.0000  d
 --------------------------------------------------------------------------------
-Total (448 nets)                                             1.0929 uW
+Total (899 nets)                                             3.0837 uW
 
 
 
@@ -600,240 +1096,763 @@ Total (448 nets)                                             1.0929 uW
                           Switching   Internal   Power           Leakage
 Net                       Power       Power      (% Net/Tot)     Power    Attrs
 --------------------------------------------------------------------------------
-n212                         0.5720     0.0000     0.572 (100%) 72706.7188  d
-current_pc[2]                0.0201     0.0000  2.01e-02 (100%) 164806.2031 
-immediate_extended[8]        0.0158     0.0000  1.58e-02 (100%) 58360.9609  
-immediate_extended[9]        0.0129     0.0000  1.29e-02 (100%) 58360.9609  
-instruction[18]              0.0120     0.0000  1.20e-02 (100%) 58360.9609  
-immediate_extended[10]       0.0119     0.0000  1.19e-02 (100%) 58360.9609  
-instruction[19]              0.0114     0.0000  1.14e-02 (100%) 58360.9609  
-immediate_extended[6]        0.0111     0.0000  1.11e-02 (100%) 58360.9609  
-instruction[20]              0.0111     0.0000  1.11e-02 (100%) 58360.9609  
-instruction[23]              0.0106     0.0000  1.06e-02 (100%) 58360.9609  
-immediate_extended[7]        0.0105     0.0000  1.05e-02 (100%) 58360.9609  
-instruction[24]              0.0101     0.0000  1.01e-02 (100%) 58360.9609  
-instruction[25]           9.708e-03     0.0000  9.71e-03 (100%) 58360.9609  
-current_pc[3]             9.527e-03     0.0000  9.53e-03 (100%) 164806.2031 
-regfile_waddr[1]          8.719e-03     0.0000  8.72e-03 (100%) 63182.5312  
-regfile_waddr[2]          8.664e-03     0.0000  8.66e-03 (100%) 63182.5312  
-alu_out[10]               8.126e-03     0.0000  8.13e-03 (100%) 59356.3086  
-alu_out[11]               8.126e-03     0.0000  8.13e-03 (100%) 59356.3086  
-program_counter/updated_pc[2]
-                          7.981e-03     0.0000  7.98e-03 (100%) 52340.1016  
-instruction[17]           7.959e-03     0.0000  7.96e-03 (100%) 58360.9609  
-alu_out[2]                6.915e-03     0.0000  6.92e-03 (100%) 161901.9062 
-alu_out[3]                6.915e-03     0.0000  6.92e-03 (100%) 161901.9062 
-alu_out[4]                6.915e-03     0.0000  6.92e-03 (100%) 59356.3086  
-alu_out[5]                6.915e-03     0.0000  6.92e-03 (100%) 161901.9062 
-alu_out[6]                6.915e-03     0.0000  6.92e-03 (100%) 161901.9062 
-alu_out[7]                6.915e-03     0.0000  6.92e-03 (100%) 161901.9062 
-alu_out[8]                6.915e-03     0.0000  6.92e-03 (100%) 59356.3086  
-alu_out[0]                6.889e-03     0.0000  6.89e-03 (100%) 78585.3438  
-alu_out[1]                6.889e-03     0.0000  6.89e-03 (100%) 161901.9062 
-alu_out[12]               6.889e-03     0.0000  6.89e-03 (100%) 59356.3086  
-alu_out[13]               6.889e-03     0.0000  6.89e-03 (100%) 59356.3086  
-alu_out[14]               6.889e-03     0.0000  6.89e-03 (100%) 59356.3086  
-alu_out[15]               6.889e-03     0.0000  6.89e-03 (100%) 59356.3086  
-alu_out[16]               6.889e-03     0.0000  6.89e-03 (100%) 161901.9062 
-alu_out[17]               6.889e-03     0.0000  6.89e-03 (100%) 59356.3086  
-alu_out[18]               6.889e-03     0.0000  6.89e-03 (100%) 161901.9062 
-alu_out[19]               6.889e-03     0.0000  6.89e-03 (100%) 59356.3086  
-alu_out[20]               6.889e-03     0.0000  6.89e-03 (100%) 161901.9062 
-alu_out[21]               6.889e-03     0.0000  6.89e-03 (100%) 161901.9062 
-alu_out[22]               6.889e-03     0.0000  6.89e-03 (100%) 161901.9062 
-alu_out[23]               6.889e-03     0.0000  6.89e-03 (100%) 161901.9062 
-alu_out[24]               6.889e-03     0.0000  6.89e-03 (100%) 59356.3086  
-alu_out[25]               6.889e-03     0.0000  6.89e-03 (100%) 59356.3086  
-alu_out[26]               6.889e-03     0.0000  6.89e-03 (100%) 59356.3086  
-alu_out[27]               6.889e-03     0.0000  6.89e-03 (100%) 59356.3086  
-alu_out[28]               6.889e-03     0.0000  6.89e-03 (100%) 161901.9062 
-alu_out[29]               6.889e-03     0.0000  6.89e-03 (100%) 161901.9062 
-alu_out[30]               6.889e-03     0.0000  6.89e-03 (100%) 65205.3594  
-alu_out[31]               6.889e-03     0.0000  6.89e-03 (100%) 59356.3086  
-regfile_waddr[3]          6.876e-03     0.0000  6.88e-03 (100%) 63182.5312  
-immediate_extended[1]     6.623e-03     0.0000  6.62e-03 (100%) 58360.9609  
-regfile_waddr[0]          6.606e-03     0.0000  6.61e-03 (100%) 63182.5312  
-instruction[16]           6.570e-03     0.0000  6.57e-03 (100%) 58360.9609  
-instruction[22]           6.469e-03     0.0000  6.47e-03 (100%) 58360.9609  
-immediate_extended[3]     6.383e-03     0.0000  6.38e-03 (100%) 58360.9609  
-immediate_extended[4]     5.931e-03     0.0000  5.93e-03 (100%) 58360.9609  
-regfile_waddr[4]          5.513e-03     0.0000  5.51e-03 (100%) 63182.5312  
-instruction[21]           5.021e-03     0.0000  5.02e-03 (100%) 58360.9609  
-alu_control[2]            4.909e-03     0.0000  4.91e-03 (100%) 59356.3086  
-alu_control[1]            4.500e-03     0.0000  4.50e-03 (100%) 71517.7109  
-immediate_extended[5]     4.158e-03     0.0000  4.16e-03 (100%) 58360.9609  
-current_pc[4]             3.182e-03     0.0000  3.18e-03 (100%) 164806.2031 
-immediate_extended[0]     3.071e-03     0.0000  3.07e-03 (100%) 58360.9609  
-alu_control[0]            3.010e-03     0.0000  3.01e-03 (100%) 102492.8984 
-immediate_extended[2]     2.928e-03     0.0000  2.93e-03 (100%) 58360.9609  
-reg_dst                   2.871e-03     0.0000  2.87e-03 (100%) 119171.2969 
-program_counter/updated_pc[3]
-                          2.298e-03     0.0000  2.30e-03 (100%) 63182.5312  
-instruction[29]           1.608e-03     0.0000  1.61e-03 (100%) 58360.9609  
-alu_out[9]                1.464e-03     0.0000  1.46e-03 (100%) 161901.9062 
-instruction[31]           1.432e-03     0.0000  1.43e-03 (100%) 58360.9609  
-instruction[27]           1.423e-03     0.0000  1.42e-03 (100%) 58360.9609  
-instruction[26]           1.367e-03     0.0000  1.37e-03 (100%) 58360.9609  
-instruction[28]           1.347e-03     0.0000  1.35e-03 (100%) 58360.9609  
-instruction[30]           1.335e-03     0.0000  1.34e-03 (100%) 58360.9609  
-immediate_extended[12]    1.273e-03     0.0000  1.27e-03 (100%) 58360.9609  
-immediate_extended[13]    1.263e-03     0.0000  1.26e-03 (100%) 58360.9609  
-alu_control[3]            1.252e-03     0.0000  1.25e-03 (100%) 119171.2969 
-immediate_extended_31     1.248e-03     0.0000  1.25e-03 (100%) 58360.9609  
-immediate_extended[14]    1.229e-03     0.0000  1.23e-03 (100%) 58360.9609  
-immediate_extended[11]    1.221e-03     0.0000  1.22e-03 (100%) 58360.9609  
-program_counter/updated_pc[4]
-                          1.098e-03     0.0000  1.10e-03 (100%) 71517.7109  
-current_pc[5]             6.751e-04     0.0000  6.75e-04 (100%) 164806.2031 
-program_counter/updated_pc[5]
-                          4.395e-04     0.0000  4.39e-04 (100%) 58174.3594  
-current_pc[6]             1.656e-04     0.0000  1.66e-04 (100%) 164806.2031 
-rdata_ext_2[23]           1.322e-04     0.0000  1.32e-04 (100%) 64943.4414  
-rdata_ext_2[8]            1.317e-04     0.0000  1.32e-04 (100%) 64943.4414  
-rdata_ext_2[16]           1.314e-04     0.0000  1.31e-04 (100%) 64943.4414  
+n222                         0.8994     0.0000     0.899 (100%) 72706.7188  d
+clk                          0.6332     0.0000     0.633 (100%)    0.0000   m, d
+arst_n                       0.5721     0.0000     0.572 (100%)    0.0000   m, d
+immediate_extended_ID_EX[15]
+                             0.0542     0.0000  5.42e-02 (100%) 164806.2031 
+instruction_ID_EX[8]         0.0158     0.0000  1.58e-02 (100%) 82403.1016  m, d
+instruction_ID_EX[9]         0.0141     0.0000  1.41e-02 (100%) 82403.1016  m, d
+instruction_ID_EX[6]         0.0110     0.0000  1.10e-02 (100%) 82403.1016  m, d
+instruction_ID_EX[7]         0.0103     0.0000  1.03e-02 (100%) 82403.1016  m, d
+instruction_IF_ID[23]     8.836e-03     0.0000  8.84e-03 (100%) 164806.2031 
+instruction_IF_ID[18]     8.764e-03     0.0000  8.76e-03 (100%) 164806.2031 
+enable                    8.704e-03     0.0000  8.70e-03 (100%)    0.0000   m, d
+instruction_ID_EX[10]     8.602e-03     0.0000  8.60e-03 (100%) 82403.1016  m, d
+instruction_IF_ID[24]     8.294e-03     0.0000  8.29e-03 (100%) 164806.2031 
+instruction_IF_ID[19]     8.265e-03     0.0000  8.27e-03 (100%) 164806.2031 
+instruction_IF_ID[25]     8.157e-03     0.0000  8.16e-03 (100%) 164806.2031 
+instruction_IF_ID[20]     8.076e-03     0.0000  8.08e-03 (100%) 164806.2031 
+alu_control[1]            7.282e-03     0.0000  7.28e-03 (100%) 86423.5625  
+instruction_ID_EX[1]      6.828e-03     0.0000  6.83e-03 (100%) 82403.1016  m, d
+alu_operand_2[0]          6.417e-03     0.0000  6.42e-03 (100%) 63182.5312  
+instruction_ID_EX[4]      6.377e-03     0.0000  6.38e-03 (100%) 82403.1016  m, d
+reg_dst_ID_EX             6.149e-03     0.0000  6.15e-03 (100%) 164806.2031 
+alu_operand_2[1]          6.108e-03     0.0000  6.11e-03 (100%) 63182.5312  
+current_pc[9]             6.031e-03     0.0000  6.03e-03 (100%)    0.0000   d
+instruction_IF_ID[17]     5.731e-03     0.0000  5.73e-03 (100%) 164806.2031 
+reg_write_MEM_WB          5.643e-03     0.0000  5.64e-03 (100%) 164806.2031 
+instruction_IF_ID[22]     5.635e-03     0.0000  5.63e-03 (100%) 164806.2031 
+regfile_waddr_MEM_WB[2]   5.550e-03     0.0000  5.55e-03 (100%) 164806.2031 
+regfile_waddr_MEM_WB[1]   5.521e-03     0.0000  5.52e-03 (100%) 164806.2031 
+alu_src_ID_EX             5.459e-03     0.0000  5.46e-03 (100%) 164806.2031 
+alu_op_ID_EX[1]           5.183e-03     0.0000  5.18e-03 (100%) 164806.2031 
+current_pc[10]            4.945e-03     0.0000  4.94e-03 (100%)    0.0000   d
+instruction_IF_ID[30]     4.915e-03     0.0000  4.92e-03 (100%) 164806.2031 
+instruction_IF_ID[21]     4.798e-03     0.0000  4.80e-03 (100%) 164806.2031 
+instruction_IF_ID[27]     4.782e-03     0.0000  4.78e-03 (100%) 164806.2031 
+instruction_IF_ID[16]     4.668e-03     0.0000  4.67e-03 (100%) 164806.2031 
+instruction_ID_EX[5]      4.529e-03     0.0000  4.53e-03 (100%) 82403.1016  m, d
+updated_pc_ID_EX[30]      4.491e-03     0.0000  4.49e-03 (100%) 82403.1016  m, d
+regfile_waddr_MEM_WB[3]   4.485e-03     0.0000  4.49e-03 (100%) 164806.2031 
+instruction_IF_ID[29]     4.451e-03     0.0000  4.45e-03 (100%) 164806.2031 
+updated_pc_ID_EX[28]      4.335e-03     0.0000  4.34e-03 (100%) 82403.1016  m, d
+updated_pc_ID_EX[29]      4.335e-03     0.0000  4.34e-03 (100%) 82403.1016  m, d
+regfile_waddr_MEM_WB[0]   4.237e-03     0.0000  4.24e-03 (100%) 164806.2031 
+alu_operand_2[2]          4.237e-03     0.0000  4.24e-03 (100%) 63182.5312  
+alu_operand_2[3]          4.145e-03     0.0000  4.15e-03 (100%) 63182.5312  
+alu_operand_2[5]          3.928e-03     0.0000  3.93e-03 (100%) 63182.5312  
+alu_operand_2[6]          3.911e-03     0.0000  3.91e-03 (100%) 63182.5312  
+regfile_wdata[2]          3.870e-03     0.0000  3.87e-03 (100%) 63182.5312  
+regfile_wdata[10]         3.833e-03     0.0000  3.83e-03 (100%) 63182.5312  
+regfile_wdata[20]         3.833e-03     0.0000  3.83e-03 (100%) 63182.5312  
+regfile_wdata[7]          3.824e-03     0.0000  3.82e-03 (100%) 63182.5312  
+regfile_wdata[17]         3.797e-03     0.0000  3.80e-03 (100%) 63182.5312  
+regfile_wdata[28]         3.778e-03     0.0000  3.78e-03 (100%) 63182.5312  
+regfile_wdata[18]         3.751e-03     0.0000  3.75e-03 (100%) 63182.5312  
+regfile_wdata[29]         3.751e-03     0.0000  3.75e-03 (100%) 63182.5312  
+regfile_wdata[3]          3.733e-03     0.0000  3.73e-03 (100%) 63182.5312  
+alu_operand_2[4]          3.726e-03     0.0000  3.73e-03 (100%) 63182.5312  
+regfile_wdata[0]          3.714e-03     0.0000  3.71e-03 (100%) 63182.5312  
+regfile_wdata[11]         3.714e-03     0.0000  3.71e-03 (100%) 63182.5312  
+regfile_wdata[15]         3.714e-03     0.0000  3.71e-03 (100%) 63182.5312  
+regfile_wdata[22]         3.714e-03     0.0000  3.71e-03 (100%) 63182.5312  
+regfile_wdata[19]         3.705e-03     0.0000  3.71e-03 (100%) 63182.5312  
+regfile_wdata[27]         3.687e-03     0.0000  3.69e-03 (100%) 63182.5312  
+regfile_wdata[13]         3.678e-03     0.0000  3.68e-03 (100%) 63182.5312  
+regfile_wdata[16]         3.678e-03     0.0000  3.68e-03 (100%) 63182.5312  
+regfile_wdata[21]         3.669e-03     0.0000  3.67e-03 (100%) 63182.5312  
+alu_control[2]            3.660e-03     0.0000  3.66e-03 (100%) 102554.6016 
+regfile_wdata[25]         3.659e-03     0.0000  3.66e-03 (100%) 63182.5312  
+regfile_wdata[24]         3.650e-03     0.0000  3.65e-03 (100%) 63182.5312  
+regfile_wdata[5]          3.641e-03     0.0000  3.64e-03 (100%) 63182.5312  
+regfile_wdata[8]          3.641e-03     0.0000  3.64e-03 (100%) 63182.5312  
+instruction_IF_ID[28]     3.634e-03     0.0000  3.63e-03 (100%) 164806.2031 
+regfile_wdata[6]          3.632e-03     0.0000  3.63e-03 (100%) 63182.5312  
+regfile_wdata[9]          3.632e-03     0.0000  3.63e-03 (100%) 63182.5312  
+regfile_wdata[12]         3.632e-03     0.0000  3.63e-03 (100%) 63182.5312  
+regfile_wdata[23]         3.632e-03     0.0000  3.63e-03 (100%) 63182.5312  
+regfile_wdata[30]         3.632e-03     0.0000  3.63e-03 (100%) 63182.5312  
+regfile_waddr_MEM_WB[4]   3.621e-03     0.0000  3.62e-03 (100%) 164806.2031 
+regfile_wdata[4]          3.614e-03     0.0000  3.61e-03 (100%) 63182.5312  
+regfile_wdata[26]         3.614e-03     0.0000  3.61e-03 (100%) 63182.5312  
+regfile_wdata[31]         3.614e-03     0.0000  3.61e-03 (100%) 63182.5312  
+alu_operand_2[7]          3.612e-03     0.0000  3.61e-03 (100%) 63182.5312  
+regfile_wdata[1]          3.595e-03     0.0000  3.60e-03 (100%) 63182.5312  
+regfile_wdata[14]         3.595e-03     0.0000  3.60e-03 (100%) 63182.5312  
+immediate_extended_ID_EX[7]
+                          3.553e-03     0.0000  3.55e-03 (100%) 164806.2031 
+immediate_extended_ID_EX[1]
+                          3.542e-03     0.0000  3.54e-03 (100%) 164806.2031 
+immediate_extended_ID_EX[8]
+                          3.533e-03     0.0000  3.53e-03 (100%) 164806.2031 
+immediate_extended_ID_EX[3]
+                          3.527e-03     0.0000  3.53e-03 (100%) 164806.2031 
+immediate_extended_ID_EX[4]
+                          3.515e-03     0.0000  3.52e-03 (100%) 164806.2031 
+immediate_extended_ID_EX[10]
+                          3.508e-03     0.0000  3.51e-03 (100%) 164806.2031 
+immediate_extended_ID_EX[2]
+                          3.498e-03     0.0000  3.50e-03 (100%) 164806.2031 
+immediate_extended_ID_EX[12]
+                          3.494e-03     0.0000  3.49e-03 (100%) 164806.2031 
+alu_operand_2[10]         3.491e-03     0.0000  3.49e-03 (100%) 63182.5312  
+alu_operand_2[8]          3.482e-03     0.0000  3.48e-03 (100%) 63182.5312  
+immediate_extended_ID_EX[5]
+                          3.462e-03     0.0000  3.46e-03 (100%) 164806.2031 
+immediate_extended_ID_EX[13]
+                          3.459e-03     0.0000  3.46e-03 (100%) 164806.2031 
+immediate_extended_ID_EX[11]
+                          3.456e-03     0.0000  3.46e-03 (100%) 164806.2031 
+immediate_extended_ID_EX[9]
+                          3.451e-03     0.0000  3.45e-03 (100%) 164806.2031 
+immediate_extended_ID_EX[14]
+                          3.437e-03     0.0000  3.44e-03 (100%) 164806.2031 
+immediate_extended_ID_EX[6]
+                          3.428e-03     0.0000  3.43e-03 (100%) 164806.2031 
+instruction_IF_ID[26]     3.385e-03     0.0000  3.38e-03 (100%) 164806.2031 
+instruction_ID_EX[3]      3.379e-03     0.0000  3.38e-03 (100%) 82403.1016  m, d
+alu_operand_2[9]          3.352e-03     0.0000  3.35e-03 (100%) 63182.5312  
+alu_operand_2[11]         3.290e-03     0.0000  3.29e-03 (100%) 63182.5312  
+alu_operand_2[12]         3.246e-03     0.0000  3.25e-03 (100%) 63182.5312  
+instruction_ID_EX[0]      3.050e-03     0.0000  3.05e-03 (100%) 82403.1016  m, d
+instruction_IF_ID[31]     3.022e-03     0.0000  3.02e-03 (100%) 164806.2031 
+instruction_ID_EX[2]      2.912e-03     0.0000  2.91e-03 (100%) 82403.1016  m, d
+alu_operand_2[13]         2.893e-03     0.0000  2.89e-03 (100%) 63182.5312  
+alu_operand_2[14]         2.830e-03     0.0000  2.83e-03 (100%) 63182.5312  
+alu_operand_2[15]         2.677e-03     0.0000  2.68e-03 (100%) 63182.5312  
+instruction[4]            2.657e-03     0.0000  2.66e-03 (100%) 58360.9609  
+alu_control[0]            2.640e-03     0.0000  2.64e-03 (100%) 78585.3438  
+instruction[9]            2.636e-03     0.0000  2.64e-03 (100%) 58360.9609  
+instruction[11]           2.635e-03     0.0000  2.64e-03 (100%) 58360.9609  
+alu_operand_2[17]         2.632e-03     0.0000  2.63e-03 (100%) 63182.5312  
+instruction[15]           2.625e-03     0.0000  2.62e-03 (100%) 58360.9609  
+instruction[27]           2.625e-03     0.0000  2.62e-03 (100%) 58360.9609  
+instruction[18]           2.624e-03     0.0000  2.62e-03 (100%) 58360.9609  
+instruction[16]           2.624e-03     0.0000  2.62e-03 (100%) 58360.9609  
+instruction[26]           2.623e-03     0.0000  2.62e-03 (100%) 58360.9609  
+instruction[3]            2.621e-03     0.0000  2.62e-03 (100%) 58360.9609  
+instruction[28]           2.620e-03     0.0000  2.62e-03 (100%) 58360.9609  
+instruction[20]           2.618e-03     0.0000  2.62e-03 (100%) 58360.9609  
+instruction[7]            2.616e-03     0.0000  2.62e-03 (100%) 58360.9609  
+instruction[29]           2.613e-03     0.0000  2.61e-03 (100%) 58360.9609  
+instruction[10]           2.611e-03     0.0000  2.61e-03 (100%) 58360.9609  
+instruction[30]           2.610e-03     0.0000  2.61e-03 (100%) 58360.9609  
+instruction[22]           2.610e-03     0.0000  2.61e-03 (100%) 58360.9609  
+instruction[13]           2.609e-03     0.0000  2.61e-03 (100%) 58360.9609  
+instruction[1]            2.609e-03     0.0000  2.61e-03 (100%) 58360.9609  
+instruction[17]           2.609e-03     0.0000  2.61e-03 (100%) 58360.9609  
+instruction[0]            2.607e-03     0.0000  2.61e-03 (100%) 58360.9609  
+instruction[21]           2.606e-03     0.0000  2.61e-03 (100%) 58360.9609  
+instruction[19]           2.604e-03     0.0000  2.60e-03 (100%) 58360.9609  
+instruction[25]           2.600e-03     0.0000  2.60e-03 (100%) 58360.9609  
+instruction[24]           2.599e-03     0.0000  2.60e-03 (100%) 58360.9609  
+instruction[23]           2.599e-03     0.0000  2.60e-03 (100%) 58360.9609  
+instruction[2]            2.597e-03     0.0000  2.60e-03 (100%) 58360.9609  
+instruction[5]            2.596e-03     0.0000  2.60e-03 (100%) 58360.9609  
+alu_operand_2[16]         2.593e-03     0.0000  2.59e-03 (100%) 63182.5312  
+instruction[8]            2.592e-03     0.0000  2.59e-03 (100%) 58360.9609  
+instruction[14]           2.588e-03     0.0000  2.59e-03 (100%) 58360.9609  
+instruction[6]            2.587e-03     0.0000  2.59e-03 (100%) 58360.9609  
+instruction[31]           2.585e-03     0.0000  2.59e-03 (100%) 58360.9609  
+instruction[12]           2.575e-03     0.0000  2.57e-03 (100%) 58360.9609  
+updated_pc_ID_EX[31]      2.532e-03     0.0000  2.53e-03 (100%) 82403.1016  m, d
+alu_operand_2[18]         2.428e-03     0.0000  2.43e-03 (100%) 63182.5312  
+alu_operand_2[19]         2.408e-03     0.0000  2.41e-03 (100%) 63182.5312  
+immediate_extended_ID_EX[0]
+                          2.383e-03     0.0000  2.38e-03 (100%) 164806.2031 
+updated_pc_ID_EX[16]      2.275e-03     0.0000  2.28e-03 (100%) 164806.2031 
+alu_operand_2[20]         2.271e-03     0.0000  2.27e-03 (100%) 63182.5312  
+updated_pc_ID_EX[8]       2.265e-03     0.0000  2.26e-03 (100%) 164806.2031 
+updated_pc_ID_EX[4]       2.255e-03     0.0000  2.26e-03 (100%) 164806.2031 
+updated_pc_ID_EX[3]       2.227e-03     0.0000  2.23e-03 (100%) 164806.2031 
+updated_pc_ID_EX[5]       2.222e-03     0.0000  2.22e-03 (100%) 164806.2031 
+updated_pc_ID_EX[10]      2.221e-03     0.0000  2.22e-03 (100%) 164806.2031 
+updated_pc_ID_EX[14]      2.217e-03     0.0000  2.22e-03 (100%) 164806.2031 
+updated_pc_ID_EX[11]      2.215e-03     0.0000  2.21e-03 (100%) 164806.2031 
+updated_pc_ID_EX[6]       2.203e-03     0.0000  2.20e-03 (100%) 164806.2031 
+updated_pc_ID_EX[12]      2.193e-03     0.0000  2.19e-03 (100%) 164806.2031 
+updated_pc_ID_EX[25]      2.180e-03     0.0000  2.18e-03 (100%) 164806.2031 
+updated_pc_ID_EX[15]      2.179e-03     0.0000  2.18e-03 (100%) 164806.2031 
+updated_pc_ID_EX[27]      2.177e-03     0.0000  2.18e-03 (100%) 164806.2031 
+updated_pc_ID_EX[22]      2.175e-03     0.0000  2.18e-03 (100%) 164806.2031 
+updated_pc_ID_EX[20]      2.168e-03     0.0000  2.17e-03 (100%) 164806.2031 
+updated_pc_ID_EX[7]       2.165e-03     0.0000  2.17e-03 (100%) 164806.2031 
+updated_pc_ID_EX[9]       2.164e-03     0.0000  2.16e-03 (100%) 164806.2031 
+updated_pc_ID_EX[21]      2.162e-03     0.0000  2.16e-03 (100%) 164806.2031 
+updated_pc_ID_EX[17]      2.151e-03     0.0000  2.15e-03 (100%) 164806.2031 
+updated_pc_ID_EX[23]      2.145e-03     0.0000  2.15e-03 (100%) 164806.2031 
+updated_pc_ID_EX[13]      2.139e-03     0.0000  2.14e-03 (100%) 164806.2031 
+updated_pc_ID_EX[24]      2.138e-03     0.0000  2.14e-03 (100%) 164806.2031 
+updated_pc_ID_EX[18]      2.133e-03     0.0000  2.13e-03 (100%) 164806.2031 
+updated_pc_ID_EX[19]      2.108e-03     0.0000  2.11e-03 (100%) 164806.2031 
+updated_pc_ID_EX[26]      2.085e-03     0.0000  2.09e-03 (100%) 164806.2031 
+alu_operand_2[21]         2.062e-03     0.0000  2.06e-03 (100%) 63182.5312  
+immediate_extended[1]     2.059e-03     0.0000  2.06e-03 (100%) 164806.2031 
+immediate_extended[2]     2.056e-03     0.0000  2.06e-03 (100%) 164806.2031 
+immediate_extended[0]     2.053e-03     0.0000  2.05e-03 (100%) 164806.2031 
+immediate_extended[4]     2.052e-03     0.0000  2.05e-03 (100%) 164806.2031 
+immediate_extended[7]     2.052e-03     0.0000  2.05e-03 (100%) 164806.2031 
+immediate_extended[12]    2.045e-03     0.0000  2.05e-03 (100%) 164806.2031 
+immediate_extended[10]    2.043e-03     0.0000  2.04e-03 (100%) 164806.2031 
+immediate_extended_31     2.042e-03     0.0000  2.04e-03 (100%) 164806.2031 
+immediate_extended[3]     2.039e-03     0.0000  2.04e-03 (100%) 164806.2031 
+immediate_extended[8]     2.038e-03     0.0000  2.04e-03 (100%) 164806.2031 
+immediate_extended[13]    2.029e-03     0.0000  2.03e-03 (100%) 164806.2031 
+immediate_extended[11]    2.018e-03     0.0000  2.02e-03 (100%) 164806.2031 
+immediate_extended[5]     2.017e-03     0.0000  2.02e-03 (100%) 164806.2031 
+immediate_extended[14]    2.015e-03     0.0000  2.02e-03 (100%) 164806.2031 
+immediate_extended[9]     2.004e-03     0.0000  2.00e-03 (100%) 164806.2031 
+immediate_extended[6]     1.988e-03     0.0000  1.99e-03 (100%) 164806.2031 
+alu_operand_2[22]         1.986e-03     0.0000  1.99e-03 (100%) 63182.5312  
+regfile_waddr[3]          1.883e-03     0.0000  1.88e-03 (100%) 63182.5312  
+regfile_waddr[4]          1.881e-03     0.0000  1.88e-03 (100%) 63182.5312  
+regfile_waddr[0]          1.866e-03     0.0000  1.87e-03 (100%) 63182.5312  
+regfile_waddr[1]          1.865e-03     0.0000  1.87e-03 (100%) 63182.5312  
+regfile_waddr[2]          1.857e-03     0.0000  1.86e-03 (100%) 63182.5312  
+alu_operand_2[23]         1.856e-03     0.0000  1.86e-03 (100%) 63182.5312  
+alu_operand_2[25]         1.753e-03     0.0000  1.75e-03 (100%) 63182.5312  
+alu_operand_2[24]         1.666e-03     0.0000  1.67e-03 (100%) 63182.5312  
+dram_data[7]              1.509e-03     0.0000  1.51e-03 (100%) 64943.4414  
+dram_data[9]              1.496e-03     0.0000  1.50e-03 (100%) 64943.4414  
+dram_data[21]             1.496e-03     0.0000  1.50e-03 (100%) 64943.4414  
+dram_data[13]             1.495e-03     0.0000  1.49e-03 (100%) 64943.4414  
+dram_data[19]             1.494e-03     0.0000  1.49e-03 (100%) 64943.4414  
+dram_data[6]              1.491e-03     0.0000  1.49e-03 (100%) 64943.4414  
+dram_data[31]             1.486e-03     0.0000  1.49e-03 (100%) 64943.4414  
+dram_data[23]             1.485e-03     0.0000  1.48e-03 (100%) 64943.4414  
+dram_data[28]             1.485e-03     0.0000  1.48e-03 (100%) 64943.4414  
+dram_data[20]             1.485e-03     0.0000  1.48e-03 (100%) 64943.4414  
+dram_data[22]             1.485e-03     0.0000  1.48e-03 (100%) 64943.4414  
+dram_data[29]             1.484e-03     0.0000  1.48e-03 (100%) 64943.4414  
+dram_data[2]              1.482e-03     0.0000  1.48e-03 (100%) 64943.4414  
+dram_data[30]             1.482e-03     0.0000  1.48e-03 (100%) 64943.4414  
+dram_data[26]             1.480e-03     0.0000  1.48e-03 (100%) 64943.4414  
+dram_data[27]             1.479e-03     0.0000  1.48e-03 (100%) 64943.4414  
+dram_data[3]              1.477e-03     0.0000  1.48e-03 (100%) 64943.4414  
+dram_data[16]             1.477e-03     0.0000  1.48e-03 (100%) 64943.4414  
+dram_data[12]             1.476e-03     0.0000  1.48e-03 (100%) 64943.4414  
+dram_data[1]              1.476e-03     0.0000  1.48e-03 (100%) 64943.4414  
+dram_data[5]              1.476e-03     0.0000  1.48e-03 (100%) 64943.4414  
+dram_data[14]             1.475e-03     0.0000  1.48e-03 (100%) 64943.4414  
+dram_data[17]             1.475e-03     0.0000  1.48e-03 (100%) 64943.4414  
+dram_data[24]             1.475e-03     0.0000  1.48e-03 (100%) 64943.4414  
+dram_data[8]              1.473e-03     0.0000  1.47e-03 (100%) 64943.4414  
+dram_data[11]             1.473e-03     0.0000  1.47e-03 (100%) 64943.4414  
+dram_data[4]              1.471e-03     0.0000  1.47e-03 (100%) 64943.4414  
+dram_data[0]              1.471e-03     0.0000  1.47e-03 (100%) 64943.4414  
+dram_data[18]             1.465e-03     0.0000  1.46e-03 (100%) 64943.4414  
+dram_data[25]             1.461e-03     0.0000  1.46e-03 (100%) 64943.4414  
+dram_data[10]             1.460e-03     0.0000  1.46e-03 (100%) 64943.4414  
+mem_2_reg_MEM_WB          1.451e-03     0.0000  1.45e-03 (100%) 164806.2031 
+dram_data[15]             1.448e-03     0.0000  1.45e-03 (100%) 64943.4414  
+instruction_ID_EX[16]     1.423e-03     0.0000  1.42e-03 (100%) 82403.1016  m, d
+instruction_ID_EX[17]     1.423e-03     0.0000  1.42e-03 (100%) 82403.1016  m, d
+instruction_ID_EX[18]     1.423e-03     0.0000  1.42e-03 (100%) 82403.1016  m, d
+instruction_ID_EX[19]     1.423e-03     0.0000  1.42e-03 (100%) 82403.1016  m, d
+instruction_ID_EX[20]     1.423e-03     0.0000  1.42e-03 (100%) 82403.1016  m, d
+updated_pc[0]             1.393e-03     0.0000  1.39e-03 (100%)    0.0000   d
+updated_pc[1]             1.393e-03     0.0000  1.39e-03 (100%)    0.0000   d
+updated_pc[2]             1.393e-03     0.0000  1.39e-03 (100%)    0.0000   d
+updated_pc[3]             1.393e-03     0.0000  1.39e-03 (100%)    0.0000   d
+updated_pc[4]             1.393e-03     0.0000  1.39e-03 (100%)    0.0000   d
+updated_pc[5]             1.393e-03     0.0000  1.39e-03 (100%)    0.0000   d
+updated_pc[6]             1.393e-03     0.0000  1.39e-03 (100%)    0.0000   d
+updated_pc[7]             1.393e-03     0.0000  1.39e-03 (100%)    0.0000   d
+updated_pc[8]             1.393e-03     0.0000  1.39e-03 (100%)    0.0000   d
+updated_pc[9]             1.393e-03     0.0000  1.39e-03 (100%)    0.0000   d
+updated_pc[10]            1.393e-03     0.0000  1.39e-03 (100%)    0.0000   d
+updated_pc[11]            1.393e-03     0.0000  1.39e-03 (100%)    0.0000   d
+updated_pc[12]            1.393e-03     0.0000  1.39e-03 (100%)    0.0000   d
+updated_pc[13]            1.393e-03     0.0000  1.39e-03 (100%)    0.0000   d
+updated_pc[14]            1.393e-03     0.0000  1.39e-03 (100%)    0.0000   d
+updated_pc[15]            1.393e-03     0.0000  1.39e-03 (100%)    0.0000   d
+updated_pc[16]            1.393e-03     0.0000  1.39e-03 (100%)    0.0000   d
+updated_pc[17]            1.393e-03     0.0000  1.39e-03 (100%)    0.0000   d
+updated_pc[18]            1.393e-03     0.0000  1.39e-03 (100%)    0.0000   d
+updated_pc[19]            1.393e-03     0.0000  1.39e-03 (100%)    0.0000   d
+updated_pc[20]            1.393e-03     0.0000  1.39e-03 (100%)    0.0000   d
+updated_pc[21]            1.393e-03     0.0000  1.39e-03 (100%)    0.0000   d
+updated_pc[22]            1.393e-03     0.0000  1.39e-03 (100%)    0.0000   d
+updated_pc[23]            1.393e-03     0.0000  1.39e-03 (100%)    0.0000   d
+updated_pc[24]            1.393e-03     0.0000  1.39e-03 (100%)    0.0000   d
+updated_pc[25]            1.393e-03     0.0000  1.39e-03 (100%)    0.0000   d
+updated_pc[26]            1.393e-03     0.0000  1.39e-03 (100%)    0.0000   d
+updated_pc[27]            1.393e-03     0.0000  1.39e-03 (100%)    0.0000   d
+updated_pc[28]            1.393e-03     0.0000  1.39e-03 (100%)    0.0000   d
+updated_pc[29]            1.393e-03     0.0000  1.39e-03 (100%)    0.0000   d
+updated_pc[30]            1.393e-03     0.0000  1.39e-03 (100%)    0.0000   d
+updated_pc[31]            1.393e-03     0.0000  1.39e-03 (100%)    0.0000   d
+updated_pc_ID_EX[2]       1.320e-03     0.0000  1.32e-03 (100%) 164806.2031 
+instruction_ID_EX[11]     1.256e-03     0.0000  1.26e-03 (100%) 82403.1016  m, d
+instruction_ID_EX[12]     1.256e-03     0.0000  1.26e-03 (100%) 82403.1016  m, d
+instruction_ID_EX[13]     1.256e-03     0.0000  1.26e-03 (100%) 82403.1016  m, d
+instruction_ID_EX[14]     1.256e-03     0.0000  1.26e-03 (100%) 82403.1016  m, d
+instruction_ID_EX[15]     1.256e-03     0.0000  1.26e-03 (100%) 82403.1016  m, d
+alu_operand_2[27]         1.200e-03     0.0000  1.20e-03 (100%) 63182.5312  
+alu_operand_2[26]         1.190e-03     0.0000  1.19e-03 (100%) 63182.5312  
+regfile_waddr_EX_MEM[4]   1.149e-03     0.0000  1.15e-03 (100%) 164806.2031 
+regfile_waddr_EX_MEM[3]   1.137e-03     0.0000  1.14e-03 (100%) 164806.2031 
+regfile_waddr_EX_MEM[0]   1.136e-03     0.0000  1.14e-03 (100%) 164806.2031 
+regfile_waddr_EX_MEM[2]   1.125e-03     0.0000  1.12e-03 (100%) 164806.2031 
+reg_write_ID_EX           1.123e-03     0.0000  1.12e-03 (100%) 164806.2031 
+regfile_waddr_EX_MEM[1]   1.111e-03     0.0000  1.11e-03 (100%) 164806.2031 
+reg_write                 1.098e-03     0.0000  1.10e-03 (100%) 59356.3086  
+alu_operand_2[28]         1.084e-03     0.0000  1.08e-03 (100%) 63182.5312  
+reg_dst                   1.016e-03     0.0000  1.02e-03 (100%) 144347.5938 
+alu_operand_2[31]         9.393e-04     0.0000  9.39e-04 (100%) 63182.5312  
+alu_operand_2[30]         9.189e-04     0.0000  9.19e-04 (100%) 63182.5312  
+mem_write_EX_MEM          9.178e-04     0.0000  9.18e-04 (100%) 164806.2031 
+alu_operand_2[29]         8.997e-04     0.0000  9.00e-04 (100%) 63182.5312  
+alu_out_EX_MEM[10]        8.743e-04     0.0000  8.74e-04 (100%) 164806.2031 
+reg_write_EX_MEM          8.635e-04     0.0000  8.64e-04 (100%) 164806.2031 
+alu_out_EX_MEM[11]        8.628e-04     0.0000  8.63e-04 (100%) 164806.2031 
+updated_pc_IF_ID[16]      8.238e-04     0.0000  8.24e-04 (100%) 164806.2031 
+updated_pc_IF_ID[8]       8.223e-04     0.0000  8.22e-04 (100%) 164806.2031 
+updated_pc_IF_ID[22]      8.176e-04     0.0000  8.18e-04 (100%) 164806.2031 
+updated_pc_IF_ID[31]      8.176e-04     0.0000  8.18e-04 (100%) 164806.2031 
+updated_pc_IF_ID[4]       8.173e-04     0.0000  8.17e-04 (100%) 164806.2031 
+updated_pc_IF_ID[25]      8.159e-04     0.0000  8.16e-04 (100%) 164806.2031 
+alu_out_EX_MEM[9]         8.152e-04     0.0000  8.15e-04 (100%) 164806.2031 
+updated_pc_IF_ID[27]      8.140e-04     0.0000  8.14e-04 (100%) 164806.2031 
+updated_pc_IF_ID[20]      8.138e-04     0.0000  8.14e-04 (100%) 164806.2031 
+updated_pc_IF_ID[21]      8.128e-04     0.0000  8.13e-04 (100%) 164806.2031 
+updated_pc_IF_ID[17]      8.123e-04     0.0000  8.12e-04 (100%) 164806.2031 
+updated_pc_IF_ID[23]      8.122e-04     0.0000  8.12e-04 (100%) 164806.2031 
+updated_pc_IF_ID[29]      8.115e-04     0.0000  8.11e-04 (100%) 164806.2031 
+updated_pc_IF_ID[24]      8.101e-04     0.0000  8.10e-04 (100%) 164806.2031 
+updated_pc_IF_ID[10]      8.098e-04     0.0000  8.10e-04 (100%) 164806.2031 
+updated_pc_IF_ID[1]       8.078e-04     0.0000  8.08e-04 (100%) 164806.2031 
+updated_pc_IF_ID[14]      8.068e-04     0.0000  8.07e-04 (100%) 164806.2031 
+updated_pc_IF_ID[3]       8.060e-04     0.0000  8.06e-04 (100%) 164806.2031 
+updated_pc_IF_ID[6]       8.053e-04     0.0000  8.05e-04 (100%) 164806.2031 
+updated_pc_IF_ID[2]       8.044e-04     0.0000  8.04e-04 (100%) 164806.2031 
+updated_pc_IF_ID[11]      8.033e-04     0.0000  8.03e-04 (100%) 164806.2031 
+updated_pc_IF_ID[18]      8.031e-04     0.0000  8.03e-04 (100%) 164806.2031 
+updated_pc_IF_ID[0]       8.014e-04     0.0000  8.01e-04 (100%) 164806.2031 
+dram_data_MEM_WB[6]       7.999e-04     0.0000  8.00e-04 (100%) 164806.2031 
+updated_pc_IF_ID[28]      7.990e-04     0.0000  7.99e-04 (100%) 164806.2031 
+updated_pc_IF_ID[5]       7.975e-04     0.0000  7.97e-04 (100%) 164806.2031 
+updated_pc_IF_ID[30]      7.962e-04     0.0000  7.96e-04 (100%) 164806.2031 
+dram_data_MEM_WB[21]      7.954e-04     0.0000  7.95e-04 (100%) 164806.2031 
+updated_pc_IF_ID[12]      7.943e-04     0.0000  7.94e-04 (100%) 164806.2031 
+updated_pc_IF_ID[19]      7.941e-04     0.0000  7.94e-04 (100%) 164806.2031 
+dram_data_MEM_WB[4]       7.889e-04     0.0000  7.89e-04 (100%) 164806.2031 
+updated_pc_IF_ID[7]       7.887e-04     0.0000  7.89e-04 (100%) 164806.2031 
+updated_pc_IF_ID[15]      7.875e-04     0.0000  7.88e-04 (100%) 164806.2031 
+dram_data_MEM_WB[9]       7.858e-04     0.0000  7.86e-04 (100%) 164806.2031 
+dram_data_MEM_WB[8]       7.851e-04     0.0000  7.85e-04 (100%) 164806.2031 
+dram_data_MEM_WB[17]      7.848e-04     0.0000  7.85e-04 (100%) 164806.2031 
+dram_data_MEM_WB[23]      7.848e-04     0.0000  7.85e-04 (100%) 164806.2031 
+updated_pc_IF_ID[13]      7.847e-04     0.0000  7.85e-04 (100%) 164806.2031 
+updated_pc_IF_ID[26]      7.841e-04     0.0000  7.84e-04 (100%) 164806.2031 
+updated_pc_IF_ID[9]       7.839e-04     0.0000  7.84e-04 (100%) 164806.2031 
+dram_data_MEM_WB[18]      7.833e-04     0.0000  7.83e-04 (100%) 164806.2031 
+dram_data_MEM_WB[7]       7.830e-04     0.0000  7.83e-04 (100%) 164806.2031 
+dram_data_MEM_WB[3]       7.829e-04     0.0000  7.83e-04 (100%) 164806.2031 
+dram_data_MEM_WB[20]      7.819e-04     0.0000  7.82e-04 (100%) 164806.2031 
+dram_data_MEM_WB[19]      7.778e-04     0.0000  7.78e-04 (100%) 164806.2031 
+dram_data_MEM_WB[27]      7.759e-04     0.0000  7.76e-04 (100%) 164806.2031 
+dram_data_MEM_WB[29]      7.756e-04     0.0000  7.76e-04 (100%) 164806.2031 
+dram_data_MEM_WB[22]      7.754e-04     0.0000  7.75e-04 (100%) 164806.2031 
+dram_data_MEM_WB[28]      7.745e-04     0.0000  7.74e-04 (100%) 164806.2031 
+dram_data_MEM_WB[5]       7.741e-04     0.0000  7.74e-04 (100%) 164806.2031 
+dram_data_MEM_WB[30]      7.741e-04     0.0000  7.74e-04 (100%) 164806.2031 
+dram_data_MEM_WB[11]      7.731e-04     0.0000  7.73e-04 (100%) 164806.2031 
+dram_data_MEM_WB[13]      7.730e-04     0.0000  7.73e-04 (100%) 164806.2031 
+dram_data_MEM_WB[2]       7.727e-04     0.0000  7.73e-04 (100%) 164806.2031 
+dram_data_MEM_WB[10]      7.718e-04     0.0000  7.72e-04 (100%) 164806.2031 
+dram_data_MEM_WB[31]      7.717e-04     0.0000  7.72e-04 (100%) 164806.2031 
+dram_data_MEM_WB[14]      7.709e-04     0.0000  7.71e-04 (100%) 164806.2031 
+dram_data_MEM_WB[1]       7.704e-04     0.0000  7.70e-04 (100%) 164806.2031 
+dram_data_MEM_WB[26]      7.696e-04     0.0000  7.70e-04 (100%) 164806.2031 
+dram_data_MEM_WB[12]      7.687e-04     0.0000  7.69e-04 (100%) 164806.2031 
+dram_data_MEM_WB[16]      7.647e-04     0.0000  7.65e-04 (100%) 164806.2031 
+dram_data_MEM_WB[0]       7.636e-04     0.0000  7.64e-04 (100%) 164806.2031 
+dram_data_MEM_WB[24]      7.617e-04     0.0000  7.62e-04 (100%) 164806.2031 
+dram_data_MEM_WB[25]      7.585e-04     0.0000  7.59e-04 (100%) 164806.2031 
+dram_data_MEM_WB[15]      7.537e-04     0.0000  7.54e-04 (100%) 164806.2031 
+alu_control[3]            4.992e-04     0.0000  4.99e-04 (100%) 52340.1016  
+alu_out[2]                4.070e-04     0.0000  4.07e-04 (100%) 59356.3086  
+alu_out[3]                4.067e-04     0.0000  4.07e-04 (100%) 65205.3594  
+alu_out[5]                3.973e-04     0.0000  3.97e-04 (100%) 59356.3086  
+alu_out[11]               3.973e-04     0.0000  3.97e-04 (100%) 59356.3086  
+alu_out[28]               3.936e-04     0.0000  3.94e-04 (100%) 59356.3086  
+alu_out[21]               3.924e-04     0.0000  3.92e-04 (100%) 161901.9062 
+alu_out[27]               3.924e-04     0.0000  3.92e-04 (100%) 161901.9062 
+alu_out[12]               3.893e-04     0.0000  3.89e-04 (100%) 59356.3086  
+alu_out[23]               3.724e-04     0.0000  3.72e-04 (100%) 161901.9062 
+alu_out[29]               3.701e-04     0.0000  3.70e-04 (100%) 161901.9062 
+alu_out[15]               3.690e-04     0.0000  3.69e-04 (100%) 59356.3086  
+alu_out[22]               3.690e-04     0.0000  3.69e-04 (100%) 59356.3086  
+alu_out[4]                3.661e-04     0.0000  3.66e-04 (100%) 161901.9062 
+alu_out[0]                3.660e-04     0.0000  3.66e-04 (100%) 65205.3594  
+alu_out[24]               3.652e-04     0.0000  3.65e-04 (100%) 161901.9062 
+alu_out[13]               3.632e-04     0.0000  3.63e-04 (100%) 59356.3086  
+alu_out[6]                3.605e-04     0.0000  3.61e-04 (100%) 59356.3086  
+alu_out[20]               3.599e-04     0.0000  3.60e-04 (100%) 59356.3086  
+alu_out[26]               3.593e-04     0.0000  3.59e-04 (100%) 161901.9062 
+alu_out[8]                3.592e-04     0.0000  3.59e-04 (100%) 161901.9062 
+alu_out[1]                3.590e-04     0.0000  3.59e-04 (100%) 59356.3086  
+alu_out[16]               3.588e-04     0.0000  3.59e-04 (100%) 59356.3086  
+alu_out[19]               3.588e-04     0.0000  3.59e-04 (100%) 59356.3086  
+alu_out[10]               3.582e-04     0.0000  3.58e-04 (100%) 161901.9062 
+alu_out[17]               3.578e-04     0.0000  3.58e-04 (100%) 161901.9062 
+alu_out[18]               3.578e-04     0.0000  3.58e-04 (100%) 59356.3086  
+alu_out[30]               3.575e-04     0.0000  3.58e-04 (100%) 59356.3086  
+alu_out[25]               3.567e-04     0.0000  3.57e-04 (100%) 161901.9062 
+alu_out[7]                3.543e-04     0.0000  3.54e-04 (100%) 59356.3086  
+alu_out[9]                3.522e-04     0.0000  3.52e-04 (100%) 59356.3086  
+alu_out[14]               3.522e-04     0.0000  3.52e-04 (100%) 59356.3086  
+regfile_data_1_ID_EX[0]   3.110e-04     0.0000  3.11e-04 (100%) 164806.2031 
+regfile_data_1_ID_EX[2]   2.772e-04     0.0000  2.77e-04 (100%) 164806.2031 
+regfile_data_1_ID_EX[1]   2.736e-04     0.0000  2.74e-04 (100%) 164806.2031 
+alu_op_1_                 2.732e-04     0.0000  2.73e-04 (100%) 144347.5938 
+regfile_data_1_ID_EX[8]   2.588e-04     0.0000  2.59e-04 (100%) 164806.2031 
+regfile_data_1_ID_EX[4]   2.501e-04     0.0000  2.50e-04 (100%) 164806.2031 
+regfile_data_1_ID_EX[3]   2.494e-04     0.0000  2.49e-04 (100%) 164806.2031 
+regfile_data_1_ID_EX[10]  2.355e-04     0.0000  2.35e-04 (100%) 164806.2031 
+regfile_data_1_ID_EX[9]   2.270e-04     0.0000  2.27e-04 (100%) 164806.2031 
+regfile_data_1_ID_EX[5]   2.170e-04     0.0000  2.17e-04 (100%) 164806.2031 
+regfile_data_1_ID_EX[7]   2.114e-04     0.0000  2.11e-04 (100%) 164806.2031 
+alu_src                   2.058e-04     0.0000  2.06e-04 (100%) 144347.5938 
+alu_op_ID_EX[0]           2.040e-04     0.0000  2.04e-04 (100%) 164806.2031 
+regfile_data_1_ID_EX[11]  2.014e-04     0.0000  2.01e-04 (100%) 164806.2031 
+regfile_data_1_ID_EX[6]   2.006e-04     0.0000  2.01e-04 (100%) 164806.2031 
+alu_out[31]               1.823e-04     0.0000  1.82e-04 (100%) 52340.1016  
+regfile_data_1_ID_EX[14]  1.822e-04     0.0000  1.82e-04 (100%) 164806.2031 
+regfile_data_1_ID_EX[13]  1.745e-04     0.0000  1.75e-04 (100%) 164806.2031 
+regfile_data_1_ID_EX[15]  1.613e-04     0.0000  1.61e-04 (100%) 164806.2031 
+regfile_data_1_ID_EX[12]  1.558e-04     0.0000  1.56e-04 (100%) 164806.2031 
+regfile_data_1_ID_EX[16]  1.557e-04     0.0000  1.56e-04 (100%) 164806.2031 
+jump                      1.543e-04     0.0000  1.54e-04 (100%) 49424.1211  
+regfile_data_1_ID_EX[20]  1.504e-04     0.0000  1.50e-04 (100%) 164806.2031 
+regfile_data_1_ID_EX[17]  1.488e-04     0.0000  1.49e-04 (100%) 164806.2031 
+regfile_data_1_ID_EX[19]  1.463e-04     0.0000  1.46e-04 (100%) 164806.2031 
+regfile_data_1_ID_EX[18]  1.425e-04     0.0000  1.43e-04 (100%) 164806.2031 
+alu_out_EX_MEM[2]         1.399e-04     0.0000  1.40e-04 (100%) 164806.2031 
+alu_out_EX_MEM[6]         1.376e-04     0.0000  1.38e-04 (100%) 164806.2031 
+alu_out_EX_MEM[3]         1.367e-04     0.0000  1.37e-04 (100%) 164806.2031 
+alu_out_EX_MEM[5]         1.364e-04     0.0000  1.36e-04 (100%) 164806.2031 
+alu_out_EX_MEM[0]         1.339e-04     0.0000  1.34e-04 (100%) 164806.2031 
+regfile_data_1_ID_EX[21]  1.328e-04     0.0000  1.33e-04 (100%) 164806.2031 
+alu_out_EX_MEM[7]         1.316e-04     0.0000  1.32e-04 (100%) 164806.2031 
+rdata_ext_2[30]           1.314e-04     0.0000  1.31e-04 (100%) 64943.4414  
+rdata_ext_2[12]           1.313e-04     0.0000  1.31e-04 (100%) 64943.4414  
 rdata_ext_2[5]            1.312e-04     0.0000  1.31e-04 (100%) 64943.4414  
-rdata_ext_2[14]           1.310e-04     0.0000  1.31e-04 (100%) 64943.4414  
-rdata_ext_2[9]            1.307e-04     0.0000  1.31e-04 (100%) 64943.4414  
-rdata_ext_2[4]            1.307e-04     0.0000  1.31e-04 (100%) 64943.4414  
-rdata_ext_2[13]           1.306e-04     0.0000  1.31e-04 (100%) 64943.4414  
-rdata_ext_2[17]           1.305e-04     0.0000  1.30e-04 (100%) 64943.4414  
-rdata_ext_2[30]           1.305e-04     0.0000  1.30e-04 (100%) 64943.4414  
-rdata_ext_2[19]           1.304e-04     0.0000  1.30e-04 (100%) 64943.4414  
-rdata_ext_2[0]            1.303e-04     0.0000  1.30e-04 (100%) 64943.4414  
-rdata_ext_2[6]            1.303e-04     0.0000  1.30e-04 (100%) 64943.4414  
-rdata_ext_2[7]            1.303e-04     0.0000  1.30e-04 (100%) 64943.4414  
-rdata_ext_2[27]           1.301e-04     0.0000  1.30e-04 (100%) 64943.4414  
-rdata_ext_2[1]            1.301e-04     0.0000  1.30e-04 (100%) 64943.4414  
-rdata_ext_2[31]           1.301e-04     0.0000  1.30e-04 (100%) 64943.4414  
-rdata_ext_2[21]           1.300e-04     0.0000  1.30e-04 (100%) 64943.4414  
-rdata_ext_2[22]           1.299e-04     0.0000  1.30e-04 (100%) 64943.4414  
+rdata_ext_2[26]           1.312e-04     0.0000  1.31e-04 (100%) 64943.4414  
+rdata_ext_2[6]            1.311e-04     0.0000  1.31e-04 (100%) 64943.4414  
+rdata_ext_2[25]           1.310e-04     0.0000  1.31e-04 (100%) 64943.4414  
+rdata_ext_2[17]           1.310e-04     0.0000  1.31e-04 (100%) 64943.4414  
+regfile_data_1_ID_EX[23]  1.309e-04     0.0000  1.31e-04 (100%) 164806.2031 
+rdata_ext_2[1]            1.307e-04     0.0000  1.31e-04 (100%) 64943.4414  
+rdata_ext_2[24]           1.306e-04     0.0000  1.31e-04 (100%) 64943.4414  
+rdata_ext_2[28]           1.305e-04     0.0000  1.31e-04 (100%) 64943.4414  
+rdata_ext_2[14]           1.305e-04     0.0000  1.30e-04 (100%) 64943.4414  
+rdata_ext_2[21]           1.303e-04     0.0000  1.30e-04 (100%) 64943.4414  
+rdata_ext_2[29]           1.303e-04     0.0000  1.30e-04 (100%) 64943.4414  
+alu_out_EX_MEM[4]         1.303e-04     0.0000  1.30e-04 (100%) 164806.2031 
+rdata_ext_2[8]            1.301e-04     0.0000  1.30e-04 (100%) 64943.4414  
+rdata_ext_2[23]           1.301e-04     0.0000  1.30e-04 (100%) 64943.4414  
+rdata_ext_2[19]           1.301e-04     0.0000  1.30e-04 (100%) 64943.4414  
+rdata_ext_2[22]           1.300e-04     0.0000  1.30e-04 (100%) 64943.4414  
+alu_out_EX_MEM[17]        1.300e-04     0.0000  1.30e-04 (100%) 164806.2031 
+alu_out_EX_MEM[20]        1.300e-04     0.0000  1.30e-04 (100%) 164806.2031 
+alu_out_EX_MEM[29]        1.300e-04     0.0000  1.30e-04 (100%) 164806.2031 
+rdata_ext_2[15]           1.299e-04     0.0000  1.30e-04 (100%) 64943.4414  
+rdata_ext_2[13]           1.299e-04     0.0000  1.30e-04 (100%) 64943.4414  
 rdata_ext_2[18]           1.298e-04     0.0000  1.30e-04 (100%) 64943.4414  
-rdata_ext_2[20]           1.298e-04     0.0000  1.30e-04 (100%) 64943.4414  
-rdata_ext_2[12]           1.297e-04     0.0000  1.30e-04 (100%) 64943.4414  
-rdata_ext_2[11]           1.297e-04     0.0000  1.30e-04 (100%) 64943.4414  
-rdata_ext_2[25]           1.295e-04     0.0000  1.30e-04 (100%) 64943.4414  
-rdata_ext_2[2]            1.295e-04     0.0000  1.29e-04 (100%) 64943.4414  
-rdata_ext_2[29]           1.294e-04     0.0000  1.29e-04 (100%) 64943.4414  
-rdata_ext_2[10]           1.294e-04     0.0000  1.29e-04 (100%) 64943.4414  
-rdata_ext_2[15]           1.294e-04     0.0000  1.29e-04 (100%) 64943.4414  
-rdata_ext_2[26]           1.291e-04     0.0000  1.29e-04 (100%) 64943.4414  
-rdata_ext_2[24]           1.291e-04     0.0000  1.29e-04 (100%) 64943.4414  
-rdata_ext_2[28]           1.290e-04     0.0000  1.29e-04 (100%) 64943.4414  
-rdata_ext_2[3]            1.286e-04     0.0000  1.29e-04 (100%) 64943.4414  
-program_counter/updated_pc[6]
-                          1.171e-04     0.0000  1.17e-04 (100%) 58174.3594  
-rdata_ext[28]             1.077e-04     0.0000  1.08e-04 (100%) 58360.9609  
-rdata_ext[5]              1.074e-04     0.0000  1.07e-04 (100%) 58360.9609  
-rdata_ext[12]             1.074e-04     0.0000  1.07e-04 (100%) 58360.9609  
-rdata_ext[23]             1.073e-04     0.0000  1.07e-04 (100%) 58360.9609  
-rdata_ext[31]             1.072e-04     0.0000  1.07e-04 (100%) 58360.9609  
-rdata_ext[1]              1.072e-04     0.0000  1.07e-04 (100%) 58360.9609  
-rdata_ext[14]             1.071e-04     0.0000  1.07e-04 (100%) 58360.9609  
-rdata_ext[24]             1.070e-04     0.0000  1.07e-04 (100%) 58360.9609  
-rdata_ext[30]             1.069e-04     0.0000  1.07e-04 (100%) 58360.9609  
+rdata_ext_2[4]            1.297e-04     0.0000  1.30e-04 (100%) 64943.4414  
+alu_out_EX_MEM[15]        1.297e-04     0.0000  1.30e-04 (100%) 164806.2031 
+alu_out_EX_MEM[18]        1.297e-04     0.0000  1.30e-04 (100%) 164806.2031 
+alu_out_EX_MEM[19]        1.297e-04     0.0000  1.30e-04 (100%) 164806.2031 
+alu_out_EX_MEM[21]        1.297e-04     0.0000  1.30e-04 (100%) 164806.2031 
+alu_out_EX_MEM[23]        1.297e-04     0.0000  1.30e-04 (100%) 164806.2031 
+alu_out_EX_MEM[24]        1.297e-04     0.0000  1.30e-04 (100%) 164806.2031 
+alu_out_EX_MEM[26]        1.297e-04     0.0000  1.30e-04 (100%) 164806.2031 
+alu_out_EX_MEM[27]        1.297e-04     0.0000  1.30e-04 (100%) 164806.2031 
+alu_out_EX_MEM[28]        1.297e-04     0.0000  1.30e-04 (100%) 164806.2031 
+rdata_ext_2[3]            1.295e-04     0.0000  1.30e-04 (100%) 64943.4414  
+rdata_ext_2[16]           1.295e-04     0.0000  1.29e-04 (100%) 64943.4414  
+rdata_ext_2[10]           1.295e-04     0.0000  1.29e-04 (100%) 64943.4414  
+alu_out_EX_MEM[16]        1.294e-04     0.0000  1.29e-04 (100%) 164806.2031 
+alu_out_EX_MEM[22]        1.294e-04     0.0000  1.29e-04 (100%) 164806.2031 
+alu_out_EX_MEM[25]        1.294e-04     0.0000  1.29e-04 (100%) 164806.2031 
+alu_out_EX_MEM[30]        1.294e-04     0.0000  1.29e-04 (100%) 164806.2031 
+alu_out_EX_MEM[31]        1.294e-04     0.0000  1.29e-04 (100%) 164806.2031 
+rdata_ext_2[9]            1.293e-04     0.0000  1.29e-04 (100%) 64943.4414  
+rdata_ext_2[27]           1.292e-04     0.0000  1.29e-04 (100%) 64943.4414  
+alu_out_EX_MEM[12]        1.291e-04     0.0000  1.29e-04 (100%) 164806.2031 
+rdata_ext_2[7]            1.291e-04     0.0000  1.29e-04 (100%) 64943.4414  
+rdata_ext_2[2]            1.290e-04     0.0000  1.29e-04 (100%) 64943.4414  
+rdata_ext_2[0]            1.290e-04     0.0000  1.29e-04 (100%) 64943.4414  
+rdata_ext_2[31]           1.288e-04     0.0000  1.29e-04 (100%) 64943.4414  
+rdata_ext_2[11]           1.287e-04     0.0000  1.29e-04 (100%) 64943.4414  
+alu_out_EX_MEM[8]         1.282e-04     0.0000  1.28e-04 (100%) 164806.2031 
+rdata_ext_2[20]           1.280e-04     0.0000  1.28e-04 (100%) 64943.4414  
+alu_out_EX_MEM[14]        1.277e-04     0.0000  1.28e-04 (100%) 164806.2031 
+alu_out_EX_MEM[13]        1.273e-04     0.0000  1.27e-04 (100%) 164806.2031 
+alu_out_EX_MEM[1]         1.258e-04     0.0000  1.26e-04 (100%) 164806.2031 
+alu_out_MEM_WB[2]         1.191e-04     0.0000  1.19e-04 (100%) 164806.2031 
+alu_out_MEM_WB[10]        1.182e-04     0.0000  1.18e-04 (100%) 164806.2031 
+alu_out_MEM_WB[6]         1.165e-04     0.0000  1.16e-04 (100%) 164806.2031 
+alu_out_MEM_WB[5]         1.148e-04     0.0000  1.15e-04 (100%) 164806.2031 
+alu_out_MEM_WB[14]        1.148e-04     0.0000  1.15e-04 (100%) 164806.2031 
+alu_out_MEM_WB[17]        1.148e-04     0.0000  1.15e-04 (100%) 164806.2031 
+alu_out_MEM_WB[20]        1.148e-04     0.0000  1.15e-04 (100%) 164806.2031 
+alu_out_MEM_WB[29]        1.148e-04     0.0000  1.15e-04 (100%) 164806.2031 
+regfile_data_1_ID_EX[24]  1.146e-04     0.0000  1.15e-04 (100%) 164806.2031 
+alu_out_MEM_WB[0]         1.145e-04     0.0000  1.14e-04 (100%) 164806.2031 
+alu_out_MEM_WB[15]        1.145e-04     0.0000  1.14e-04 (100%) 164806.2031 
+alu_out_MEM_WB[18]        1.145e-04     0.0000  1.14e-04 (100%) 164806.2031 
+alu_out_MEM_WB[19]        1.145e-04     0.0000  1.14e-04 (100%) 164806.2031 
+alu_out_MEM_WB[21]        1.145e-04     0.0000  1.14e-04 (100%) 164806.2031 
+alu_out_MEM_WB[23]        1.145e-04     0.0000  1.14e-04 (100%) 164806.2031 
+alu_out_MEM_WB[24]        1.145e-04     0.0000  1.14e-04 (100%) 164806.2031 
+alu_out_MEM_WB[26]        1.145e-04     0.0000  1.14e-04 (100%) 164806.2031 
+alu_out_MEM_WB[27]        1.145e-04     0.0000  1.14e-04 (100%) 164806.2031 
+alu_out_MEM_WB[28]        1.145e-04     0.0000  1.14e-04 (100%) 164806.2031 
+alu_out_MEM_WB[3]         1.142e-04     0.0000  1.14e-04 (100%) 164806.2031 
+alu_out_MEM_WB[12]        1.142e-04     0.0000  1.14e-04 (100%) 164806.2031 
+alu_out_MEM_WB[16]        1.142e-04     0.0000  1.14e-04 (100%) 164806.2031 
+alu_out_MEM_WB[22]        1.142e-04     0.0000  1.14e-04 (100%) 164806.2031 
+alu_out_MEM_WB[25]        1.142e-04     0.0000  1.14e-04 (100%) 164806.2031 
+alu_out_MEM_WB[30]        1.142e-04     0.0000  1.14e-04 (100%) 164806.2031 
+alu_out_MEM_WB[31]        1.142e-04     0.0000  1.14e-04 (100%) 164806.2031 
+alu_out_MEM_WB[9]         1.136e-04     0.0000  1.14e-04 (100%) 164806.2031 
+alu_out_MEM_WB[7]         1.122e-04     0.0000  1.12e-04 (100%) 164806.2031 
+alu_out_MEM_WB[11]        1.122e-04     0.0000  1.12e-04 (100%) 164806.2031 
+alu_out_MEM_WB[4]         1.113e-04     0.0000  1.11e-04 (100%) 164806.2031 
+alu_out_MEM_WB[1]         1.107e-04     0.0000  1.11e-04 (100%) 164806.2031 
+alu_out_MEM_WB[13]        1.107e-04     0.0000  1.11e-04 (100%) 164806.2031 
+regfile_data_1_ID_EX[29]  1.089e-04     0.0000  1.09e-04 (100%) 164806.2031 
+alu_out_MEM_WB[8]         1.081e-04     0.0000  1.08e-04 (100%) 164806.2031 
+rdata_ext[26]             1.076e-04     0.0000  1.08e-04 (100%) 58360.9609  
+rdata_ext[30]             1.076e-04     0.0000  1.08e-04 (100%) 58360.9609  
+rdata_ext[23]             1.075e-04     0.0000  1.07e-04 (100%) 58360.9609  
+rdata_ext[27]             1.073e-04     0.0000  1.07e-04 (100%) 58360.9609  
+rdata_ext[5]              1.071e-04     0.0000  1.07e-04 (100%) 58360.9609  
+rdata_ext[21]             1.071e-04     0.0000  1.07e-04 (100%) 58360.9609  
 rdata_ext[0]              1.069e-04     0.0000  1.07e-04 (100%) 58360.9609  
-rdata_ext[25]             1.069e-04     0.0000  1.07e-04 (100%) 58360.9609  
-rdata_ext[18]             1.067e-04     0.0000  1.07e-04 (100%) 58360.9609  
-rdata_ext[7]              1.067e-04     0.0000  1.07e-04 (100%) 58360.9609  
-rdata_ext[15]             1.066e-04     0.0000  1.07e-04 (100%) 58360.9609  
-rdata_ext[29]             1.066e-04     0.0000  1.07e-04 (100%) 58360.9609  
-rdata_ext[13]             1.065e-04     0.0000  1.07e-04 (100%) 58360.9609  
-rdata_ext[27]             1.065e-04     0.0000  1.06e-04 (100%) 58360.9609  
-rdata_ext[10]             1.065e-04     0.0000  1.06e-04 (100%) 58360.9609  
-rdata_ext[2]              1.064e-04     0.0000  1.06e-04 (100%) 58360.9609  
-rdata_ext[21]             1.063e-04     0.0000  1.06e-04 (100%) 58360.9609  
-rdata_ext[16]             1.063e-04     0.0000  1.06e-04 (100%) 58360.9609  
-rdata_ext[6]              1.062e-04     0.0000  1.06e-04 (100%) 58360.9609  
-rdata_ext[9]              1.062e-04     0.0000  1.06e-04 (100%) 58360.9609  
-rdata_ext[22]             1.062e-04     0.0000  1.06e-04 (100%) 58360.9609  
-rdata_ext[8]              1.061e-04     0.0000  1.06e-04 (100%) 58360.9609  
-rdata_ext[26]             1.061e-04     0.0000  1.06e-04 (100%) 58360.9609  
-rdata_ext[20]             1.060e-04     0.0000  1.06e-04 (100%) 58360.9609  
-rdata_ext[3]              1.059e-04     0.0000  1.06e-04 (100%) 58360.9609  
-rdata_ext[4]              1.059e-04     0.0000  1.06e-04 (100%) 58360.9609  
-rdata_ext[17]             1.059e-04     0.0000  1.06e-04 (100%) 58360.9609  
-rdata_ext[11]             1.059e-04     0.0000  1.06e-04 (100%) 58360.9609  
-rdata_ext[19]             1.050e-04     0.0000  1.05e-04 (100%) 58360.9609  
-current_pc[7]             1.288e-05     0.0000  1.29e-05 (100%) 164806.2031 
-program_counter/updated_pc[7]
-                          8.498e-06     0.0000  8.50e-06 (100%) 58174.3594  
-alu_operand_2[14]         5.737e-06     0.0000  5.74e-06 (100%) 161901.9062 
-alu_operand_2[20]         5.676e-06     0.0000  5.68e-06 (100%) 161901.9062 
-alu_operand_2[22]         5.676e-06     0.0000  5.68e-06 (100%) 161901.9062 
-alu_operand_2[19]         5.652e-06     0.0000  5.65e-06 (100%) 161901.9062 
-alu_operand_2[28]         5.644e-06     0.0000  5.64e-06 (100%) 161901.9062 
-alu_operand_2[10]         5.629e-06     0.0000  5.63e-06 (100%) 161901.9062 
-alu_operand_2[18]         5.629e-06     0.0000  5.63e-06 (100%) 161901.9062 
-alu_operand_2[25]         5.629e-06     0.0000  5.63e-06 (100%) 161901.9062 
-alu_operand_2[9]          5.590e-06     0.0000  5.59e-06 (100%) 161901.9062 
-alu_operand_2[13]         5.557e-06     0.0000  5.56e-06 (100%) 161901.9062 
-alu_operand_2[17]         5.557e-06     0.0000  5.56e-06 (100%) 161901.9062 
-alu_operand_2[12]         5.428e-06     0.0000  5.43e-06 (100%) 161901.9062 
-alu_operand_2[31]         5.391e-06     0.0000  5.39e-06 (100%) 161901.9062 
-alu_operand_2[15]         5.320e-06     0.0000  5.32e-06 (100%) 161901.9062 
-alu_operand_2[3]          5.266e-06     0.0000  5.27e-06 (100%) 161901.9062 
-alu_operand_2[4]          5.266e-06     0.0000  5.27e-06 (100%) 161901.9062 
-alu_operand_2[5]          5.266e-06     0.0000  5.27e-06 (100%) 161901.9062 
-alu_operand_2[6]          5.266e-06     0.0000  5.27e-06 (100%) 161901.9062 
-alu_operand_2[7]          5.266e-06     0.0000  5.27e-06 (100%) 161901.9062 
-alu_operand_2[8]          5.266e-06     0.0000  5.27e-06 (100%) 161901.9062 
-alu_operand_2[11]         5.266e-06     0.0000  5.27e-06 (100%) 161901.9062 
-alu_operand_2[16]         5.266e-06     0.0000  5.27e-06 (100%) 161901.9062 
-alu_operand_2[21]         5.266e-06     0.0000  5.27e-06 (100%) 161901.9062 
-alu_operand_2[23]         5.266e-06     0.0000  5.27e-06 (100%) 161901.9062 
-alu_operand_2[24]         5.266e-06     0.0000  5.27e-06 (100%) 161901.9062 
-alu_operand_2[26]         5.260e-06     0.0000  5.26e-06 (100%) 161901.9062 
-alu_operand_2[2]          4.991e-06     0.0000  4.99e-06 (100%) 161901.9062 
-alu_operand_2[29]         4.991e-06     0.0000  4.99e-06 (100%) 161901.9062 
-alu_operand_2[0]          4.792e-06     0.0000  4.79e-06 (100%) 161901.9062 
-alu_operand_2[30]         4.749e-06     0.0000  4.75e-06 (100%) 161901.9062 
-alu_operand_2[1]          4.717e-06     0.0000  4.72e-06 (100%) 161901.9062 
-alu_operand_2[27]         4.443e-06     0.0000  4.44e-06 (100%) 161901.9062 
-regfile_data_1[23]        2.856e-06     0.0000  2.86e-06 (100%) 161901.9062 
-regfile_data_1[16]        2.656e-06     0.0000  2.66e-06 (100%) 161901.9062 
-regfile_data_1[5]         2.594e-06     0.0000  2.59e-06 (100%) 161901.9062 
-regfile_data_1[6]         2.594e-06     0.0000  2.59e-06 (100%) 161901.9062 
-regfile_data_1[7]         2.589e-06     0.0000  2.59e-06 (100%) 161901.9062 
-regfile_data_1[12]        2.577e-06     0.0000  2.58e-06 (100%) 161901.9062 
-regfile_data_1[15]        2.571e-06     0.0000  2.57e-06 (100%) 161901.9062 
-regfile_data_1[2]         2.484e-06     0.0000  2.48e-06 (100%) 161901.9062 
-regfile_data_1[8]         2.484e-06     0.0000  2.48e-06 (100%) 161901.9062 
-regfile_data_1[24]        2.484e-06     0.0000  2.48e-06 (100%) 161901.9062 
-regfile_data_1[19]        2.451e-06     0.0000  2.45e-06 (100%) 161901.9062 
-regfile_data_1[21]        2.437e-06     0.0000  2.44e-06 (100%) 161901.9062 
-regfile_data_1[29]        2.437e-06     0.0000  2.44e-06 (100%) 161901.9062 
-regfile_data_1[3]         2.423e-06     0.0000  2.42e-06 (100%) 161901.9062 
-regfile_data_1[4]         2.423e-06     0.0000  2.42e-06 (100%) 161901.9062 
-regfile_data_1[11]        2.400e-06     0.0000  2.40e-06 (100%) 161901.9062 
-regfile_data_1[27]        2.400e-06     0.0000  2.40e-06 (100%) 161901.9062 
-regfile_data_1[1]         2.380e-06     0.0000  2.38e-06 (100%) 161901.9062 
-regfile_data_1[10]        2.317e-06     0.0000  2.32e-06 (100%) 161901.9062 
-regfile_data_1[13]        2.317e-06     0.0000  2.32e-06 (100%) 161901.9062 
-regfile_data_1[14]        2.317e-06     0.0000  2.32e-06 (100%) 161901.9062 
-regfile_data_1[18]        2.317e-06     0.0000  2.32e-06 (100%) 161901.9062 
-regfile_data_1[28]        2.289e-06     0.0000  2.29e-06 (100%) 161901.9062 
-regfile_data_1[22]        2.260e-06     0.0000  2.26e-06 (100%) 161901.9062 
-regfile_data_1[0]         2.258e-06     0.0000  2.26e-06 (100%) 161901.9062 
-regfile_data_1[20]        2.254e-06     0.0000  2.25e-06 (100%) 161901.9062 
-regfile_data_1[17]        2.245e-06     0.0000  2.24e-06 (100%) 161901.9062 
-regfile_data_1[25]        2.245e-06     0.0000  2.24e-06 (100%) 161901.9062 
-regfile_data_1[9]         2.210e-06     0.0000  2.21e-06 (100%) 161901.9062 
-regfile_data_1[31]        2.100e-06     0.0000  2.10e-06 (100%) 161901.9062 
-regfile_data_1[26]        1.954e-06     0.0000  1.95e-06 (100%) 161901.9062 
-regfile_data_1[30]        1.932e-06     0.0000  1.93e-06 (100%) 161901.9062 
-alu_op[0]                    0.0000     0.0000     0.000 (N/A)     0.0000   d
-alu_op[1]                    0.0000     0.0000     0.000 (N/A)     0.0000   d
-alu_src                      0.0000     0.0000     0.000 (N/A)     0.0000   d
-branch                       0.0000     0.0000     0.000 (N/A)     0.0000   d
-current_pc[8]                0.0000     0.0000     0.000 (N/A)  164806.2031 
-current_pc[9]                0.0000     0.0000     0.000 (N/A)  164806.2031 
-current_pc[10]               0.0000     0.0000     0.000 (N/A)  164806.2031 
-jump                         0.0000     0.0000     0.000 (N/A)     0.0000   d
-jump_pc[0]                   0.0000     0.0000     0.000 (N/A)     0.0000   d
-jump_pc[1]                   0.0000     0.0000     0.000 (N/A)     0.0000   d
-mem_2_reg                    0.0000     0.0000     0.000 (N/A)     0.0000   d
-mem_read                     0.0000     0.0000     0.000 (N/A)     0.0000   d
-mem_write                    0.0000     0.0000     0.000 (N/A)     0.0000   d
+rdata_ext[9]              1.068e-04     0.0000  1.07e-04 (100%) 58360.9609  
+rdata_ext[8]              1.067e-04     0.0000  1.07e-04 (100%) 58360.9609  
+rdata_ext[24]             1.066e-04     0.0000  1.07e-04 (100%) 58360.9609  
+rdata_ext[16]             1.066e-04     0.0000  1.07e-04 (100%) 58360.9609  
+rdata_ext[7]              1.065e-04     0.0000  1.07e-04 (100%) 58360.9609  
+rdata_ext[3]              1.065e-04     0.0000  1.07e-04 (100%) 58360.9609  
+rdata_ext[25]             1.065e-04     0.0000  1.07e-04 (100%) 58360.9609  
+rdata_ext[17]             1.065e-04     0.0000  1.07e-04 (100%) 58360.9609  
+rdata_ext[14]             1.064e-04     0.0000  1.06e-04 (100%) 58360.9609  
+rdata_ext[10]             1.063e-04     0.0000  1.06e-04 (100%) 58360.9609  
+rdata_ext[29]             1.062e-04     0.0000  1.06e-04 (100%) 58360.9609  
+rdata_ext[11]             1.062e-04     0.0000  1.06e-04 (100%) 58360.9609  
+rdata_ext[18]             1.061e-04     0.0000  1.06e-04 (100%) 58360.9609  
+rdata_ext[12]             1.060e-04     0.0000  1.06e-04 (100%) 58360.9609  
+rdata_ext[13]             1.060e-04     0.0000  1.06e-04 (100%) 58360.9609  
+rdata_ext[6]              1.060e-04     0.0000  1.06e-04 (100%) 58360.9609  
+rdata_ext[19]             1.059e-04     0.0000  1.06e-04 (100%) 58360.9609  
+rdata_ext[22]             1.058e-04     0.0000  1.06e-04 (100%) 58360.9609  
+rdata_ext[20]             1.058e-04     0.0000  1.06e-04 (100%) 58360.9609  
+rdata_ext[4]              1.055e-04     0.0000  1.06e-04 (100%) 58360.9609  
+rdata_ext[31]             1.054e-04     0.0000  1.05e-04 (100%) 58360.9609  
+rdata_ext[2]              1.053e-04     0.0000  1.05e-04 (100%) 58360.9609  
+rdata_ext[15]             1.053e-04     0.0000  1.05e-04 (100%) 58360.9609  
+rdata_ext[1]              1.048e-04     0.0000  1.05e-04 (100%) 58360.9609  
+rdata_ext[28]             1.047e-04     0.0000  1.05e-04 (100%) 58360.9609  
+regfile_data_1_ID_EX[25]  1.017e-04     0.0000  1.02e-04 (100%) 164806.2031 
+regfile_data_1_ID_EX[22]  9.767e-05     0.0000  9.77e-05 (100%) 164806.2031 
+regfile_data_1_ID_EX[27]  9.403e-05     0.0000  9.40e-05 (100%) 164806.2031 
+regfile_data_1_ID_EX[26]  8.928e-05     0.0000  8.93e-05 (100%) 164806.2031 
+regfile_data_1_ID_EX[28]  7.995e-05     0.0000  8.00e-05 (100%) 164806.2031 
+mem_2_reg                 7.313e-05     0.0000  7.31e-05 (100%) 144347.5938 
+regfile_data_2_EX_MEM[3]  7.219e-05     0.0000  7.22e-05 (100%) 164806.2031 
+branch                    7.001e-05     0.0000  7.00e-05 (100%) 144347.5938 
+mem_write                 6.803e-05     0.0000  6.80e-05 (100%) 59411.3711  
+regfile_data_2_EX_MEM[7]  6.768e-05     0.0000  6.77e-05 (100%) 164806.2031 
+regfile_data_2_EX_MEM[16] 6.768e-05     0.0000  6.77e-05 (100%) 164806.2031 
+regfile_data_2_EX_MEM[20] 6.768e-05     0.0000  6.77e-05 (100%) 164806.2031 
+regfile_data_2_EX_MEM[22] 6.768e-05     0.0000  6.77e-05 (100%) 164806.2031 
+regfile_data_2_EX_MEM[29] 6.768e-05     0.0000  6.77e-05 (100%) 164806.2031 
+regfile_data_2_EX_MEM[0]  6.542e-05     0.0000  6.54e-05 (100%) 164806.2031 
+regfile_data_2_EX_MEM[5]  6.542e-05     0.0000  6.54e-05 (100%) 164806.2031 
+regfile_data_2_EX_MEM[10] 6.542e-05     0.0000  6.54e-05 (100%) 164806.2031 
+regfile_data_2_EX_MEM[19] 6.542e-05     0.0000  6.54e-05 (100%) 164806.2031 
+mem_2_reg_ID_EX           6.434e-05     0.0000  6.43e-05 (100%) 164806.2031 
+regfile_data_2_EX_MEM[23] 6.317e-05     0.0000  6.32e-05 (100%) 164806.2031 
+regfile_data_2_EX_MEM[30] 6.317e-05     0.0000  6.32e-05 (100%) 164806.2031 
+regfile_data_2_EX_MEM[1]  6.091e-05     0.0000  6.09e-05 (100%) 164806.2031 
+regfile_data_2_EX_MEM[15] 6.091e-05     0.0000  6.09e-05 (100%) 164806.2031 
+regfile_data_2_EX_MEM[24] 6.091e-05     0.0000  6.09e-05 (100%) 164806.2031 
+regfile_data_2_EX_MEM[31] 6.091e-05     0.0000  6.09e-05 (100%) 164806.2031 
+mem_write_ID_EX           5.924e-05     0.0000  5.92e-05 (100%) 164806.2031 
+regfile_data_2_EX_MEM[4]  5.865e-05     0.0000  5.87e-05 (100%) 164806.2031 
+regfile_data_2_EX_MEM[6]  5.865e-05     0.0000  5.87e-05 (100%) 164806.2031 
+regfile_data_2_EX_MEM[8]  5.865e-05     0.0000  5.87e-05 (100%) 164806.2031 
+regfile_data_2_EX_MEM[25] 5.865e-05     0.0000  5.87e-05 (100%) 164806.2031 
+regfile_data_2_EX_MEM[27] 5.865e-05     0.0000  5.87e-05 (100%) 164806.2031 
+regfile_data_2_EX_MEM[2]  5.640e-05     0.0000  5.64e-05 (100%) 164806.2031 
+regfile_data_2_EX_MEM[9]  5.640e-05     0.0000  5.64e-05 (100%) 164806.2031 
+regfile_data_2_EX_MEM[14] 5.640e-05     0.0000  5.64e-05 (100%) 164806.2031 
+regfile_data_2_EX_MEM[17] 5.640e-05     0.0000  5.64e-05 (100%) 164806.2031 
+regfile_data_2_EX_MEM[26] 5.640e-05     0.0000  5.64e-05 (100%) 164806.2031 
+regfile_data_2_EX_MEM[28] 5.640e-05     0.0000  5.64e-05 (100%) 164806.2031 
+regfile_data_2_EX_MEM[21] 5.414e-05     0.0000  5.41e-05 (100%) 164806.2031 
+jump_ID_EX                5.329e-05     0.0000  5.33e-05 (100%) 164806.2031 
+regfile_data_2_EX_MEM[13] 4.963e-05     0.0000  4.96e-05 (100%) 164806.2031 
+regfile_data_2_EX_MEM[18] 4.963e-05     0.0000  4.96e-05 (100%) 164806.2031 
+mem_2_reg_EX_MEM          4.859e-05     0.0000  4.86e-05 (100%) 164806.2031 
+regfile_data_2_EX_MEM[11] 4.512e-05     0.0000  4.51e-05 (100%) 164806.2031 
+regfile_data_1_ID_EX[30]  4.500e-05     0.0000  4.50e-05 (100%) 164806.2031 
+regfile_data_2_EX_MEM[12] 4.286e-05     0.0000  4.29e-05 (100%) 164806.2031 
+regfile_data_1_ID_EX[31]  2.714e-05     0.0000  2.71e-05 (100%) 164806.2031 
+regfile_data_2_ID_EX[3]   1.947e-05     0.0000  1.95e-05 (100%) 164806.2031 
+regfile_data_2_ID_EX[20]  1.890e-05     0.0000  1.89e-05 (100%) 164806.2031 
+regfile_data_2_ID_EX[7]   1.832e-05     0.0000  1.83e-05 (100%) 164806.2031 
+regfile_data_2_ID_EX[16]  1.832e-05     0.0000  1.83e-05 (100%) 164806.2031 
+regfile_data_2_ID_EX[0]   1.775e-05     0.0000  1.78e-05 (100%) 164806.2031 
+regfile_data_2_ID_EX[5]   1.775e-05     0.0000  1.78e-05 (100%) 164806.2031 
+regfile_data_2_ID_EX[10]  1.775e-05     0.0000  1.78e-05 (100%) 164806.2031 
+regfile_data_2_ID_EX[19]  1.775e-05     0.0000  1.78e-05 (100%) 164806.2031 
+regfile_data_2_ID_EX[22]  1.775e-05     0.0000  1.78e-05 (100%) 164806.2031 
+regfile_data_2_ID_EX[23]  1.775e-05     0.0000  1.78e-05 (100%) 164806.2031 
+regfile_data_2_ID_EX[29]  1.775e-05     0.0000  1.78e-05 (100%) 164806.2031 
+regfile_data_2_ID_EX[8]   1.661e-05     0.0000  1.66e-05 (100%) 164806.2031 
+regfile_data_2_ID_EX[27]  1.661e-05     0.0000  1.66e-05 (100%) 164806.2031 
+regfile_data_2_ID_EX[30]  1.661e-05     0.0000  1.66e-05 (100%) 164806.2031 
+regfile_data_2_ID_EX[1]   1.603e-05     0.0000  1.60e-05 (100%) 164806.2031 
+regfile_data_2_ID_EX[2]   1.603e-05     0.0000  1.60e-05 (100%) 164806.2031 
+regfile_data_2_ID_EX[15]  1.603e-05     0.0000  1.60e-05 (100%) 164806.2031 
+regfile_data_2_ID_EX[24]  1.603e-05     0.0000  1.60e-05 (100%) 164806.2031 
+regfile_data_2_ID_EX[31]  1.603e-05     0.0000  1.60e-05 (100%) 164806.2031 
+regfile_data_2_ID_EX[4]   1.546e-05     0.0000  1.55e-05 (100%) 164806.2031 
+regfile_data_2_ID_EX[6]   1.546e-05     0.0000  1.55e-05 (100%) 164806.2031 
+regfile_data_2_ID_EX[9]   1.546e-05     0.0000  1.55e-05 (100%) 164806.2031 
+regfile_data_2_ID_EX[14]  1.546e-05     0.0000  1.55e-05 (100%) 164806.2031 
+regfile_data_2_ID_EX[17]  1.546e-05     0.0000  1.55e-05 (100%) 164806.2031 
+regfile_data_2_ID_EX[25]  1.546e-05     0.0000  1.55e-05 (100%) 164806.2031 
+regfile_data_2_ID_EX[26]  1.546e-05     0.0000  1.55e-05 (100%) 164806.2031 
+regfile_data_2_ID_EX[18]  1.489e-05     0.0000  1.49e-05 (100%) 164806.2031 
+regfile_data_2_ID_EX[28]  1.489e-05     0.0000  1.49e-05 (100%) 164806.2031 
+regfile_data_2_ID_EX[21]  1.432e-05     0.0000  1.43e-05 (100%) 164806.2031 
+regfile_data_2_ID_EX[11]  1.260e-05     0.0000  1.26e-05 (100%) 164806.2031 
+regfile_data_2_ID_EX[13]  1.260e-05     0.0000  1.26e-05 (100%) 164806.2031 
+current_pc[2]             1.243e-05     0.0000  1.24e-05 (100%)    0.0000   d
+current_pc[3]             1.243e-05     0.0000  1.24e-05 (100%)    0.0000   d
+current_pc[4]             1.243e-05     0.0000  1.24e-05 (100%)    0.0000   d
+current_pc[5]             1.243e-05     0.0000  1.24e-05 (100%)    0.0000   d
+current_pc[6]             1.243e-05     0.0000  1.24e-05 (100%)    0.0000   d
+current_pc[7]             1.243e-05     0.0000  1.24e-05 (100%)    0.0000   d
+current_pc[8]             1.243e-05     0.0000  1.24e-05 (100%)    0.0000   d
+regfile_data_2_ID_EX[12]  1.145e-05     0.0000  1.15e-05 (100%) 164806.2031 
+regfile_data_2[3]         1.020e-05     0.0000  1.02e-05 (100%) 161901.9062 
+regfile_data_2[7]         1.020e-05     0.0000  1.02e-05 (100%) 161901.9062 
+regfile_data_2[16]        9.920e-06     0.0000  9.92e-06 (100%) 161901.9062 
+regfile_data_2[20]        9.920e-06     0.0000  9.92e-06 (100%) 161901.9062 
+regfile_data_1[8]         9.637e-06     0.0000  9.64e-06 (100%) 161901.9062 
+regfile_data_2[5]         9.637e-06     0.0000  9.64e-06 (100%) 161901.9062 
+regfile_data_2[29]        9.637e-06     0.0000  9.64e-06 (100%) 161901.9062 
+regfile_data_1[29]        9.354e-06     0.0000  9.35e-06 (100%) 161901.9062 
+regfile_data_2[19]        9.354e-06     0.0000  9.35e-06 (100%) 161901.9062 
+regfile_data_2[22]        9.354e-06     0.0000  9.35e-06 (100%) 161901.9062 
+regfile_data_1[0]         9.070e-06     0.0000  9.07e-06 (100%) 161901.9062 
+regfile_data_1[10]        9.070e-06     0.0000  9.07e-06 (100%) 161901.9062 
+regfile_data_2[0]         9.070e-06     0.0000  9.07e-06 (100%) 161901.9062 
+regfile_data_2[10]        9.070e-06     0.0000  9.07e-06 (100%) 161901.9062 
+regfile_data_2[23]        9.070e-06     0.0000  9.07e-06 (100%) 161901.9062 
+regfile_data_1[20]        8.787e-06     0.0000  8.79e-06 (100%) 161901.9062 
+regfile_data_2[2]         8.787e-06     0.0000  8.79e-06 (100%) 161901.9062 
+regfile_data_2[8]         8.787e-06     0.0000  8.79e-06 (100%) 161901.9062 
+regfile_data_2[9]         8.787e-06     0.0000  8.79e-06 (100%) 161901.9062 
+regfile_data_1[2]         8.503e-06     0.0000  8.50e-06 (100%) 161901.9062 
+regfile_data_1[9]         8.503e-06     0.0000  8.50e-06 (100%) 161901.9062 
+regfile_data_1[27]        8.503e-06     0.0000  8.50e-06 (100%) 161901.9062 
+regfile_data_2[1]         8.503e-06     0.0000  8.50e-06 (100%) 161901.9062 
+regfile_data_2[4]         8.503e-06     0.0000  8.50e-06 (100%) 161901.9062 
+regfile_data_2[15]        8.503e-06     0.0000  8.50e-06 (100%) 161901.9062 
+regfile_data_2[17]        8.503e-06     0.0000  8.50e-06 (100%) 161901.9062 
+regfile_data_2[24]        8.503e-06     0.0000  8.50e-06 (100%) 161901.9062 
+regfile_data_2[25]        8.503e-06     0.0000  8.50e-06 (100%) 161901.9062 
+regfile_data_2[27]        8.503e-06     0.0000  8.50e-06 (100%) 161901.9062 
+regfile_data_2[30]        8.503e-06     0.0000  8.50e-06 (100%) 161901.9062 
+regfile_data_2[31]        8.503e-06     0.0000  8.50e-06 (100%) 161901.9062 
+regfile_data_1[11]        8.220e-06     0.0000  8.22e-06 (100%) 161901.9062 
+regfile_data_1[14]        8.220e-06     0.0000  8.22e-06 (100%) 161901.9062 
+regfile_data_1[17]        8.220e-06     0.0000  8.22e-06 (100%) 161901.9062 
+regfile_data_1[26]        8.220e-06     0.0000  8.22e-06 (100%) 161901.9062 
+regfile_data_1[28]        8.220e-06     0.0000  8.22e-06 (100%) 161901.9062 
+regfile_data_2[6]         8.220e-06     0.0000  8.22e-06 (100%) 161901.9062 
+regfile_data_2[14]        8.220e-06     0.0000  8.22e-06 (100%) 161901.9062 
+regfile_data_2[18]        8.220e-06     0.0000  8.22e-06 (100%) 161901.9062 
+regfile_data_2[26]        8.220e-06     0.0000  8.22e-06 (100%) 161901.9062 
+regfile_data_1[4]         7.936e-06     0.0000  7.94e-06 (100%) 161901.9062 
+regfile_data_1[23]        7.936e-06     0.0000  7.94e-06 (100%) 161901.9062 
+regfile_data_1[25]        7.936e-06     0.0000  7.94e-06 (100%) 161901.9062 
+regfile_data_2[21]        7.936e-06     0.0000  7.94e-06 (100%) 161901.9062 
+regfile_data_2[28]        7.936e-06     0.0000  7.94e-06 (100%) 161901.9062 
+regfile_data_1[1]         7.653e-06     0.0000  7.65e-06 (100%) 161901.9062 
+regfile_data_1[13]        7.653e-06     0.0000  7.65e-06 (100%) 161901.9062 
+regfile_data_1[16]        7.653e-06     0.0000  7.65e-06 (100%) 161901.9062 
+regfile_data_1[18]        7.653e-06     0.0000  7.65e-06 (100%) 161901.9062 
+regfile_data_1[19]        7.653e-06     0.0000  7.65e-06 (100%) 161901.9062 
+regfile_data_1[24]        7.653e-06     0.0000  7.65e-06 (100%) 161901.9062 
+regfile_data_1[5]         7.369e-06     0.0000  7.37e-06 (100%) 161901.9062 
+regfile_data_1[15]        7.369e-06     0.0000  7.37e-06 (100%) 161901.9062 
+regfile_data_1[21]        7.369e-06     0.0000  7.37e-06 (100%) 161901.9062 
+regfile_data_1[3]         7.086e-06     0.0000  7.09e-06 (100%) 161901.9062 
+regfile_data_1[7]         7.086e-06     0.0000  7.09e-06 (100%) 161901.9062 
+regfile_data_2[13]        7.086e-06     0.0000  7.09e-06 (100%) 161901.9062 
+regfile_data_1[6]         6.803e-06     0.0000  6.80e-06 (100%) 161901.9062 
+regfile_data_2[11]        6.803e-06     0.0000  6.80e-06 (100%) 161901.9062 
+regfile_data_1[22]        6.519e-06     0.0000  6.52e-06 (100%) 161901.9062 
+regfile_data_2[12]        6.519e-06     0.0000  6.52e-06 (100%) 161901.9062 
+regfile_data_1[12]        5.952e-06     0.0000  5.95e-06 (100%) 161901.9062 
+regfile_data_1[30]        5.952e-06     0.0000  5.95e-06 (100%) 161901.9062 
+regfile_data_1[31]        5.952e-06     0.0000  5.95e-06 (100%) 161901.9062 
+branch_EX_MEM             1.759e-06     0.0000  1.76e-06 (100%) 82403.1016  m, d
+branch_pc[2]              1.759e-06     0.0000  1.76e-06 (100%) 29087.1797  m, d
+branch_pc[3]              1.759e-06     0.0000  1.76e-06 (100%) 39790.1992  m, d
+branch_pc[4]              1.759e-06     0.0000  1.76e-06 (100%) 39790.1992  m, d
+branch_pc[5]              1.759e-06     0.0000  1.76e-06 (100%) 39790.1992  m, d
+branch_pc[6]              1.759e-06     0.0000  1.76e-06 (100%) 39790.1992  m, d
+branch_pc[7]              1.759e-06     0.0000  1.76e-06 (100%) 39790.1992  m, d
+branch_pc[8]              1.759e-06     0.0000  1.76e-06 (100%) 39790.1992  m, d
+branch_pc[9]              1.759e-06     0.0000  1.76e-06 (100%) 39790.1992  m, d
+branch_pc[10]             1.759e-06     0.0000  1.76e-06 (100%) 39790.1992  m, d
+branch_pc[11]             1.759e-06     0.0000  1.76e-06 (100%) 39790.1992  m, d
+branch_pc[12]             1.759e-06     0.0000  1.76e-06 (100%) 39790.1992  m, d
+branch_pc[13]             1.759e-06     0.0000  1.76e-06 (100%) 39790.1992  m, d
+branch_pc[14]             1.759e-06     0.0000  1.76e-06 (100%) 39790.1992  m, d
+branch_pc[15]             1.759e-06     0.0000  1.76e-06 (100%) 39790.1992  m, d
+branch_pc[16]             1.759e-06     0.0000  1.76e-06 (100%) 39790.1992  m, d
+branch_pc[17]             1.759e-06     0.0000  1.76e-06 (100%) 39790.1992  m, d
+branch_pc[18]             1.759e-06     0.0000  1.76e-06 (100%) 39790.1992  m, d
+branch_pc[19]             1.759e-06     0.0000  1.76e-06 (100%) 39790.1992  m, d
+branch_pc[20]             1.759e-06     0.0000  1.76e-06 (100%) 39790.1992  m, d
+branch_pc[21]             1.759e-06     0.0000  1.76e-06 (100%) 39790.1992  m, d
+branch_pc[22]             1.759e-06     0.0000  1.76e-06 (100%) 39790.1992  m, d
+branch_pc[23]             1.759e-06     0.0000  1.76e-06 (100%) 39790.1992  m, d
+branch_pc[24]             1.759e-06     0.0000  1.76e-06 (100%) 39790.1992  m, d
+branch_pc[25]             1.759e-06     0.0000  1.76e-06 (100%) 39790.1992  m, d
+branch_pc[26]             1.759e-06     0.0000  1.76e-06 (100%) 39790.1992  m, d
+branch_pc[27]             1.759e-06     0.0000  1.76e-06 (100%) 39790.1992  m, d
+branch_pc[28]             1.759e-06     0.0000  1.76e-06 (100%) 39790.1992  m, d
+branch_pc[29]             1.759e-06     0.0000  1.76e-06 (100%) 39790.1992  m, d
+branch_pc[30]             1.759e-06     0.0000  1.76e-06 (100%) 39790.1992  m, d
+branch_pc[31]             1.759e-06     0.0000  1.76e-06 (100%) 44917.7305  m, d
+branch_pc_EX_MEM          1.759e-06     0.0000  1.76e-06 (100%)    0.0000   m, d
+instruction_ID_EX[21]     1.759e-06     0.0000  1.76e-06 (100%) 82403.1016  m, d
+instruction_ID_EX[22]     1.759e-06     0.0000  1.76e-06 (100%) 82403.1016  m, d
+instruction_ID_EX[23]     1.759e-06     0.0000  1.76e-06 (100%) 82403.1016  m, d
+instruction_ID_EX[24]     1.759e-06     0.0000  1.76e-06 (100%) 82403.1016  m, d
+instruction_ID_EX[25]     1.759e-06     0.0000  1.76e-06 (100%) 82403.1016  m, d
+jump_EX_MEM               1.759e-06     0.0000  1.76e-06 (100%) 82403.1016  m, d
+jump_pc_EX_MEM            1.759e-06     0.0000  1.76e-06 (100%)    0.0000   m, d
+updated_pc_ID_EX[0]       1.759e-06     0.0000  1.76e-06 (100%) 82403.1016  m, d
+updated_pc_ID_EX[1]       1.759e-06     0.0000  1.76e-06 (100%) 82403.1016  m, d
+zero_flag                 1.759e-06     0.0000  1.76e-06 (100%) 59585.6484  m, d
+zero_flag_EX_MEM          1.759e-06     0.0000  1.76e-06 (100%)    0.0000   m, d
+jump_pc[0]                   0.0000     0.0000     0.000 (N/A)     0.0000   m, d
+jump_pc[1]                   0.0000     0.0000     0.000 (N/A)     0.0000   m, d
 n1                           0.0000     0.0000     0.000 (N/A)     0.0000   d
 n2                           0.0000     0.0000     0.000 (N/A)     0.0000   d
 n3                           0.0000     0.0000     0.000 (N/A)     0.0000   d
@@ -926,16 +1945,23 @@ n89                          0.0000     0.0000     0.000 (N/A)     0.0000   d
 n90                          0.0000     0.0000     0.000 (N/A)     0.0000   d
 n91                          0.0000     0.0000     0.000 (N/A)     0.0000   d
 n92                          0.0000     0.0000     0.000 (N/A)     0.0000   d
-n213                         0.0000     0.0000     0.000 (N/A)     0.0000   d
-n214                         0.0000     0.0000     0.000 (N/A)     0.0000   d
-n215                         0.0000     0.0000     0.000 (N/A)     0.0000   d
-n216                         0.0000     0.0000     0.000 (N/A)     0.0000   d
-n217                         0.0000     0.0000     0.000 (N/A)     0.0000   d
-n218                         0.0000     0.0000     0.000 (N/A)     0.0000   d
-n219                         0.0000     0.0000     0.000 (N/A)     0.0000   d
-n220                         0.0000     0.0000     0.000 (N/A)     0.0000   d
-n221                         0.0000     0.0000     0.000 (N/A)     0.0000   d
-n222                         0.0000     0.0000     0.000 (N/A)     0.0000   d
+n93                          0.0000     0.0000     0.000 (N/A)     0.0000   d
+n94                          0.0000     0.0000     0.000 (N/A)     0.0000   d
+n95                          0.0000     0.0000     0.000 (N/A)     0.0000   d
+n96                          0.0000     0.0000     0.000 (N/A)     0.0000   d
+n97                          0.0000     0.0000     0.000 (N/A)     0.0000   d
+n98                          0.0000     0.0000     0.000 (N/A)     0.0000   d
+n99                          0.0000     0.0000     0.000 (N/A)     0.0000   d
+n100                         0.0000     0.0000     0.000 (N/A)     0.0000   d
+n101                         0.0000     0.0000     0.000 (N/A)     0.0000   d
+n102                         0.0000     0.0000     0.000 (N/A)     0.0000   d
+n103                         0.0000     0.0000     0.000 (N/A)     0.0000   d
+n104                         0.0000     0.0000     0.000 (N/A)     0.0000   d
+n105                         0.0000     0.0000     0.000 (N/A)     0.0000   d
+n106                         0.0000     0.0000     0.000 (N/A)     0.0000   d
+n107                         0.0000     0.0000     0.000 (N/A)     0.0000   d
+n108                         0.0000     0.0000     0.000 (N/A)     0.0000   d
+n109                         0.0000     0.0000     0.000 (N/A)     0.0000   d
 n223                         0.0000     0.0000     0.000 (N/A)     0.0000   d
 n224                         0.0000     0.0000     0.000 (N/A)     0.0000   d
 n225                         0.0000     0.0000     0.000 (N/A)     0.0000   d
@@ -983,80 +2009,11 @@ n266                         0.0000     0.0000     0.000 (N/A)     0.0000   d
 n267                         0.0000     0.0000     0.000 (N/A)     0.0000   d
 n268                         0.0000     0.0000     0.000 (N/A)     0.0000   d
 n269                         0.0000     0.0000     0.000 (N/A)     0.0000   d
-n270                         0.0000     0.0000     0.000 (N/A)     0.0000   d
-n271                         0.0000     0.0000     0.000 (N/A)     0.0000   d
-n272                         0.0000     0.0000     0.000 (N/A)     0.0000   d
-n273                         0.0000     0.0000     0.000 (N/A)     0.0000   d
-n274                         0.0000     0.0000     0.000 (N/A)     0.0000   d
-n275                         0.0000     0.0000     0.000 (N/A)     0.0000   d
-n276                         0.0000     0.0000     0.000 (N/A)     0.0000   d
-n277                         0.0000     0.0000     0.000 (N/A)     0.0000   d
-n278                         0.0000     0.0000     0.000 (N/A)     0.0000   d
-n279                         0.0000     0.0000     0.000 (N/A)     0.0000   d
-n280                         0.0000     0.0000     0.000 (N/A)     0.0000   d
-n281                         0.0000     0.0000     0.000 (N/A)     0.0000   d
-n282                         0.0000     0.0000     0.000 (N/A)     0.0000   d
-n283                         0.0000     0.0000     0.000 (N/A)     0.0000   d
-n284                         0.0000     0.0000     0.000 (N/A)     0.0000   d
-n285                         0.0000     0.0000     0.000 (N/A)     0.0000   d
-n286                         0.0000     0.0000     0.000 (N/A)     0.0000   d
-n287                         0.0000     0.0000     0.000 (N/A)     0.0000   d
-n288                         0.0000     0.0000     0.000 (N/A)     0.0000   d
-n289                         0.0000     0.0000     0.000 (N/A)     0.0000   d
-n290                         0.0000     0.0000     0.000 (N/A)     0.0000   d
-n291                         0.0000     0.0000     0.000 (N/A)     0.0000   d
-n292                         0.0000     0.0000     0.000 (N/A)     0.0000   d
-n293                         0.0000     0.0000     0.000 (N/A)     0.0000   d
-n294                         0.0000     0.0000     0.000 (N/A)     0.0000   d
-n295                         0.0000     0.0000     0.000 (N/A)     0.0000   d
-n296                         0.0000     0.0000     0.000 (N/A)     0.0000   d
-n297                         0.0000     0.0000     0.000 (N/A)     0.0000   d
-n298                         0.0000     0.0000     0.000 (N/A)     0.0000   d
-n299                         0.0000     0.0000     0.000 (N/A)     0.0000   d
-n300                         0.0000     0.0000     0.000 (N/A)     0.0000   d
-n301                         0.0000     0.0000     0.000 (N/A)     0.0000   d
-n302                         0.0000     0.0000     0.000 (N/A)     0.0000   d
-n303                         0.0000     0.0000     0.000 (N/A)     0.0000   d
-n304                         0.0000     0.0000     0.000 (N/A)     0.0000   d
-n305                         0.0000     0.0000     0.000 (N/A)     0.0000   d
-n306                         0.0000     0.0000     0.000 (N/A)     0.0000   d
-n307                         0.0000     0.0000     0.000 (N/A)     0.0000   d
-n308                         0.0000     0.0000     0.000 (N/A)     0.0000   d
-n309                         0.0000     0.0000     0.000 (N/A)     0.0000   d
-n310                         0.0000     0.0000     0.000 (N/A)     0.0000   d
-n311                         0.0000     0.0000     0.000 (N/A)     0.0000   d
-n312                         0.0000     0.0000     0.000 (N/A)     0.0000   d
-n313                         0.0000     0.0000     0.000 (N/A)     0.0000   d
-n314                         0.0000     0.0000     0.000 (N/A)     0.0000   d
-n315                         0.0000     0.0000     0.000 (N/A)     0.0000   d
-n316                         0.0000     0.0000     0.000 (N/A)     0.0000   d
-n317                         0.0000     0.0000     0.000 (N/A)     0.0000   d
-n318                         0.0000     0.0000     0.000 (N/A)     0.0000   d
-n319                         0.0000     0.0000     0.000 (N/A)     0.0000   d
-n320                         0.0000     0.0000     0.000 (N/A)     0.0000   d
-n321                         0.0000     0.0000     0.000 (N/A)     0.0000   d
-n322                         0.0000     0.0000     0.000 (N/A)     0.0000   d
-n323                         0.0000     0.0000     0.000 (N/A)     0.0000   d
-n324                         0.0000     0.0000     0.000 (N/A)     0.0000   d
-n325                         0.0000     0.0000     0.000 (N/A)     0.0000   d
-n326                         0.0000     0.0000     0.000 (N/A)     0.0000   d
-n327                         0.0000     0.0000     0.000 (N/A)     0.0000   d
-n328                         0.0000     0.0000     0.000 (N/A)     0.0000   d
-n329                         0.0000     0.0000     0.000 (N/A)     0.0000   d
-n330                         0.0000     0.0000     0.000 (N/A)     0.0000   d
-n331                         0.0000     0.0000     0.000 (N/A)     0.0000   d
-n332                         0.0000     0.0000     0.000 (N/A)     0.0000   d
-n333                         0.0000     0.0000     0.000 (N/A)     0.0000   d
-n334                         0.0000     0.0000     0.000 (N/A)     0.0000   d
-n335                         0.0000     0.0000     0.000 (N/A)     0.0000   d
-n336                         0.0000     0.0000     0.000 (N/A)     0.0000   d
-n337                         0.0000     0.0000     0.000 (N/A)     0.0000   d
-n338                         0.0000     0.0000     0.000 (N/A)     0.0000   d
-n339                         0.0000     0.0000     0.000 (N/A)     0.0000   d
 n_Logic0_                    0.0000     0.0000     0.000 (N/A)     0.0000   d
+n_Logic1_                    0.0000     0.0000     0.000 (N/A)     0.0000   d
 --------------------------------------------------------------------------------
-Totals (448 nets)            1.093uW    0.000uW    1.093uW (100%)
-                                                                  22.343uW
+Totals (899 nets)            3.084uW    0.000uW    3.084uW (100%)
+                                                                  83.880uW
 
 
   Attributes
@@ -1067,27 +2024,77 @@ Totals (448 nets)            1.093uW    0.000uW    1.093uW (100%)
                         Internal  Switching   Power            Leakage
 Cell                    Power     Power       (% Cell/Tot)     Power      Attrs
 --------------------------------------------------------------------------------
-U114                       0.0000    0.5720      0.572 (0%)    72706.7188  
-alu                        0.0000       N/A        N/A (N/A)   61796672.0000
+U116                       0.0000    0.8994      0.899 (0%)    72706.7188  
+instruction_pipe_EX_MEM_4
+                           0.0000    0.4627      0.463 (0%)       0.0000   
+program_counter            0.0000    0.4603      0.460 (0%)       0.0000   
+alu                        0.0000       N/A        N/A (N/A)   179535424.0000
                                                                           h
-alu_ctrl                   0.0000       N/A        N/A (N/A)   1107491.8750
+alu_ctrl                   0.0000       N/A        N/A (N/A)   1841511.1250
                                                                           h
-alu_operand_mux            0.0000       N/A        N/A (N/A)      0.0000  h
-control_unit               0.0000       N/A        N/A (N/A)   181737.5938
+alu_operand_mux            0.0000       N/A        N/A (N/A)   2074180.3750
                                                                           h
-data_memory                0.0000       N/A        N/A (N/A)   12591543.0000
+branch_unit                0.0000       N/A        N/A (N/A)   4825273.0000
                                                                           h
-instruction_memory         0.0000       N/A        N/A (N/A)   12946011.0000
+control_pipe_EX_MEM        0.0000       N/A        N/A (N/A)   1007281.0000
                                                                           h
-program_counter            0.0000       N/A        N/A (N/A)   3226356.5000
+control_pipe_ID_EX         0.0000       N/A        N/A (N/A)   1501699.6250
                                                                           h
-regfile_data_mux           0.0000       N/A        N/A (N/A)      0.0000  h
+control_pipe_MEM_WB        0.0000       N/A        N/A (N/A)   508317.5625
+                                                                          h
+control_unit               0.0000       N/A        N/A (N/A)   2295811.0000
+                                                                          h
+data_memory                0.0000       N/A        N/A (N/A)   23175806.0000
+                                                                          h
+instruction_memory         0.0000       N/A        N/A (N/A)   12946008.0000
+                                                                          h
+instruction_pipe_EX_MEM_1
+                           0.0000       N/A        N/A (N/A)   5457048.0000
+                                                                          h
+instruction_pipe_EX_MEM_2
+                           0.0000       N/A        N/A (N/A)   5457048.0000
+                                                                          h
+instruction_pipe_EX_MEM_3
+                           0.0000       N/A        N/A (N/A)   1007281.0000
+                                                                          h
+instruction_pipe_ID_EX_1
+                           0.0000       N/A        N/A (N/A)   4468212.0000
+                                                                          h
+instruction_pipe_ID_EX_2
+                           0.0000       N/A        N/A (N/A)   2820149.5000
+                                                                          h
+instruction_pipe_ID_EX_3
+                           0.0000       N/A        N/A (N/A)   5457048.0000
+                                                                          h
+instruction_pipe_ID_EX_4
+                           0.0000       N/A        N/A (N/A)   5457048.0000
+                                                                          h
+instruction_pipe_ID_EX_5
+                           0.0000       N/A        N/A (N/A)   5457048.0000
+                                                                          h
+instruction_pipe_IF_ID_1
+                           0.0000       N/A        N/A (N/A)   5457048.0000
+                                                                          h
+instruction_pipe_IF_ID_2
+                           0.0000       N/A        N/A (N/A)   5457048.0000
+                                                                          h
+instruction_pipe_MEM_WB_1
+                           0.0000       N/A        N/A (N/A)   5457048.0000
+                                                                          h
+instruction_pipe_MEM_WB_2
+                           0.0000       N/A        N/A (N/A)   5457048.0000
+                                                                          h
+instruction_pipe_MEM_WB_3
+                           0.0000       N/A        N/A (N/A)   1007281.0000
+                                                                          h
+regfile_data_mux           0.0000       N/A        N/A (N/A)   2074180.3750
+                                                                          h
 regfile_dest_mux           0.0000       N/A        N/A (N/A)   368252.7500
                                                                           h
-register_file              0.0000       N/A        N/A (N/A)   288641760.0000
+register_file              0.0000       N/A        N/A (N/A)   288505184.0000
                                                                           h
 --------------------------------------------------------------------------------
-Totals (11 cells)          0.000uW     N/A         N/A (N/A)    380.933uW
+Totals (29 cells)          0.000uW     N/A         N/A (N/A)    579.148uW
 
 
 
@@ -1101,49 +2108,113 @@ Totals (11 cells)          0.000uW     N/A         N/A (N/A)    380.933uW
                Toggling Source   State Pin Toggle Internal     Leakage
 Cell           Pin      of Path  Cond  Rate       Power        Power    Attrs
 --------------------------------------------------------------------------------
-   U114        Y        A              5.0e-04      0.0000              d r
-   U114        Y        A              5.0e-04      0.0000              d f
-U114  (Cell Total)                                  0.0000    72706.7188
-alu                                                 0.0000    61796672.0000
+   U116        Y        A              5.0e-04      0.0000              d r
+   U116        Y        A              5.0e-04      0.0000              d f
+U116  (Cell Total)                                  0.0000    72706.7188
+instruction_pipe_EX_MEM_4                           0.0000       0.0000
+program_counter                                     0.0000       0.0000
+alu                                                 0.0000    179535424.0000
                                                                         h
-alu_ctrl                                            0.0000    1107491.8750
+alu_ctrl                                            0.0000    1841511.1250
                                                                         h
-alu_operand_mux                                     0.0000       0.0000 h
-control_unit                                        0.0000    181737.5938
+alu_operand_mux                                     0.0000    2074180.3750
                                                                         h
-data_memory                                         0.0000    12591543.0000
+branch_unit                                         0.0000    4825273.0000
                                                                         h
-instruction_memory                                  0.0000    12946011.0000
+control_pipe_EX_MEM                                 0.0000    1007281.0000
                                                                         h
-program_counter                                     0.0000    3226356.5000
+control_pipe_ID_EX                                  0.0000    1501699.6250
                                                                         h
-regfile_data_mux                                    0.0000       0.0000 h
+control_pipe_MEM_WB                                 0.0000    508317.5625
+                                                                        h
+control_unit                                        0.0000    2295811.0000
+                                                                        h
+data_memory                                         0.0000    23175806.0000
+                                                                        h
+instruction_memory                                  0.0000    12946008.0000
+                                                                        h
+instruction_pipe_EX_MEM_1                           0.0000    5457048.0000
+                                                                        h
+instruction_pipe_EX_MEM_2                           0.0000    5457048.0000
+                                                                        h
+instruction_pipe_EX_MEM_3                           0.0000    1007281.0000
+                                                                        h
+instruction_pipe_ID_EX_1                            0.0000    4468212.0000
+                                                                        h
+instruction_pipe_ID_EX_2                            0.0000    2820149.5000
+                                                                        h
+instruction_pipe_ID_EX_3                            0.0000    5457048.0000
+                                                                        h
+instruction_pipe_ID_EX_4                            0.0000    5457048.0000
+                                                                        h
+instruction_pipe_ID_EX_5                            0.0000    5457048.0000
+                                                                        h
+instruction_pipe_IF_ID_1                            0.0000    5457048.0000
+                                                                        h
+instruction_pipe_IF_ID_2                            0.0000    5457048.0000
+                                                                        h
+instruction_pipe_MEM_WB_1                           0.0000    5457048.0000
+                                                                        h
+instruction_pipe_MEM_WB_2                           0.0000    5457048.0000
+                                                                        h
+instruction_pipe_MEM_WB_3                           0.0000    1007281.0000
+                                                                        h
+regfile_data_mux                                    0.0000    2074180.3750
+                                                                        h
 regfile_dest_mux                                    0.0000    368252.7500
                                                                         h
-register_file                                       0.0000    288641760.0000
+register_file                                       0.0000    288505184.0000
                                                                         h
 --------------------------------------------------------------------------------
-Totals (11 cells)                                   0.000uW    380.933uW
+Totals (29 cells)                                   0.000uW    579.148uW
 
 --------------------------------------------------------------------------------
                                        Switch   Int      Leak     Total
 Hierarchy                              Power    Power    Power    Power    %
 --------------------------------------------------------------------------------
-cpu                                       4.406    0.000 3.81e+08  385.343 100.0
-  regfile_data_mux (mux_2_DATA_W32_2)     0.000    0.000    0.000    0.000   0.0
-  data_memory (sram_ADDR_W10_DATA_W32)    0.805    0.000 1.26e+07   13.396   3.5
-  alu (alu_DATA_W32)                      0.758    0.000 6.18e+07   62.555  16.2
-  alu_operand_mux (mux_2_DATA_W32_3)      0.000    0.000    0.000    0.000   0.0
-  alu_ctrl (alu_control)               3.74e-02    0.000 1.11e+06    1.145   0.3
+cpu                                      12.771    0.000 5.79e+08  591.920 100.0
+  branch_unit (branch_unit_DATA_W32)   6.79e-02    0.000 4.83e+06    4.893   0.8
+  regfile_data_mux (mux_2_DATA_W32_0)     0.120    0.000 2.07e+06    2.194   0.4
+  control_pipe_MEM_WB (reg_arstn_en_DATA_W2)
+                                       1.12e-02    0.000 5.08e+05    0.520   0.1
+  instruction_pipe_MEM_WB_3 (reg_arstn_en_DATA_W5_0)
+                                          0.121    0.000 1.01e+06    1.128   0.2
+  instruction_pipe_MEM_WB_2 (reg_arstn_en_DATA_W32_0)
+                                          0.582    0.000 5.46e+06    6.039   1.0
+  instruction_pipe_MEM_WB_1 (reg_arstn_en_DATA_W32_1)
+                                          0.604    0.000 5.46e+06    6.061   1.0
+  data_memory (sram_ADDR_W10_DATA_W32)    1.254    0.000 2.32e+07   24.430   4.1
+  control_pipe_EX_MEM (reg_arstn_en_DATA_W6)
+                                       9.96e-02    0.000 1.01e+06    1.107   0.2
+  instruction_pipe_EX_MEM_3 (reg_arstn_en_DATA_W5_1)
+                                          0.103    0.000 1.01e+06    1.111   0.2
+  instruction_pipe_EX_MEM_2 (reg_arstn_en_DATA_W32_2)
+                                          0.581    0.000 5.46e+06    6.038   1.0
+  instruction_pipe_EX_MEM_1 (reg_arstn_en_DATA_W32_3)
+                                          0.585    0.000 5.46e+06    6.042   1.0
+  alu (alu_DATA_W32)                      0.667    0.000 1.80e+08  180.203  30.4
+  alu_operand_mux (mux_2_DATA_W32_1)   9.64e-02    0.000 2.07e+06    2.171   0.4
+  alu_ctrl (alu_control)               5.05e-02    0.000 1.84e+06    1.892   0.3
+  control_pipe_ID_EX (reg_arstn_en_DATA_W10)
+                                          0.176    0.000 1.50e+06    1.678   0.3
+  instruction_pipe_ID_EX_5 (reg_arstn_en_DATA_W32_4)
+                                          0.579    0.000 5.46e+06    6.036   1.0
+  instruction_pipe_ID_EX_4 (reg_arstn_en_DATA_W32_5)
+                                          0.584    0.000 5.46e+06    6.041   1.0
+  instruction_pipe_ID_EX_3 (reg_arstn_en_DATA_W32_6)
+                                          0.643    0.000 5.46e+06    6.100   1.0
   register_file (register_file_DATA_W32)
-                                          1.043    0.000 2.89e+08  289.685  75.2
-  regfile_dest_mux (mux_2_DATA_W5)     3.77e-02    0.000 3.68e+05    0.406   0.1
-  control_unit (control_unit)          4.09e-03    0.000 1.82e+05    0.186   0.0
+                                          0.577    0.000 2.89e+08  289.083  48.8
+  regfile_dest_mux (mux_2_DATA_W5)     1.50e-02    0.000 3.68e+05    0.383   0.1
+  instruction_pipe_ID_EX_2 (reg_arstn_en_DATA_W32_7)
+                                          0.431    0.000 2.82e+06    3.251   0.5
+  instruction_pipe_ID_EX_1 (reg_arstn_en_DATA_W32_8)
+                                          0.599    0.000 4.47e+06    5.067   0.9
+  control_unit (control_unit)          2.46e-02    0.000 2.30e+06    2.320   0.4
+  instruction_pipe_IF_ID_2 (reg_arstn_en_DATA_W32_9)
+                                          0.605    0.000 5.46e+06    6.062   1.0
+  instruction_pipe_IF_ID_1 (reg_arstn_en_DATA_W32_10)
+                                          0.707    0.000 5.46e+06    6.164   1.0
   instruction_memory (sram_ADDR_W9_DATA_W32)
-                                          0.926    0.000 1.29e+07   13.872   3.6
-  program_counter (pc_DATA_W32)           0.224    0.000 3.23e+06    3.450   0.9
-    pc_register (reg_arstn_en_32_s00000000)
-                                          0.207    0.000 1.67e+06    1.874   0.5
-    mux_jump (mux_2_DATA_W32_0)           0.000    0.000    0.000    0.000   0.0
-    mux_branch (mux_2_DATA_W32_1)         0.000    0.000    0.000    0.000   0.0
+                                          1.065    0.000 1.29e+07   14.011   2.4
 1
