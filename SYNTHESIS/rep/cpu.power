@@ -1,0 +1,1149 @@
+Information: Propagating switching activity (high effort zero delay simulation). (PWR-6)
+Warning: Design has unannotated primary inputs. (PWR-414)
+Warning: Design has unannotated sequential cell outputs. (PWR-415)
+Warning: Design has unannotated black box outputs. (PWR-428)
+ 
+****************************************
+Report : power
+        -net
+        -cell
+        -hier
+        -analysis_effort high
+        -verbose
+        -sort_mode dynamic_power
+Design : cpu
+Version: N-2017.09-SP3
+Date   : Mon Apr  5 17:38:41 2021
+****************************************
+
+
+Library(s) Used:
+
+    saed32rvt_tt1p05v25c (File: /users/micas/micas/design/generic/synopsys_32nm/SAED32_EDK/lib/stdcell_rvt/db_ccs/saed32rvt_tt1p05v25c.db)
+    saed32sram_tt1p05v25c (File: /users/micas/micas/design/generic/synopsys_32nm/SAED32_EDK/lib/sram/db_ccs/saed32sram_tt1p05v25c.db)
+
+Information: The library cell 'SRAM2RW128x32' in the library 'saed32sram_tt1p05v25c' is not characterized for internal power. (PWR-227)
+Information: The design contains cells, other than constants and black boxes, that are not characterized for internal power. (PWR-228)
+
+Operating Conditions: tt1p05v25c   Library: saed32sram_tt1p05v25c
+Wire Load Model Mode: enclosed
+
+Design        Wire Load Model            Library
+------------------------------------------------
+cpu                    280000            saed32sram_tt1p05v25c
+pc_DATA_W32            ForQA             saed32sram_tt1p05v25c
+sram_ADDR_W9_DATA_W32  140000            saed32sram_tt1p05v25c
+control_unit           ForQA             saed32sram_tt1p05v25c
+mux_2_DATA_W5          ForQA             saed32sram_tt1p05v25c
+alu_control            ForQA             saed32sram_tt1p05v25c
+mux_2_DATA_W32_3       ForQA             saed32sram_tt1p05v25c
+alu_DATA_W32           8000              saed32sram_tt1p05v25c
+sram_ADDR_W10_DATA_W32 280000            saed32sram_tt1p05v25c
+mux_2_DATA_W32_0       ForQA             saed32sram_tt1p05v25c
+mux_2_DATA_W32_1       ForQA             saed32sram_tt1p05v25c
+mux_2_DATA_W32_2       ForQA             saed32sram_tt1p05v25c
+register_file_DATA_W32 16000             saed32sram_tt1p05v25c
+reg_arstn_en_32_s00000000
+                       ForQA             saed32sram_tt1p05v25c
+SNPS_CLOCK_GATE_HIGH_register_file_DATA_W32_0
+                       ForQA             saed32sram_tt1p05v25c
+SNPS_CLOCK_GATE_HIGH_register_file_DATA_W32_31
+                       ForQA             saed32sram_tt1p05v25c
+SNPS_CLOCK_GATE_HIGH_register_file_DATA_W32_30
+                       ForQA             saed32sram_tt1p05v25c
+SNPS_CLOCK_GATE_HIGH_register_file_DATA_W32_29
+                       ForQA             saed32sram_tt1p05v25c
+SNPS_CLOCK_GATE_HIGH_register_file_DATA_W32_28
+                       ForQA             saed32sram_tt1p05v25c
+SNPS_CLOCK_GATE_HIGH_register_file_DATA_W32_27
+                       ForQA             saed32sram_tt1p05v25c
+SNPS_CLOCK_GATE_HIGH_register_file_DATA_W32_26
+                       ForQA             saed32sram_tt1p05v25c
+SNPS_CLOCK_GATE_HIGH_register_file_DATA_W32_25
+                       ForQA             saed32sram_tt1p05v25c
+SNPS_CLOCK_GATE_HIGH_register_file_DATA_W32_24
+                       ForQA             saed32sram_tt1p05v25c
+SNPS_CLOCK_GATE_HIGH_register_file_DATA_W32_23
+                       ForQA             saed32sram_tt1p05v25c
+SNPS_CLOCK_GATE_HIGH_register_file_DATA_W32_22
+                       ForQA             saed32sram_tt1p05v25c
+SNPS_CLOCK_GATE_HIGH_register_file_DATA_W32_21
+                       ForQA             saed32sram_tt1p05v25c
+SNPS_CLOCK_GATE_HIGH_register_file_DATA_W32_20
+                       ForQA             saed32sram_tt1p05v25c
+SNPS_CLOCK_GATE_HIGH_register_file_DATA_W32_19
+                       ForQA             saed32sram_tt1p05v25c
+SNPS_CLOCK_GATE_HIGH_register_file_DATA_W32_18
+                       ForQA             saed32sram_tt1p05v25c
+SNPS_CLOCK_GATE_HIGH_register_file_DATA_W32_17
+                       ForQA             saed32sram_tt1p05v25c
+SNPS_CLOCK_GATE_HIGH_register_file_DATA_W32_16
+                       ForQA             saed32sram_tt1p05v25c
+SNPS_CLOCK_GATE_HIGH_register_file_DATA_W32_15
+                       ForQA             saed32sram_tt1p05v25c
+SNPS_CLOCK_GATE_HIGH_register_file_DATA_W32_14
+                       ForQA             saed32sram_tt1p05v25c
+SNPS_CLOCK_GATE_HIGH_register_file_DATA_W32_13
+                       ForQA             saed32sram_tt1p05v25c
+SNPS_CLOCK_GATE_HIGH_register_file_DATA_W32_12
+                       ForQA             saed32sram_tt1p05v25c
+SNPS_CLOCK_GATE_HIGH_register_file_DATA_W32_11
+                       ForQA             saed32sram_tt1p05v25c
+SNPS_CLOCK_GATE_HIGH_register_file_DATA_W32_10
+                       ForQA             saed32sram_tt1p05v25c
+SNPS_CLOCK_GATE_HIGH_register_file_DATA_W32_9
+                       ForQA             saed32sram_tt1p05v25c
+SNPS_CLOCK_GATE_HIGH_register_file_DATA_W32_8
+                       ForQA             saed32sram_tt1p05v25c
+SNPS_CLOCK_GATE_HIGH_register_file_DATA_W32_7
+                       ForQA             saed32sram_tt1p05v25c
+SNPS_CLOCK_GATE_HIGH_register_file_DATA_W32_6
+                       ForQA             saed32sram_tt1p05v25c
+SNPS_CLOCK_GATE_HIGH_register_file_DATA_W32_5
+                       ForQA             saed32sram_tt1p05v25c
+SNPS_CLOCK_GATE_HIGH_register_file_DATA_W32_4
+                       ForQA             saed32sram_tt1p05v25c
+SNPS_CLOCK_GATE_HIGH_register_file_DATA_W32_3
+                       ForQA             saed32sram_tt1p05v25c
+SNPS_CLOCK_GATE_HIGH_register_file_DATA_W32_2
+                       ForQA             saed32sram_tt1p05v25c
+SNPS_CLOCK_GATE_HIGH_register_file_DATA_W32_1
+                       ForQA             saed32sram_tt1p05v25c
+SNPS_CLOCK_GATE_HIGH_reg_arstn_en_32_s00000000
+                       ForQA             saed32sram_tt1p05v25c
+
+
+Global Operating Voltage = 1.05 
+Power-specific unit information :
+    Voltage Units = 1V
+    Capacitance Units = 1.000000ff
+    Time Units = 1ns
+    Dynamic Power Units = 1uW    (derived from V,C,T units)
+    Leakage Power Units = 1pW
+
+
+
+  Attributes
+  ----------
+      a  -  Switching activity information annotated on net
+      d  -  Default switching activity information on net
+
+                             Total      Static   Toggle   Switching
+Net                          Net Load   Prob.    Rate     Power      Attrs
+--------------------------------------------------------------------------------
+n212                         1037.719   0.500    0.0010      0.5720  d
+current_pc[2]                 13.916    0.190    0.0026      0.0201  
+immediate_extended[8]         28.702    0.505    0.0010      0.0158  
+immediate_extended[9]         23.075    0.508    0.0010      0.0129  
+instruction[18]               21.862    0.494    0.0010      0.0120  
+immediate_extended[10]        21.148    0.501    0.0010      0.0119  
+instruction[19]               20.772    0.494    0.0010      0.0114  
+immediate_extended[6]         20.139    0.502    0.0010      0.0111  
+instruction[20]               20.204    0.495    0.0010      0.0111  
+instruction[23]               19.275    0.503    0.0010      0.0106  
+immediate_extended[7]         18.936    0.503    0.0010      0.0105  
+instruction[24]               18.185    0.504    0.0010      0.0101  
+instruction[25]               17.617    0.498    0.0010      0.0097  
+current_pc[3]                 13.433    0.170    0.0013      0.0095  
+regfile_waddr[1]              14.568    0.508    0.0011      0.0087  
+regfile_waddr[2]              14.675    0.495    0.0011      0.0087  
+alu_out[10]                   96.225    0.015    0.0002      0.0081  
+alu_out[11]                   96.225    0.015    0.0002      0.0081  
+program_counter/updated_pc[2]
+                               5.528    0.810    0.0026      0.0080  
+instruction[17]               14.340    0.508    0.0010      0.0080  
+alu_out[2]                    81.884    0.015    0.0002      0.0069  
+alu_out[3]                    81.884    0.015    0.0002      0.0069  
+alu_out[4]                    81.884    0.015    0.0002      0.0069  
+alu_out[5]                    81.884    0.015    0.0002      0.0069  
+alu_out[6]                    81.884    0.015    0.0002      0.0069  
+alu_out[7]                    81.884    0.015    0.0002      0.0069  
+alu_out[8]                    81.884    0.015    0.0002      0.0069  
+alu_out[0]                    81.571    0.015    0.0002      0.0069  
+alu_out[1]                    81.571    0.015    0.0002      0.0069  
+alu_out[12]                   81.571    0.015    0.0002      0.0069  
+alu_out[13]                   81.571    0.015    0.0002      0.0069  
+alu_out[14]                   81.571    0.015    0.0002      0.0069  
+alu_out[15]                   81.571    0.015    0.0002      0.0069  
+alu_out[16]                   81.571    0.015    0.0002      0.0069  
+alu_out[17]                   81.571    0.015    0.0002      0.0069  
+alu_out[18]                   81.571    0.015    0.0002      0.0069  
+alu_out[19]                   81.571    0.015    0.0002      0.0069  
+alu_out[20]                   81.571    0.015    0.0002      0.0069  
+alu_out[21]                   81.571    0.015    0.0002      0.0069  
+alu_out[22]                   81.571    0.015    0.0002      0.0069  
+alu_out[23]                   81.571    0.015    0.0002      0.0069  
+alu_out[24]                   81.571    0.015    0.0002      0.0069  
+alu_out[25]                   81.571    0.015    0.0002      0.0069  
+alu_out[26]                   81.571    0.015    0.0002      0.0069  
+alu_out[27]                   81.571    0.015    0.0002      0.0069  
+alu_out[28]                   81.571    0.015    0.0002      0.0069  
+alu_out[29]                   81.571    0.015    0.0002      0.0069  
+alu_out[30]                   81.571    0.015    0.0002      0.0069  
+alu_out[31]                   81.571    0.015    0.0002      0.0069  
+regfile_waddr[3]              11.639    0.494    0.0011      0.0069  
+immediate_extended[1]         11.983    0.496    0.0010      0.0066  
+regfile_waddr[0]              11.023    0.508    0.0011      0.0066  
+instruction[16]               11.827    0.508    0.0010      0.0066  
+instruction[22]               11.759    0.498    0.0010      0.0065  
+immediate_extended[3]         11.758    0.497    0.0010      0.0064  
+immediate_extended[4]         10.857    0.510    0.0010      0.0059  
+regfile_waddr[4]               9.367    0.495    0.0011      0.0055  
+instruction[21]                9.247    0.509    0.0010      0.0050  
+alu_control[2]                16.526    0.061    0.0005      0.0049  
+alu_control[1]                18.852    0.046    0.0004      0.0045  
+immediate_extended[5]          7.637    0.507    0.0010      0.0042  
+current_pc[4]                  9.380    0.140    0.0006      0.0032  
+immediate_extended[0]          5.528    0.508    0.0010      0.0031  
+alu_control[0]                 9.090    0.061    0.0006      0.0030  
+immediate_extended[2]          5.277    0.511    0.0010      0.0029  
+reg_dst                       30.737    0.015    0.0002      0.0029  
+program_counter/updated_pc[3]
+                               2.745    0.205    0.0015      0.0023  
+instruction[29]                2.921    0.499    0.0010      0.0016  
+alu_out[9]                    17.340    0.015    0.0002      0.0015  
+instruction[31]                2.588    0.499    0.0010      0.0014  
+instruction[27]                2.602    0.500    0.0010      0.0014  
+instruction[26]                2.447    0.496    0.0010      0.0014  
+instruction[28]                2.437    0.498    0.0010      0.0013  
+instruction[30]                2.425    0.495    0.0010      0.0013  
+immediate_extended[12]         2.274    0.507    0.0010      0.0013  
+immediate_extended[13]         2.274    0.490    0.0010      0.0013  
+alu_control[3]                14.867    0.015    0.0002      0.0013  
+immediate_extended_31          2.274    0.497    0.0010      0.0012  
+immediate_extended[14]         2.274    0.500    0.0010      0.0012  
+immediate_extended[11]         2.274    0.504    0.0010      0.0012  
+program_counter/updated_pc[4]
+                               2.745    0.168    0.0007      0.0011  
+current_pc[5]                  4.918    0.090    0.0002      0.0007  
+program_counter/updated_pc[5]
+                               2.745    0.103    0.0003      0.0004  
+current_pc[6]                  4.557    0.029    0.66e-4     0.0002  
+rdata_ext_2[23]                0.103    0.499    0.0023      0.0001  
+rdata_ext_2[8]                 0.103    0.502    0.0023      0.0001  
+rdata_ext_2[16]                0.103    0.503    0.0023      0.0001  
+rdata_ext_2[5]                 0.103    0.498    0.0023      0.0001  
+rdata_ext_2[14]                0.103    0.501    0.0023      0.0001  
+rdata_ext_2[9]                 0.103    0.497    0.0023      0.0001  
+rdata_ext_2[4]                 0.103    0.500    0.0023      0.0001  
+rdata_ext_2[13]                0.103    0.501    0.0023      0.0001  
+rdata_ext_2[17]                0.103    0.495    0.0023      0.0001  
+rdata_ext_2[30]                0.103    0.496    0.0023      0.0001  
+rdata_ext_2[19]                0.103    0.499    0.0023      0.0001  
+rdata_ext_2[0]                 0.103    0.504    0.0023      0.0001  
+rdata_ext_2[6]                 0.103    0.503    0.0023      0.0001  
+rdata_ext_2[7]                 0.103    0.503    0.0023      0.0001  
+rdata_ext_2[27]                0.103    0.496    0.0023      0.0001  
+rdata_ext_2[1]                 0.103    0.507    0.0023      0.0001  
+rdata_ext_2[31]                0.103    0.499    0.0023      0.0001  
+rdata_ext_2[21]                0.103    0.496    0.0023      0.0001  
+rdata_ext_2[22]                0.103    0.499    0.0023      0.0001  
+rdata_ext_2[18]                0.103    0.503    0.0023      0.0001  
+rdata_ext_2[20]                0.103    0.498    0.0023      0.0001  
+rdata_ext_2[12]                0.103    0.503    0.0023      0.0001  
+rdata_ext_2[11]                0.103    0.502    0.0023      0.0001  
+rdata_ext_2[25]                0.103    0.495    0.0023      0.0001  
+rdata_ext_2[2]                 0.103    0.502    0.0023      0.0001  
+rdata_ext_2[29]                0.103    0.498    0.0023      0.0001  
+rdata_ext_2[10]                0.103    0.498    0.0023      0.0001  
+rdata_ext_2[15]                0.103    0.501    0.0023      0.0001  
+rdata_ext_2[26]                0.103    0.497    0.0023      0.0001  
+rdata_ext_2[24]                0.103    0.499    0.0023      0.0001  
+rdata_ext_2[28]                0.103    0.496    0.0023      0.0001  
+rdata_ext_2[3]                 0.103    0.494    0.0023      0.0001  
+program_counter/updated_pc[6]
+                               2.745    0.034    0.77e-4     0.0001  
+rdata_ext[28]                  0.103    0.490    0.0019      0.0001  
+rdata_ext[5]                   0.103    0.505    0.0019      0.0001  
+rdata_ext[12]                  0.103    0.498    0.0019      0.0001  
+rdata_ext[23]                  0.103    0.502    0.0019      0.0001  
+rdata_ext[31]                  0.103    0.503    0.0019      0.0001  
+rdata_ext[1]                   0.103    0.503    0.0019      0.0001  
+rdata_ext[14]                  0.103    0.504    0.0019      0.0001  
+rdata_ext[24]                  0.103    0.496    0.0019      0.0001  
+rdata_ext[30]                  0.103    0.503    0.0019      0.0001  
+rdata_ext[0]                   0.103    0.503    0.0019      0.0001  
+rdata_ext[25]                  0.103    0.498    0.0019      0.0001  
+rdata_ext[18]                  0.103    0.501    0.0019      0.0001  
+rdata_ext[7]                   0.103    0.502    0.0019      0.0001  
+rdata_ext[15]                  0.103    0.498    0.0019      0.0001  
+rdata_ext[29]                  0.103    0.503    0.0019      0.0001  
+rdata_ext[13]                  0.103    0.498    0.0019      0.0001  
+rdata_ext[27]                  0.103    0.502    0.0019      0.0001  
+rdata_ext[10]                  0.103    0.500    0.0019      0.0001  
+rdata_ext[2]                   0.103    0.504    0.0019      0.0001  
+rdata_ext[21]                  0.103    0.499    0.0019      0.0001  
+rdata_ext[16]                  0.103    0.498    0.0019      0.0001  
+rdata_ext[6]                   0.103    0.504    0.0019      0.0001  
+rdata_ext[9]                   0.103    0.498    0.0019      0.0001  
+rdata_ext[22]                  0.103    0.502    0.0019      0.0001  
+rdata_ext[8]                   0.103    0.497    0.0019      0.0001  
+rdata_ext[26]                  0.103    0.501    0.0019      0.0001  
+rdata_ext[20]                  0.103    0.500    0.0019      0.0001  
+rdata_ext[3]                   0.103    0.508    0.0019      0.0001  
+rdata_ext[4]                   0.103    0.502    0.0019      0.0001  
+rdata_ext[17]                  0.103    0.506    0.0019      0.0001  
+rdata_ext[11]                  0.103    0.500    0.0019      0.0001  
+rdata_ext[19]                  0.103    0.502    0.0018      0.0001  
+current_pc[7]                  4.557    0.003    0.51e-5  1.288e-05  
+program_counter/updated_pc[7]
+                               2.745    0.003    0.56e-5  8.498e-06  
+alu_operand_2[14]             42.632    0.000    0.24e-6  5.737e-06  
+alu_operand_2[20]             42.177    0.000    0.24e-6  5.676e-06  
+alu_operand_2[22]             42.177    0.000    0.24e-6  5.676e-06  
+alu_operand_2[19]             41.996    0.000    0.24e-6  5.652e-06  
+alu_operand_2[28]             41.936    0.000    0.24e-6  5.644e-06  
+alu_operand_2[10]             41.828    0.000    0.24e-6  5.629e-06  
+alu_operand_2[18]             41.828    0.000    0.24e-6  5.629e-06  
+alu_operand_2[25]             41.828    0.000    0.24e-6  5.629e-06  
+alu_operand_2[9]              41.533    0.000    0.24e-6  5.590e-06  
+alu_operand_2[13]             41.293    0.000    0.24e-6  5.557e-06  
+alu_operand_2[17]             41.293    0.000    0.24e-6  5.557e-06  
+alu_operand_2[12]             40.336    0.000    0.24e-6  5.428e-06  
+alu_operand_2[31]             40.057    0.000    0.24e-6  5.391e-06  
+alu_operand_2[15]             39.532    0.000    0.24e-6  5.320e-06  
+alu_operand_2[3]              39.131    0.000    0.24e-6  5.266e-06  
+alu_operand_2[4]              39.131    0.000    0.24e-6  5.266e-06  
+alu_operand_2[5]              39.131    0.000    0.24e-6  5.266e-06  
+alu_operand_2[6]              39.131    0.000    0.24e-6  5.266e-06  
+alu_operand_2[7]              39.131    0.000    0.24e-6  5.266e-06  
+alu_operand_2[8]              39.131    0.000    0.24e-6  5.266e-06  
+alu_operand_2[11]             39.131    0.000    0.24e-6  5.266e-06  
+alu_operand_2[16]             39.131    0.000    0.24e-6  5.266e-06  
+alu_operand_2[21]             39.131    0.000    0.24e-6  5.266e-06  
+alu_operand_2[23]             39.131    0.000    0.24e-6  5.266e-06  
+alu_operand_2[24]             39.131    0.000    0.24e-6  5.266e-06  
+alu_operand_2[26]             39.082    0.000    0.24e-6  5.260e-06  
+alu_operand_2[2]              37.088    0.000    0.24e-6  4.991e-06  
+alu_operand_2[29]             37.088    0.000    0.24e-6  4.991e-06  
+alu_operand_2[0]              35.605    0.000    0.24e-6  4.792e-06  
+alu_operand_2[30]             35.289    0.000    0.24e-6  4.749e-06  
+alu_operand_2[1]              35.049    0.000    0.24e-6  4.717e-06  
+alu_operand_2[27]             33.011    0.000    0.24e-6  4.443e-06  
+regfile_data_1[23]            21.222    0.000    0.24e-6  2.856e-06  
+regfile_data_1[16]            19.733    0.000    0.24e-6  2.656e-06  
+regfile_data_1[5]             19.276    0.000    0.24e-6  2.594e-06  
+regfile_data_1[6]             19.276    0.000    0.24e-6  2.594e-06  
+regfile_data_1[7]             19.239    0.000    0.24e-6  2.589e-06  
+regfile_data_1[12]            19.151    0.000    0.24e-6  2.577e-06  
+regfile_data_1[15]            19.107    0.000    0.24e-6  2.571e-06  
+regfile_data_1[2]             18.458    0.000    0.24e-6  2.484e-06  
+regfile_data_1[8]             18.458    0.000    0.24e-6  2.484e-06  
+regfile_data_1[24]            18.458    0.000    0.24e-6  2.484e-06  
+regfile_data_1[19]            18.211    0.000    0.24e-6  2.451e-06  
+regfile_data_1[21]            18.110    0.000    0.24e-6  2.437e-06  
+regfile_data_1[29]            18.110    0.000    0.24e-6  2.437e-06  
+regfile_data_1[3]             18.001    0.000    0.24e-6  2.423e-06  
+regfile_data_1[4]             18.001    0.000    0.24e-6  2.423e-06  
+regfile_data_1[11]            17.832    0.000    0.24e-6  2.400e-06  
+regfile_data_1[27]            17.832    0.000    0.24e-6  2.400e-06  
+regfile_data_1[1]             17.685    0.000    0.24e-6  2.380e-06  
+regfile_data_1[10]            17.216    0.000    0.24e-6  2.317e-06  
+regfile_data_1[13]            17.216    0.000    0.24e-6  2.317e-06  
+regfile_data_1[14]            17.216    0.000    0.24e-6  2.317e-06  
+regfile_data_1[18]            17.216    0.000    0.24e-6  2.317e-06  
+regfile_data_1[28]            17.009    0.000    0.24e-6  2.289e-06  
+regfile_data_1[22]            16.793    0.000    0.24e-6  2.260e-06  
+regfile_data_1[0]             16.779    0.000    0.24e-6  2.258e-06  
+regfile_data_1[20]            16.747    0.000    0.24e-6  2.254e-06  
+regfile_data_1[17]            16.680    0.000    0.24e-6  2.245e-06  
+regfile_data_1[25]            16.680    0.000    0.24e-6  2.245e-06  
+regfile_data_1[9]             16.419    0.000    0.24e-6  2.210e-06  
+regfile_data_1[31]            15.607    0.000    0.24e-6  2.100e-06  
+regfile_data_1[26]            14.516    0.000    0.24e-6  1.954e-06  
+regfile_data_1[30]            14.356    0.000    0.24e-6  1.932e-06  
+alu_op[0]                      0.000    0.000    0.0000      0.0000  d
+alu_op[1]                      0.000    1.000    0.0000      0.0000  d
+alu_src                        0.000    0.000    0.0000      0.0000  d
+branch                         0.000    0.000    0.0000      0.0000  d
+current_pc[8]                  4.557    0.000    0.0000      0.0000  
+current_pc[9]                 15.475    0.000    0.0000      0.0000  
+current_pc[10]                13.502    0.000    0.0000      0.0000  
+jump                           0.000    0.000    0.0000      0.0000  d
+jump_pc[0]                     0.000    0.000    0.0000      0.0000  d
+jump_pc[1]                     0.000    0.000    0.0000      0.0000  d
+mem_2_reg                      0.000    0.000    0.0000      0.0000  d
+mem_read                       0.000    0.000    0.0000      0.0000  d
+mem_write                      0.000    0.000    0.0000      0.0000  d
+n1                             0.000    0.000    0.0000      0.0000  d
+n2                             0.000    0.000    0.0000      0.0000  d
+n3                             0.000    0.000    0.0000      0.0000  d
+n4                             0.000    0.000    0.0000      0.0000  d
+n5                             0.000    0.000    0.0000      0.0000  d
+n6                             0.000    0.000    0.0000      0.0000  d
+n7                             0.000    0.000    0.0000      0.0000  d
+n8                             0.000    0.000    0.0000      0.0000  d
+n9                             0.000    0.000    0.0000      0.0000  d
+n10                            0.000    0.000    0.0000      0.0000  d
+n11                            0.000    0.000    0.0000      0.0000  d
+n12                            0.000    0.000    0.0000      0.0000  d
+n13                            0.000    0.000    0.0000      0.0000  d
+n14                            0.000    0.000    0.0000      0.0000  d
+n15                            0.000    0.000    0.0000      0.0000  d
+n16                            0.000    0.000    0.0000      0.0000  d
+n17                            0.000    0.000    0.0000      0.0000  d
+n18                            0.000    0.000    0.0000      0.0000  d
+n19                            0.000    0.000    0.0000      0.0000  d
+n20                            0.000    0.000    0.0000      0.0000  d
+n21                            0.000    0.000    0.0000      0.0000  d
+n22                            0.000    0.000    0.0000      0.0000  d
+n23                            0.000    0.000    0.0000      0.0000  d
+n24                            0.000    0.000    0.0000      0.0000  d
+n25                            0.000    0.000    0.0000      0.0000  d
+n26                            0.000    0.000    0.0000      0.0000  d
+n27                            0.000    0.000    0.0000      0.0000  d
+n28                            0.000    0.000    0.0000      0.0000  d
+n29                            0.000    0.000    0.0000      0.0000  d
+n30                            0.000    0.000    0.0000      0.0000  d
+n31                            0.000    0.000    0.0000      0.0000  d
+n32                            0.000    0.000    0.0000      0.0000  d
+n33                            0.000    0.000    0.0000      0.0000  d
+n34                            0.000    0.000    0.0000      0.0000  d
+n35                            0.000    0.000    0.0000      0.0000  d
+n36                            0.000    0.000    0.0000      0.0000  d
+n37                            0.000    0.000    0.0000      0.0000  d
+n38                            0.000    0.000    0.0000      0.0000  d
+n39                            0.000    0.000    0.0000      0.0000  d
+n40                            0.000    0.000    0.0000      0.0000  d
+n41                            0.000    0.000    0.0000      0.0000  d
+n42                            0.000    0.000    0.0000      0.0000  d
+n43                            0.000    0.000    0.0000      0.0000  d
+n44                            0.000    0.000    0.0000      0.0000  d
+n45                            0.000    0.000    0.0000      0.0000  d
+n46                            0.000    0.000    0.0000      0.0000  d
+n47                            0.000    0.000    0.0000      0.0000  d
+n48                            0.000    0.000    0.0000      0.0000  d
+n49                            0.000    0.000    0.0000      0.0000  d
+n50                            0.000    0.000    0.0000      0.0000  d
+n51                            0.000    0.000    0.0000      0.0000  d
+n52                            0.000    0.000    0.0000      0.0000  d
+n53                            0.000    0.000    0.0000      0.0000  d
+n54                            0.000    0.000    0.0000      0.0000  d
+n55                            0.000    0.000    0.0000      0.0000  d
+n56                            0.000    0.000    0.0000      0.0000  d
+n57                            0.000    0.000    0.0000      0.0000  d
+n58                            0.000    0.000    0.0000      0.0000  d
+n59                            0.000    0.000    0.0000      0.0000  d
+n60                            0.000    0.000    0.0000      0.0000  d
+n61                            0.000    0.000    0.0000      0.0000  d
+n62                            0.000    0.000    0.0000      0.0000  d
+n63                            0.000    0.000    0.0000      0.0000  d
+n64                            0.000    0.000    0.0000      0.0000  d
+n65                            0.000    0.000    0.0000      0.0000  d
+n66                            0.000    0.000    0.0000      0.0000  d
+n67                            0.000    0.000    0.0000      0.0000  d
+n68                            0.000    0.000    0.0000      0.0000  d
+n69                            0.000    0.000    0.0000      0.0000  d
+n70                            0.000    0.000    0.0000      0.0000  d
+n71                            0.000    0.000    0.0000      0.0000  d
+n72                            0.000    0.000    0.0000      0.0000  d
+n73                            0.000    0.000    0.0000      0.0000  d
+n74                            0.000    0.000    0.0000      0.0000  d
+n75                            0.000    0.000    0.0000      0.0000  d
+n76                            0.000    0.000    0.0000      0.0000  d
+n77                            0.000    0.000    0.0000      0.0000  d
+n78                            0.000    0.000    0.0000      0.0000  d
+n79                            0.000    0.000    0.0000      0.0000  d
+n80                            0.000    0.000    0.0000      0.0000  d
+n81                            0.000    0.000    0.0000      0.0000  d
+n82                            0.000    0.000    0.0000      0.0000  d
+n83                            0.000    0.000    0.0000      0.0000  d
+n84                            0.000    0.000    0.0000      0.0000  d
+n85                            0.000    0.000    0.0000      0.0000  d
+n86                            0.000    0.000    0.0000      0.0000  d
+n87                            0.000    0.000    0.0000      0.0000  d
+n88                            0.000    0.000    0.0000      0.0000  d
+n89                            0.000    0.000    0.0000      0.0000  d
+n90                            0.000    0.000    0.0000      0.0000  d
+n91                            0.000    0.000    0.0000      0.0000  d
+n92                            0.000    0.000    0.0000      0.0000  d
+n213                           0.000    0.000    0.0000      0.0000  d
+n214                           0.000    0.000    0.0000      0.0000  d
+n215                           0.000    0.000    0.0000      0.0000  d
+n216                           0.000    0.000    0.0000      0.0000  d
+n217                           0.000    0.000    0.0000      0.0000  d
+n218                           0.000    0.000    0.0000      0.0000  d
+n219                           0.000    0.000    0.0000      0.0000  d
+n220                           0.000    0.000    0.0000      0.0000  d
+n221                           0.000    0.000    0.0000      0.0000  d
+n222                           0.000    0.000    0.0000      0.0000  d
+n223                           0.000    0.000    0.0000      0.0000  d
+n224                           0.000    0.000    0.0000      0.0000  d
+n225                           0.000    0.000    0.0000      0.0000  d
+n226                           0.000    0.000    0.0000      0.0000  d
+n227                           0.000    0.000    0.0000      0.0000  d
+n228                           0.000    0.000    0.0000      0.0000  d
+n229                           0.000    0.000    0.0000      0.0000  d
+n230                           0.000    0.000    0.0000      0.0000  d
+n231                           0.000    0.000    0.0000      0.0000  d
+n232                           0.000    0.000    0.0000      0.0000  d
+n233                           0.000    0.000    0.0000      0.0000  d
+n234                           0.000    0.000    0.0000      0.0000  d
+n235                           0.000    0.000    0.0000      0.0000  d
+n236                           0.000    0.000    0.0000      0.0000  d
+n237                           0.000    0.000    0.0000      0.0000  d
+n238                           0.000    0.000    0.0000      0.0000  d
+n239                           0.000    0.000    0.0000      0.0000  d
+n240                           0.000    0.000    0.0000      0.0000  d
+n241                           0.000    0.000    0.0000      0.0000  d
+n242                           0.000    0.000    0.0000      0.0000  d
+n243                           0.000    0.000    0.0000      0.0000  d
+n244                           0.000    0.000    0.0000      0.0000  d
+n245                           0.000    0.000    0.0000      0.0000  d
+n246                           0.000    0.000    0.0000      0.0000  d
+n247                           0.000    0.000    0.0000      0.0000  d
+n248                           0.000    0.000    0.0000      0.0000  d
+n249                           0.000    0.000    0.0000      0.0000  d
+n250                           0.000    0.000    0.0000      0.0000  d
+n251                           0.000    0.000    0.0000      0.0000  d
+n252                           0.000    0.000    0.0000      0.0000  d
+n253                           0.000    0.000    0.0000      0.0000  d
+n254                           0.000    0.000    0.0000      0.0000  d
+n255                           0.000    0.000    0.0000      0.0000  d
+n256                           0.000    0.000    0.0000      0.0000  d
+n257                           0.000    0.000    0.0000      0.0000  d
+n258                           0.000    0.000    0.0000      0.0000  d
+n259                           0.000    0.000    0.0000      0.0000  d
+n260                           0.000    0.000    0.0000      0.0000  d
+n261                           0.000    0.000    0.0000      0.0000  d
+n262                           0.000    0.000    0.0000      0.0000  d
+n263                           0.000    0.000    0.0000      0.0000  d
+n264                           0.000    0.000    0.0000      0.0000  d
+n265                           0.000    0.000    0.0000      0.0000  d
+n266                           0.000    0.000    0.0000      0.0000  d
+n267                           0.000    0.000    0.0000      0.0000  d
+n268                           0.000    0.000    0.0000      0.0000  d
+n269                           0.000    0.000    0.0000      0.0000  d
+n270                           0.000    0.000    0.0000      0.0000  d
+n271                           0.000    0.000    0.0000      0.0000  d
+n272                           0.000    0.000    0.0000      0.0000  d
+n273                           0.000    0.000    0.0000      0.0000  d
+n274                           0.000    0.000    0.0000      0.0000  d
+n275                           0.000    0.000    0.0000      0.0000  d
+n276                           0.000    0.000    0.0000      0.0000  d
+n277                           0.000    0.000    0.0000      0.0000  d
+n278                           0.000    0.000    0.0000      0.0000  d
+n279                           0.000    0.000    0.0000      0.0000  d
+n280                           0.000    0.000    0.0000      0.0000  d
+n281                           0.000    0.000    0.0000      0.0000  d
+n282                           0.000    0.000    0.0000      0.0000  d
+n283                           0.000    0.000    0.0000      0.0000  d
+n284                           0.000    0.000    0.0000      0.0000  d
+n285                           0.000    0.000    0.0000      0.0000  d
+n286                           0.000    0.000    0.0000      0.0000  d
+n287                           0.000    0.000    0.0000      0.0000  d
+n288                           0.000    0.000    0.0000      0.0000  d
+n289                           0.000    0.000    0.0000      0.0000  d
+n290                           0.000    0.000    0.0000      0.0000  d
+n291                           0.000    0.000    0.0000      0.0000  d
+n292                           0.000    0.000    0.0000      0.0000  d
+n293                           0.000    0.000    0.0000      0.0000  d
+n294                           0.000    0.000    0.0000      0.0000  d
+n295                           0.000    0.000    0.0000      0.0000  d
+n296                           0.000    0.000    0.0000      0.0000  d
+n297                           0.000    0.000    0.0000      0.0000  d
+n298                           0.000    0.000    0.0000      0.0000  d
+n299                           0.000    0.000    0.0000      0.0000  d
+n300                           0.000    0.000    0.0000      0.0000  d
+n301                           0.000    0.000    0.0000      0.0000  d
+n302                           0.000    0.000    0.0000      0.0000  d
+n303                           0.000    0.000    0.0000      0.0000  d
+n304                           0.000    0.000    0.0000      0.0000  d
+n305                           0.000    0.000    0.0000      0.0000  d
+n306                           0.000    0.000    0.0000      0.0000  d
+n307                           0.000    0.000    0.0000      0.0000  d
+n308                           0.000    0.000    0.0000      0.0000  d
+n309                           0.000    0.000    0.0000      0.0000  d
+n310                           0.000    0.000    0.0000      0.0000  d
+n311                           0.000    0.000    0.0000      0.0000  d
+n312                           0.000    0.000    0.0000      0.0000  d
+n313                           0.000    0.000    0.0000      0.0000  d
+n314                           0.000    0.000    0.0000      0.0000  d
+n315                           0.000    0.000    0.0000      0.0000  d
+n316                           0.000    0.000    0.0000      0.0000  d
+n317                           0.000    0.000    0.0000      0.0000  d
+n318                           0.000    0.000    0.0000      0.0000  d
+n319                           0.000    0.000    0.0000      0.0000  d
+n320                           0.000    0.000    0.0000      0.0000  d
+n321                           0.000    0.000    0.0000      0.0000  d
+n322                           0.000    0.000    0.0000      0.0000  d
+n323                           0.000    0.000    0.0000      0.0000  d
+n324                           0.000    0.000    0.0000      0.0000  d
+n325                           0.000    0.000    0.0000      0.0000  d
+n326                           0.000    0.000    0.0000      0.0000  d
+n327                           0.000    0.000    0.0000      0.0000  d
+n328                           0.000    0.000    0.0000      0.0000  d
+n329                           0.000    0.000    0.0000      0.0000  d
+n330                           0.000    0.000    0.0000      0.0000  d
+n331                           0.000    0.000    0.0000      0.0000  d
+n332                           0.000    0.000    0.0000      0.0000  d
+n333                           0.000    0.000    0.0000      0.0000  d
+n334                           0.000    0.000    0.0000      0.0000  d
+n335                           0.000    0.000    0.0000      0.0000  d
+n336                           0.000    0.000    0.0000      0.0000  d
+n337                           0.000    0.000    0.0000      0.0000  d
+n338                           0.000    0.000    0.0000      0.0000  d
+n339                           0.000    0.000    0.0000      0.0000  d
+n_Logic0_                      0.000    0.000    0.0000      0.0000  d
+--------------------------------------------------------------------------------
+Total (448 nets)                                             1.0929 uW
+
+
+
+  Attributes
+  ----------
+      a  -  Switching activity information annotated on net
+      d  -  Default switching activity information on net
+      m  -  Multiply-driven net
+
+                          Net         Driver     Tot Dynamic     Driver
+                          Switching   Internal   Power           Leakage
+Net                       Power       Power      (% Net/Tot)     Power    Attrs
+--------------------------------------------------------------------------------
+n212                         0.5720     0.0000     0.572 (100%) 72706.7188  d
+current_pc[2]                0.0201     0.0000  2.01e-02 (100%) 164806.2031 
+immediate_extended[8]        0.0158     0.0000  1.58e-02 (100%) 58360.9609  
+immediate_extended[9]        0.0129     0.0000  1.29e-02 (100%) 58360.9609  
+instruction[18]              0.0120     0.0000  1.20e-02 (100%) 58360.9609  
+immediate_extended[10]       0.0119     0.0000  1.19e-02 (100%) 58360.9609  
+instruction[19]              0.0114     0.0000  1.14e-02 (100%) 58360.9609  
+immediate_extended[6]        0.0111     0.0000  1.11e-02 (100%) 58360.9609  
+instruction[20]              0.0111     0.0000  1.11e-02 (100%) 58360.9609  
+instruction[23]              0.0106     0.0000  1.06e-02 (100%) 58360.9609  
+immediate_extended[7]        0.0105     0.0000  1.05e-02 (100%) 58360.9609  
+instruction[24]              0.0101     0.0000  1.01e-02 (100%) 58360.9609  
+instruction[25]           9.708e-03     0.0000  9.71e-03 (100%) 58360.9609  
+current_pc[3]             9.527e-03     0.0000  9.53e-03 (100%) 164806.2031 
+regfile_waddr[1]          8.719e-03     0.0000  8.72e-03 (100%) 63182.5312  
+regfile_waddr[2]          8.664e-03     0.0000  8.66e-03 (100%) 63182.5312  
+alu_out[10]               8.126e-03     0.0000  8.13e-03 (100%) 59356.3086  
+alu_out[11]               8.126e-03     0.0000  8.13e-03 (100%) 59356.3086  
+program_counter/updated_pc[2]
+                          7.981e-03     0.0000  7.98e-03 (100%) 52340.1016  
+instruction[17]           7.959e-03     0.0000  7.96e-03 (100%) 58360.9609  
+alu_out[2]                6.915e-03     0.0000  6.92e-03 (100%) 161901.9062 
+alu_out[3]                6.915e-03     0.0000  6.92e-03 (100%) 161901.9062 
+alu_out[4]                6.915e-03     0.0000  6.92e-03 (100%) 59356.3086  
+alu_out[5]                6.915e-03     0.0000  6.92e-03 (100%) 161901.9062 
+alu_out[6]                6.915e-03     0.0000  6.92e-03 (100%) 161901.9062 
+alu_out[7]                6.915e-03     0.0000  6.92e-03 (100%) 161901.9062 
+alu_out[8]                6.915e-03     0.0000  6.92e-03 (100%) 59356.3086  
+alu_out[0]                6.889e-03     0.0000  6.89e-03 (100%) 78585.3438  
+alu_out[1]                6.889e-03     0.0000  6.89e-03 (100%) 161901.9062 
+alu_out[12]               6.889e-03     0.0000  6.89e-03 (100%) 59356.3086  
+alu_out[13]               6.889e-03     0.0000  6.89e-03 (100%) 59356.3086  
+alu_out[14]               6.889e-03     0.0000  6.89e-03 (100%) 59356.3086  
+alu_out[15]               6.889e-03     0.0000  6.89e-03 (100%) 59356.3086  
+alu_out[16]               6.889e-03     0.0000  6.89e-03 (100%) 161901.9062 
+alu_out[17]               6.889e-03     0.0000  6.89e-03 (100%) 59356.3086  
+alu_out[18]               6.889e-03     0.0000  6.89e-03 (100%) 161901.9062 
+alu_out[19]               6.889e-03     0.0000  6.89e-03 (100%) 59356.3086  
+alu_out[20]               6.889e-03     0.0000  6.89e-03 (100%) 161901.9062 
+alu_out[21]               6.889e-03     0.0000  6.89e-03 (100%) 161901.9062 
+alu_out[22]               6.889e-03     0.0000  6.89e-03 (100%) 161901.9062 
+alu_out[23]               6.889e-03     0.0000  6.89e-03 (100%) 161901.9062 
+alu_out[24]               6.889e-03     0.0000  6.89e-03 (100%) 59356.3086  
+alu_out[25]               6.889e-03     0.0000  6.89e-03 (100%) 59356.3086  
+alu_out[26]               6.889e-03     0.0000  6.89e-03 (100%) 59356.3086  
+alu_out[27]               6.889e-03     0.0000  6.89e-03 (100%) 59356.3086  
+alu_out[28]               6.889e-03     0.0000  6.89e-03 (100%) 161901.9062 
+alu_out[29]               6.889e-03     0.0000  6.89e-03 (100%) 161901.9062 
+alu_out[30]               6.889e-03     0.0000  6.89e-03 (100%) 65205.3594  
+alu_out[31]               6.889e-03     0.0000  6.89e-03 (100%) 59356.3086  
+regfile_waddr[3]          6.876e-03     0.0000  6.88e-03 (100%) 63182.5312  
+immediate_extended[1]     6.623e-03     0.0000  6.62e-03 (100%) 58360.9609  
+regfile_waddr[0]          6.606e-03     0.0000  6.61e-03 (100%) 63182.5312  
+instruction[16]           6.570e-03     0.0000  6.57e-03 (100%) 58360.9609  
+instruction[22]           6.469e-03     0.0000  6.47e-03 (100%) 58360.9609  
+immediate_extended[3]     6.383e-03     0.0000  6.38e-03 (100%) 58360.9609  
+immediate_extended[4]     5.931e-03     0.0000  5.93e-03 (100%) 58360.9609  
+regfile_waddr[4]          5.513e-03     0.0000  5.51e-03 (100%) 63182.5312  
+instruction[21]           5.021e-03     0.0000  5.02e-03 (100%) 58360.9609  
+alu_control[2]            4.909e-03     0.0000  4.91e-03 (100%) 59356.3086  
+alu_control[1]            4.500e-03     0.0000  4.50e-03 (100%) 71517.7109  
+immediate_extended[5]     4.158e-03     0.0000  4.16e-03 (100%) 58360.9609  
+current_pc[4]             3.182e-03     0.0000  3.18e-03 (100%) 164806.2031 
+immediate_extended[0]     3.071e-03     0.0000  3.07e-03 (100%) 58360.9609  
+alu_control[0]            3.010e-03     0.0000  3.01e-03 (100%) 102492.8984 
+immediate_extended[2]     2.928e-03     0.0000  2.93e-03 (100%) 58360.9609  
+reg_dst                   2.871e-03     0.0000  2.87e-03 (100%) 119171.2969 
+program_counter/updated_pc[3]
+                          2.298e-03     0.0000  2.30e-03 (100%) 63182.5312  
+instruction[29]           1.608e-03     0.0000  1.61e-03 (100%) 58360.9609  
+alu_out[9]                1.464e-03     0.0000  1.46e-03 (100%) 161901.9062 
+instruction[31]           1.432e-03     0.0000  1.43e-03 (100%) 58360.9609  
+instruction[27]           1.423e-03     0.0000  1.42e-03 (100%) 58360.9609  
+instruction[26]           1.367e-03     0.0000  1.37e-03 (100%) 58360.9609  
+instruction[28]           1.347e-03     0.0000  1.35e-03 (100%) 58360.9609  
+instruction[30]           1.335e-03     0.0000  1.34e-03 (100%) 58360.9609  
+immediate_extended[12]    1.273e-03     0.0000  1.27e-03 (100%) 58360.9609  
+immediate_extended[13]    1.263e-03     0.0000  1.26e-03 (100%) 58360.9609  
+alu_control[3]            1.252e-03     0.0000  1.25e-03 (100%) 119171.2969 
+immediate_extended_31     1.248e-03     0.0000  1.25e-03 (100%) 58360.9609  
+immediate_extended[14]    1.229e-03     0.0000  1.23e-03 (100%) 58360.9609  
+immediate_extended[11]    1.221e-03     0.0000  1.22e-03 (100%) 58360.9609  
+program_counter/updated_pc[4]
+                          1.098e-03     0.0000  1.10e-03 (100%) 71517.7109  
+current_pc[5]             6.751e-04     0.0000  6.75e-04 (100%) 164806.2031 
+program_counter/updated_pc[5]
+                          4.395e-04     0.0000  4.39e-04 (100%) 58174.3594  
+current_pc[6]             1.656e-04     0.0000  1.66e-04 (100%) 164806.2031 
+rdata_ext_2[23]           1.322e-04     0.0000  1.32e-04 (100%) 64943.4414  
+rdata_ext_2[8]            1.317e-04     0.0000  1.32e-04 (100%) 64943.4414  
+rdata_ext_2[16]           1.314e-04     0.0000  1.31e-04 (100%) 64943.4414  
+rdata_ext_2[5]            1.312e-04     0.0000  1.31e-04 (100%) 64943.4414  
+rdata_ext_2[14]           1.310e-04     0.0000  1.31e-04 (100%) 64943.4414  
+rdata_ext_2[9]            1.307e-04     0.0000  1.31e-04 (100%) 64943.4414  
+rdata_ext_2[4]            1.307e-04     0.0000  1.31e-04 (100%) 64943.4414  
+rdata_ext_2[13]           1.306e-04     0.0000  1.31e-04 (100%) 64943.4414  
+rdata_ext_2[17]           1.305e-04     0.0000  1.30e-04 (100%) 64943.4414  
+rdata_ext_2[30]           1.305e-04     0.0000  1.30e-04 (100%) 64943.4414  
+rdata_ext_2[19]           1.304e-04     0.0000  1.30e-04 (100%) 64943.4414  
+rdata_ext_2[0]            1.303e-04     0.0000  1.30e-04 (100%) 64943.4414  
+rdata_ext_2[6]            1.303e-04     0.0000  1.30e-04 (100%) 64943.4414  
+rdata_ext_2[7]            1.303e-04     0.0000  1.30e-04 (100%) 64943.4414  
+rdata_ext_2[27]           1.301e-04     0.0000  1.30e-04 (100%) 64943.4414  
+rdata_ext_2[1]            1.301e-04     0.0000  1.30e-04 (100%) 64943.4414  
+rdata_ext_2[31]           1.301e-04     0.0000  1.30e-04 (100%) 64943.4414  
+rdata_ext_2[21]           1.300e-04     0.0000  1.30e-04 (100%) 64943.4414  
+rdata_ext_2[22]           1.299e-04     0.0000  1.30e-04 (100%) 64943.4414  
+rdata_ext_2[18]           1.298e-04     0.0000  1.30e-04 (100%) 64943.4414  
+rdata_ext_2[20]           1.298e-04     0.0000  1.30e-04 (100%) 64943.4414  
+rdata_ext_2[12]           1.297e-04     0.0000  1.30e-04 (100%) 64943.4414  
+rdata_ext_2[11]           1.297e-04     0.0000  1.30e-04 (100%) 64943.4414  
+rdata_ext_2[25]           1.295e-04     0.0000  1.30e-04 (100%) 64943.4414  
+rdata_ext_2[2]            1.295e-04     0.0000  1.29e-04 (100%) 64943.4414  
+rdata_ext_2[29]           1.294e-04     0.0000  1.29e-04 (100%) 64943.4414  
+rdata_ext_2[10]           1.294e-04     0.0000  1.29e-04 (100%) 64943.4414  
+rdata_ext_2[15]           1.294e-04     0.0000  1.29e-04 (100%) 64943.4414  
+rdata_ext_2[26]           1.291e-04     0.0000  1.29e-04 (100%) 64943.4414  
+rdata_ext_2[24]           1.291e-04     0.0000  1.29e-04 (100%) 64943.4414  
+rdata_ext_2[28]           1.290e-04     0.0000  1.29e-04 (100%) 64943.4414  
+rdata_ext_2[3]            1.286e-04     0.0000  1.29e-04 (100%) 64943.4414  
+program_counter/updated_pc[6]
+                          1.171e-04     0.0000  1.17e-04 (100%) 58174.3594  
+rdata_ext[28]             1.077e-04     0.0000  1.08e-04 (100%) 58360.9609  
+rdata_ext[5]              1.074e-04     0.0000  1.07e-04 (100%) 58360.9609  
+rdata_ext[12]             1.074e-04     0.0000  1.07e-04 (100%) 58360.9609  
+rdata_ext[23]             1.073e-04     0.0000  1.07e-04 (100%) 58360.9609  
+rdata_ext[31]             1.072e-04     0.0000  1.07e-04 (100%) 58360.9609  
+rdata_ext[1]              1.072e-04     0.0000  1.07e-04 (100%) 58360.9609  
+rdata_ext[14]             1.071e-04     0.0000  1.07e-04 (100%) 58360.9609  
+rdata_ext[24]             1.070e-04     0.0000  1.07e-04 (100%) 58360.9609  
+rdata_ext[30]             1.069e-04     0.0000  1.07e-04 (100%) 58360.9609  
+rdata_ext[0]              1.069e-04     0.0000  1.07e-04 (100%) 58360.9609  
+rdata_ext[25]             1.069e-04     0.0000  1.07e-04 (100%) 58360.9609  
+rdata_ext[18]             1.067e-04     0.0000  1.07e-04 (100%) 58360.9609  
+rdata_ext[7]              1.067e-04     0.0000  1.07e-04 (100%) 58360.9609  
+rdata_ext[15]             1.066e-04     0.0000  1.07e-04 (100%) 58360.9609  
+rdata_ext[29]             1.066e-04     0.0000  1.07e-04 (100%) 58360.9609  
+rdata_ext[13]             1.065e-04     0.0000  1.07e-04 (100%) 58360.9609  
+rdata_ext[27]             1.065e-04     0.0000  1.06e-04 (100%) 58360.9609  
+rdata_ext[10]             1.065e-04     0.0000  1.06e-04 (100%) 58360.9609  
+rdata_ext[2]              1.064e-04     0.0000  1.06e-04 (100%) 58360.9609  
+rdata_ext[21]             1.063e-04     0.0000  1.06e-04 (100%) 58360.9609  
+rdata_ext[16]             1.063e-04     0.0000  1.06e-04 (100%) 58360.9609  
+rdata_ext[6]              1.062e-04     0.0000  1.06e-04 (100%) 58360.9609  
+rdata_ext[9]              1.062e-04     0.0000  1.06e-04 (100%) 58360.9609  
+rdata_ext[22]             1.062e-04     0.0000  1.06e-04 (100%) 58360.9609  
+rdata_ext[8]              1.061e-04     0.0000  1.06e-04 (100%) 58360.9609  
+rdata_ext[26]             1.061e-04     0.0000  1.06e-04 (100%) 58360.9609  
+rdata_ext[20]             1.060e-04     0.0000  1.06e-04 (100%) 58360.9609  
+rdata_ext[3]              1.059e-04     0.0000  1.06e-04 (100%) 58360.9609  
+rdata_ext[4]              1.059e-04     0.0000  1.06e-04 (100%) 58360.9609  
+rdata_ext[17]             1.059e-04     0.0000  1.06e-04 (100%) 58360.9609  
+rdata_ext[11]             1.059e-04     0.0000  1.06e-04 (100%) 58360.9609  
+rdata_ext[19]             1.050e-04     0.0000  1.05e-04 (100%) 58360.9609  
+current_pc[7]             1.288e-05     0.0000  1.29e-05 (100%) 164806.2031 
+program_counter/updated_pc[7]
+                          8.498e-06     0.0000  8.50e-06 (100%) 58174.3594  
+alu_operand_2[14]         5.737e-06     0.0000  5.74e-06 (100%) 161901.9062 
+alu_operand_2[20]         5.676e-06     0.0000  5.68e-06 (100%) 161901.9062 
+alu_operand_2[22]         5.676e-06     0.0000  5.68e-06 (100%) 161901.9062 
+alu_operand_2[19]         5.652e-06     0.0000  5.65e-06 (100%) 161901.9062 
+alu_operand_2[28]         5.644e-06     0.0000  5.64e-06 (100%) 161901.9062 
+alu_operand_2[10]         5.629e-06     0.0000  5.63e-06 (100%) 161901.9062 
+alu_operand_2[18]         5.629e-06     0.0000  5.63e-06 (100%) 161901.9062 
+alu_operand_2[25]         5.629e-06     0.0000  5.63e-06 (100%) 161901.9062 
+alu_operand_2[9]          5.590e-06     0.0000  5.59e-06 (100%) 161901.9062 
+alu_operand_2[13]         5.557e-06     0.0000  5.56e-06 (100%) 161901.9062 
+alu_operand_2[17]         5.557e-06     0.0000  5.56e-06 (100%) 161901.9062 
+alu_operand_2[12]         5.428e-06     0.0000  5.43e-06 (100%) 161901.9062 
+alu_operand_2[31]         5.391e-06     0.0000  5.39e-06 (100%) 161901.9062 
+alu_operand_2[15]         5.320e-06     0.0000  5.32e-06 (100%) 161901.9062 
+alu_operand_2[3]          5.266e-06     0.0000  5.27e-06 (100%) 161901.9062 
+alu_operand_2[4]          5.266e-06     0.0000  5.27e-06 (100%) 161901.9062 
+alu_operand_2[5]          5.266e-06     0.0000  5.27e-06 (100%) 161901.9062 
+alu_operand_2[6]          5.266e-06     0.0000  5.27e-06 (100%) 161901.9062 
+alu_operand_2[7]          5.266e-06     0.0000  5.27e-06 (100%) 161901.9062 
+alu_operand_2[8]          5.266e-06     0.0000  5.27e-06 (100%) 161901.9062 
+alu_operand_2[11]         5.266e-06     0.0000  5.27e-06 (100%) 161901.9062 
+alu_operand_2[16]         5.266e-06     0.0000  5.27e-06 (100%) 161901.9062 
+alu_operand_2[21]         5.266e-06     0.0000  5.27e-06 (100%) 161901.9062 
+alu_operand_2[23]         5.266e-06     0.0000  5.27e-06 (100%) 161901.9062 
+alu_operand_2[24]         5.266e-06     0.0000  5.27e-06 (100%) 161901.9062 
+alu_operand_2[26]         5.260e-06     0.0000  5.26e-06 (100%) 161901.9062 
+alu_operand_2[2]          4.991e-06     0.0000  4.99e-06 (100%) 161901.9062 
+alu_operand_2[29]         4.991e-06     0.0000  4.99e-06 (100%) 161901.9062 
+alu_operand_2[0]          4.792e-06     0.0000  4.79e-06 (100%) 161901.9062 
+alu_operand_2[30]         4.749e-06     0.0000  4.75e-06 (100%) 161901.9062 
+alu_operand_2[1]          4.717e-06     0.0000  4.72e-06 (100%) 161901.9062 
+alu_operand_2[27]         4.443e-06     0.0000  4.44e-06 (100%) 161901.9062 
+regfile_data_1[23]        2.856e-06     0.0000  2.86e-06 (100%) 161901.9062 
+regfile_data_1[16]        2.656e-06     0.0000  2.66e-06 (100%) 161901.9062 
+regfile_data_1[5]         2.594e-06     0.0000  2.59e-06 (100%) 161901.9062 
+regfile_data_1[6]         2.594e-06     0.0000  2.59e-06 (100%) 161901.9062 
+regfile_data_1[7]         2.589e-06     0.0000  2.59e-06 (100%) 161901.9062 
+regfile_data_1[12]        2.577e-06     0.0000  2.58e-06 (100%) 161901.9062 
+regfile_data_1[15]        2.571e-06     0.0000  2.57e-06 (100%) 161901.9062 
+regfile_data_1[2]         2.484e-06     0.0000  2.48e-06 (100%) 161901.9062 
+regfile_data_1[8]         2.484e-06     0.0000  2.48e-06 (100%) 161901.9062 
+regfile_data_1[24]        2.484e-06     0.0000  2.48e-06 (100%) 161901.9062 
+regfile_data_1[19]        2.451e-06     0.0000  2.45e-06 (100%) 161901.9062 
+regfile_data_1[21]        2.437e-06     0.0000  2.44e-06 (100%) 161901.9062 
+regfile_data_1[29]        2.437e-06     0.0000  2.44e-06 (100%) 161901.9062 
+regfile_data_1[3]         2.423e-06     0.0000  2.42e-06 (100%) 161901.9062 
+regfile_data_1[4]         2.423e-06     0.0000  2.42e-06 (100%) 161901.9062 
+regfile_data_1[11]        2.400e-06     0.0000  2.40e-06 (100%) 161901.9062 
+regfile_data_1[27]        2.400e-06     0.0000  2.40e-06 (100%) 161901.9062 
+regfile_data_1[1]         2.380e-06     0.0000  2.38e-06 (100%) 161901.9062 
+regfile_data_1[10]        2.317e-06     0.0000  2.32e-06 (100%) 161901.9062 
+regfile_data_1[13]        2.317e-06     0.0000  2.32e-06 (100%) 161901.9062 
+regfile_data_1[14]        2.317e-06     0.0000  2.32e-06 (100%) 161901.9062 
+regfile_data_1[18]        2.317e-06     0.0000  2.32e-06 (100%) 161901.9062 
+regfile_data_1[28]        2.289e-06     0.0000  2.29e-06 (100%) 161901.9062 
+regfile_data_1[22]        2.260e-06     0.0000  2.26e-06 (100%) 161901.9062 
+regfile_data_1[0]         2.258e-06     0.0000  2.26e-06 (100%) 161901.9062 
+regfile_data_1[20]        2.254e-06     0.0000  2.25e-06 (100%) 161901.9062 
+regfile_data_1[17]        2.245e-06     0.0000  2.24e-06 (100%) 161901.9062 
+regfile_data_1[25]        2.245e-06     0.0000  2.24e-06 (100%) 161901.9062 
+regfile_data_1[9]         2.210e-06     0.0000  2.21e-06 (100%) 161901.9062 
+regfile_data_1[31]        2.100e-06     0.0000  2.10e-06 (100%) 161901.9062 
+regfile_data_1[26]        1.954e-06     0.0000  1.95e-06 (100%) 161901.9062 
+regfile_data_1[30]        1.932e-06     0.0000  1.93e-06 (100%) 161901.9062 
+alu_op[0]                    0.0000     0.0000     0.000 (N/A)     0.0000   d
+alu_op[1]                    0.0000     0.0000     0.000 (N/A)     0.0000   d
+alu_src                      0.0000     0.0000     0.000 (N/A)     0.0000   d
+branch                       0.0000     0.0000     0.000 (N/A)     0.0000   d
+current_pc[8]                0.0000     0.0000     0.000 (N/A)  164806.2031 
+current_pc[9]                0.0000     0.0000     0.000 (N/A)  164806.2031 
+current_pc[10]               0.0000     0.0000     0.000 (N/A)  164806.2031 
+jump                         0.0000     0.0000     0.000 (N/A)     0.0000   d
+jump_pc[0]                   0.0000     0.0000     0.000 (N/A)     0.0000   d
+jump_pc[1]                   0.0000     0.0000     0.000 (N/A)     0.0000   d
+mem_2_reg                    0.0000     0.0000     0.000 (N/A)     0.0000   d
+mem_read                     0.0000     0.0000     0.000 (N/A)     0.0000   d
+mem_write                    0.0000     0.0000     0.000 (N/A)     0.0000   d
+n1                           0.0000     0.0000     0.000 (N/A)     0.0000   d
+n2                           0.0000     0.0000     0.000 (N/A)     0.0000   d
+n3                           0.0000     0.0000     0.000 (N/A)     0.0000   d
+n4                           0.0000     0.0000     0.000 (N/A)     0.0000   d
+n5                           0.0000     0.0000     0.000 (N/A)     0.0000   d
+n6                           0.0000     0.0000     0.000 (N/A)     0.0000   d
+n7                           0.0000     0.0000     0.000 (N/A)     0.0000   d
+n8                           0.0000     0.0000     0.000 (N/A)     0.0000   d
+n9                           0.0000     0.0000     0.000 (N/A)     0.0000   d
+n10                          0.0000     0.0000     0.000 (N/A)     0.0000   d
+n11                          0.0000     0.0000     0.000 (N/A)     0.0000   d
+n12                          0.0000     0.0000     0.000 (N/A)     0.0000   d
+n13                          0.0000     0.0000     0.000 (N/A)     0.0000   d
+n14                          0.0000     0.0000     0.000 (N/A)     0.0000   d
+n15                          0.0000     0.0000     0.000 (N/A)     0.0000   d
+n16                          0.0000     0.0000     0.000 (N/A)     0.0000   d
+n17                          0.0000     0.0000     0.000 (N/A)     0.0000   d
+n18                          0.0000     0.0000     0.000 (N/A)     0.0000   d
+n19                          0.0000     0.0000     0.000 (N/A)     0.0000   d
+n20                          0.0000     0.0000     0.000 (N/A)     0.0000   d
+n21                          0.0000     0.0000     0.000 (N/A)     0.0000   d
+n22                          0.0000     0.0000     0.000 (N/A)     0.0000   d
+n23                          0.0000     0.0000     0.000 (N/A)     0.0000   d
+n24                          0.0000     0.0000     0.000 (N/A)     0.0000   d
+n25                          0.0000     0.0000     0.000 (N/A)     0.0000   d
+n26                          0.0000     0.0000     0.000 (N/A)     0.0000   d
+n27                          0.0000     0.0000     0.000 (N/A)     0.0000   d
+n28                          0.0000     0.0000     0.000 (N/A)     0.0000   d
+n29                          0.0000     0.0000     0.000 (N/A)     0.0000   d
+n30                          0.0000     0.0000     0.000 (N/A)     0.0000   d
+n31                          0.0000     0.0000     0.000 (N/A)     0.0000   d
+n32                          0.0000     0.0000     0.000 (N/A)     0.0000   d
+n33                          0.0000     0.0000     0.000 (N/A)     0.0000   d
+n34                          0.0000     0.0000     0.000 (N/A)     0.0000   d
+n35                          0.0000     0.0000     0.000 (N/A)     0.0000   d
+n36                          0.0000     0.0000     0.000 (N/A)     0.0000   d
+n37                          0.0000     0.0000     0.000 (N/A)     0.0000   d
+n38                          0.0000     0.0000     0.000 (N/A)     0.0000   d
+n39                          0.0000     0.0000     0.000 (N/A)     0.0000   d
+n40                          0.0000     0.0000     0.000 (N/A)     0.0000   d
+n41                          0.0000     0.0000     0.000 (N/A)     0.0000   d
+n42                          0.0000     0.0000     0.000 (N/A)     0.0000   d
+n43                          0.0000     0.0000     0.000 (N/A)     0.0000   d
+n44                          0.0000     0.0000     0.000 (N/A)     0.0000   d
+n45                          0.0000     0.0000     0.000 (N/A)     0.0000   d
+n46                          0.0000     0.0000     0.000 (N/A)     0.0000   d
+n47                          0.0000     0.0000     0.000 (N/A)     0.0000   d
+n48                          0.0000     0.0000     0.000 (N/A)     0.0000   d
+n49                          0.0000     0.0000     0.000 (N/A)     0.0000   d
+n50                          0.0000     0.0000     0.000 (N/A)     0.0000   d
+n51                          0.0000     0.0000     0.000 (N/A)     0.0000   d
+n52                          0.0000     0.0000     0.000 (N/A)     0.0000   d
+n53                          0.0000     0.0000     0.000 (N/A)     0.0000   d
+n54                          0.0000     0.0000     0.000 (N/A)     0.0000   d
+n55                          0.0000     0.0000     0.000 (N/A)     0.0000   d
+n56                          0.0000     0.0000     0.000 (N/A)     0.0000   d
+n57                          0.0000     0.0000     0.000 (N/A)     0.0000   d
+n58                          0.0000     0.0000     0.000 (N/A)     0.0000   d
+n59                          0.0000     0.0000     0.000 (N/A)     0.0000   d
+n60                          0.0000     0.0000     0.000 (N/A)     0.0000   d
+n61                          0.0000     0.0000     0.000 (N/A)     0.0000   d
+n62                          0.0000     0.0000     0.000 (N/A)     0.0000   d
+n63                          0.0000     0.0000     0.000 (N/A)     0.0000   d
+n64                          0.0000     0.0000     0.000 (N/A)     0.0000   d
+n65                          0.0000     0.0000     0.000 (N/A)     0.0000   d
+n66                          0.0000     0.0000     0.000 (N/A)     0.0000   d
+n67                          0.0000     0.0000     0.000 (N/A)     0.0000   d
+n68                          0.0000     0.0000     0.000 (N/A)     0.0000   d
+n69                          0.0000     0.0000     0.000 (N/A)     0.0000   d
+n70                          0.0000     0.0000     0.000 (N/A)     0.0000   d
+n71                          0.0000     0.0000     0.000 (N/A)     0.0000   d
+n72                          0.0000     0.0000     0.000 (N/A)     0.0000   d
+n73                          0.0000     0.0000     0.000 (N/A)     0.0000   d
+n74                          0.0000     0.0000     0.000 (N/A)     0.0000   d
+n75                          0.0000     0.0000     0.000 (N/A)     0.0000   d
+n76                          0.0000     0.0000     0.000 (N/A)     0.0000   d
+n77                          0.0000     0.0000     0.000 (N/A)     0.0000   d
+n78                          0.0000     0.0000     0.000 (N/A)     0.0000   d
+n79                          0.0000     0.0000     0.000 (N/A)     0.0000   d
+n80                          0.0000     0.0000     0.000 (N/A)     0.0000   d
+n81                          0.0000     0.0000     0.000 (N/A)     0.0000   d
+n82                          0.0000     0.0000     0.000 (N/A)     0.0000   d
+n83                          0.0000     0.0000     0.000 (N/A)     0.0000   d
+n84                          0.0000     0.0000     0.000 (N/A)     0.0000   d
+n85                          0.0000     0.0000     0.000 (N/A)     0.0000   d
+n86                          0.0000     0.0000     0.000 (N/A)     0.0000   d
+n87                          0.0000     0.0000     0.000 (N/A)     0.0000   d
+n88                          0.0000     0.0000     0.000 (N/A)     0.0000   d
+n89                          0.0000     0.0000     0.000 (N/A)     0.0000   d
+n90                          0.0000     0.0000     0.000 (N/A)     0.0000   d
+n91                          0.0000     0.0000     0.000 (N/A)     0.0000   d
+n92                          0.0000     0.0000     0.000 (N/A)     0.0000   d
+n213                         0.0000     0.0000     0.000 (N/A)     0.0000   d
+n214                         0.0000     0.0000     0.000 (N/A)     0.0000   d
+n215                         0.0000     0.0000     0.000 (N/A)     0.0000   d
+n216                         0.0000     0.0000     0.000 (N/A)     0.0000   d
+n217                         0.0000     0.0000     0.000 (N/A)     0.0000   d
+n218                         0.0000     0.0000     0.000 (N/A)     0.0000   d
+n219                         0.0000     0.0000     0.000 (N/A)     0.0000   d
+n220                         0.0000     0.0000     0.000 (N/A)     0.0000   d
+n221                         0.0000     0.0000     0.000 (N/A)     0.0000   d
+n222                         0.0000     0.0000     0.000 (N/A)     0.0000   d
+n223                         0.0000     0.0000     0.000 (N/A)     0.0000   d
+n224                         0.0000     0.0000     0.000 (N/A)     0.0000   d
+n225                         0.0000     0.0000     0.000 (N/A)     0.0000   d
+n226                         0.0000     0.0000     0.000 (N/A)     0.0000   d
+n227                         0.0000     0.0000     0.000 (N/A)     0.0000   d
+n228                         0.0000     0.0000     0.000 (N/A)     0.0000   d
+n229                         0.0000     0.0000     0.000 (N/A)     0.0000   d
+n230                         0.0000     0.0000     0.000 (N/A)     0.0000   d
+n231                         0.0000     0.0000     0.000 (N/A)     0.0000   d
+n232                         0.0000     0.0000     0.000 (N/A)     0.0000   d
+n233                         0.0000     0.0000     0.000 (N/A)     0.0000   d
+n234                         0.0000     0.0000     0.000 (N/A)     0.0000   d
+n235                         0.0000     0.0000     0.000 (N/A)     0.0000   d
+n236                         0.0000     0.0000     0.000 (N/A)     0.0000   d
+n237                         0.0000     0.0000     0.000 (N/A)     0.0000   d
+n238                         0.0000     0.0000     0.000 (N/A)     0.0000   d
+n239                         0.0000     0.0000     0.000 (N/A)     0.0000   d
+n240                         0.0000     0.0000     0.000 (N/A)     0.0000   d
+n241                         0.0000     0.0000     0.000 (N/A)     0.0000   d
+n242                         0.0000     0.0000     0.000 (N/A)     0.0000   d
+n243                         0.0000     0.0000     0.000 (N/A)     0.0000   d
+n244                         0.0000     0.0000     0.000 (N/A)     0.0000   d
+n245                         0.0000     0.0000     0.000 (N/A)     0.0000   d
+n246                         0.0000     0.0000     0.000 (N/A)     0.0000   d
+n247                         0.0000     0.0000     0.000 (N/A)     0.0000   d
+n248                         0.0000     0.0000     0.000 (N/A)     0.0000   d
+n249                         0.0000     0.0000     0.000 (N/A)     0.0000   d
+n250                         0.0000     0.0000     0.000 (N/A)     0.0000   d
+n251                         0.0000     0.0000     0.000 (N/A)     0.0000   d
+n252                         0.0000     0.0000     0.000 (N/A)     0.0000   d
+n253                         0.0000     0.0000     0.000 (N/A)     0.0000   d
+n254                         0.0000     0.0000     0.000 (N/A)     0.0000   d
+n255                         0.0000     0.0000     0.000 (N/A)     0.0000   d
+n256                         0.0000     0.0000     0.000 (N/A)     0.0000   d
+n257                         0.0000     0.0000     0.000 (N/A)     0.0000   d
+n258                         0.0000     0.0000     0.000 (N/A)     0.0000   d
+n259                         0.0000     0.0000     0.000 (N/A)     0.0000   d
+n260                         0.0000     0.0000     0.000 (N/A)     0.0000   d
+n261                         0.0000     0.0000     0.000 (N/A)     0.0000   d
+n262                         0.0000     0.0000     0.000 (N/A)     0.0000   d
+n263                         0.0000     0.0000     0.000 (N/A)     0.0000   d
+n264                         0.0000     0.0000     0.000 (N/A)     0.0000   d
+n265                         0.0000     0.0000     0.000 (N/A)     0.0000   d
+n266                         0.0000     0.0000     0.000 (N/A)     0.0000   d
+n267                         0.0000     0.0000     0.000 (N/A)     0.0000   d
+n268                         0.0000     0.0000     0.000 (N/A)     0.0000   d
+n269                         0.0000     0.0000     0.000 (N/A)     0.0000   d
+n270                         0.0000     0.0000     0.000 (N/A)     0.0000   d
+n271                         0.0000     0.0000     0.000 (N/A)     0.0000   d
+n272                         0.0000     0.0000     0.000 (N/A)     0.0000   d
+n273                         0.0000     0.0000     0.000 (N/A)     0.0000   d
+n274                         0.0000     0.0000     0.000 (N/A)     0.0000   d
+n275                         0.0000     0.0000     0.000 (N/A)     0.0000   d
+n276                         0.0000     0.0000     0.000 (N/A)     0.0000   d
+n277                         0.0000     0.0000     0.000 (N/A)     0.0000   d
+n278                         0.0000     0.0000     0.000 (N/A)     0.0000   d
+n279                         0.0000     0.0000     0.000 (N/A)     0.0000   d
+n280                         0.0000     0.0000     0.000 (N/A)     0.0000   d
+n281                         0.0000     0.0000     0.000 (N/A)     0.0000   d
+n282                         0.0000     0.0000     0.000 (N/A)     0.0000   d
+n283                         0.0000     0.0000     0.000 (N/A)     0.0000   d
+n284                         0.0000     0.0000     0.000 (N/A)     0.0000   d
+n285                         0.0000     0.0000     0.000 (N/A)     0.0000   d
+n286                         0.0000     0.0000     0.000 (N/A)     0.0000   d
+n287                         0.0000     0.0000     0.000 (N/A)     0.0000   d
+n288                         0.0000     0.0000     0.000 (N/A)     0.0000   d
+n289                         0.0000     0.0000     0.000 (N/A)     0.0000   d
+n290                         0.0000     0.0000     0.000 (N/A)     0.0000   d
+n291                         0.0000     0.0000     0.000 (N/A)     0.0000   d
+n292                         0.0000     0.0000     0.000 (N/A)     0.0000   d
+n293                         0.0000     0.0000     0.000 (N/A)     0.0000   d
+n294                         0.0000     0.0000     0.000 (N/A)     0.0000   d
+n295                         0.0000     0.0000     0.000 (N/A)     0.0000   d
+n296                         0.0000     0.0000     0.000 (N/A)     0.0000   d
+n297                         0.0000     0.0000     0.000 (N/A)     0.0000   d
+n298                         0.0000     0.0000     0.000 (N/A)     0.0000   d
+n299                         0.0000     0.0000     0.000 (N/A)     0.0000   d
+n300                         0.0000     0.0000     0.000 (N/A)     0.0000   d
+n301                         0.0000     0.0000     0.000 (N/A)     0.0000   d
+n302                         0.0000     0.0000     0.000 (N/A)     0.0000   d
+n303                         0.0000     0.0000     0.000 (N/A)     0.0000   d
+n304                         0.0000     0.0000     0.000 (N/A)     0.0000   d
+n305                         0.0000     0.0000     0.000 (N/A)     0.0000   d
+n306                         0.0000     0.0000     0.000 (N/A)     0.0000   d
+n307                         0.0000     0.0000     0.000 (N/A)     0.0000   d
+n308                         0.0000     0.0000     0.000 (N/A)     0.0000   d
+n309                         0.0000     0.0000     0.000 (N/A)     0.0000   d
+n310                         0.0000     0.0000     0.000 (N/A)     0.0000   d
+n311                         0.0000     0.0000     0.000 (N/A)     0.0000   d
+n312                         0.0000     0.0000     0.000 (N/A)     0.0000   d
+n313                         0.0000     0.0000     0.000 (N/A)     0.0000   d
+n314                         0.0000     0.0000     0.000 (N/A)     0.0000   d
+n315                         0.0000     0.0000     0.000 (N/A)     0.0000   d
+n316                         0.0000     0.0000     0.000 (N/A)     0.0000   d
+n317                         0.0000     0.0000     0.000 (N/A)     0.0000   d
+n318                         0.0000     0.0000     0.000 (N/A)     0.0000   d
+n319                         0.0000     0.0000     0.000 (N/A)     0.0000   d
+n320                         0.0000     0.0000     0.000 (N/A)     0.0000   d
+n321                         0.0000     0.0000     0.000 (N/A)     0.0000   d
+n322                         0.0000     0.0000     0.000 (N/A)     0.0000   d
+n323                         0.0000     0.0000     0.000 (N/A)     0.0000   d
+n324                         0.0000     0.0000     0.000 (N/A)     0.0000   d
+n325                         0.0000     0.0000     0.000 (N/A)     0.0000   d
+n326                         0.0000     0.0000     0.000 (N/A)     0.0000   d
+n327                         0.0000     0.0000     0.000 (N/A)     0.0000   d
+n328                         0.0000     0.0000     0.000 (N/A)     0.0000   d
+n329                         0.0000     0.0000     0.000 (N/A)     0.0000   d
+n330                         0.0000     0.0000     0.000 (N/A)     0.0000   d
+n331                         0.0000     0.0000     0.000 (N/A)     0.0000   d
+n332                         0.0000     0.0000     0.000 (N/A)     0.0000   d
+n333                         0.0000     0.0000     0.000 (N/A)     0.0000   d
+n334                         0.0000     0.0000     0.000 (N/A)     0.0000   d
+n335                         0.0000     0.0000     0.000 (N/A)     0.0000   d
+n336                         0.0000     0.0000     0.000 (N/A)     0.0000   d
+n337                         0.0000     0.0000     0.000 (N/A)     0.0000   d
+n338                         0.0000     0.0000     0.000 (N/A)     0.0000   d
+n339                         0.0000     0.0000     0.000 (N/A)     0.0000   d
+n_Logic0_                    0.0000     0.0000     0.000 (N/A)     0.0000   d
+--------------------------------------------------------------------------------
+Totals (448 nets)            1.093uW    0.000uW    1.093uW (100%)
+                                                                  22.343uW
+
+
+  Attributes
+  ----------
+      h  -  Hierarchical cell
+
+                        Cell      Driven Net  Tot Dynamic      Cell
+                        Internal  Switching   Power            Leakage
+Cell                    Power     Power       (% Cell/Tot)     Power      Attrs
+--------------------------------------------------------------------------------
+U114                       0.0000    0.5720      0.572 (0%)    72706.7188  
+alu                        0.0000       N/A        N/A (N/A)   61796672.0000
+                                                                          h
+alu_ctrl                   0.0000       N/A        N/A (N/A)   1107491.8750
+                                                                          h
+alu_operand_mux            0.0000       N/A        N/A (N/A)      0.0000  h
+control_unit               0.0000       N/A        N/A (N/A)   181737.5938
+                                                                          h
+data_memory                0.0000       N/A        N/A (N/A)   12591543.0000
+                                                                          h
+instruction_memory         0.0000       N/A        N/A (N/A)   12946011.0000
+                                                                          h
+program_counter            0.0000       N/A        N/A (N/A)   3226356.5000
+                                                                          h
+regfile_data_mux           0.0000       N/A        N/A (N/A)      0.0000  h
+regfile_dest_mux           0.0000       N/A        N/A (N/A)   368252.7500
+                                                                          h
+register_file              0.0000       N/A        N/A (N/A)   288641760.0000
+                                                                          h
+--------------------------------------------------------------------------------
+Totals (11 cells)          0.000uW     N/A         N/A (N/A)    380.933uW
+
+
+
+  Attributes
+  ----------
+      h  -  Hierarchical cell
+      a  -  User annotated State/Path Dependent (SDPD) information
+      e  -  Estimated SDPD from user annotated non-SDPD switching activity
+      d  -  Estimated SDPD from default annotated non-SDPD switching activity
+
+               Toggling Source   State Pin Toggle Internal     Leakage
+Cell           Pin      of Path  Cond  Rate       Power        Power    Attrs
+--------------------------------------------------------------------------------
+   U114        Y        A              5.0e-04      0.0000              d r
+   U114        Y        A              5.0e-04      0.0000              d f
+U114  (Cell Total)                                  0.0000    72706.7188
+alu                                                 0.0000    61796672.0000
+                                                                        h
+alu_ctrl                                            0.0000    1107491.8750
+                                                                        h
+alu_operand_mux                                     0.0000       0.0000 h
+control_unit                                        0.0000    181737.5938
+                                                                        h
+data_memory                                         0.0000    12591543.0000
+                                                                        h
+instruction_memory                                  0.0000    12946011.0000
+                                                                        h
+program_counter                                     0.0000    3226356.5000
+                                                                        h
+regfile_data_mux                                    0.0000       0.0000 h
+regfile_dest_mux                                    0.0000    368252.7500
+                                                                        h
+register_file                                       0.0000    288641760.0000
+                                                                        h
+--------------------------------------------------------------------------------
+Totals (11 cells)                                   0.000uW    380.933uW
+
+--------------------------------------------------------------------------------
+                                       Switch   Int      Leak     Total
+Hierarchy                              Power    Power    Power    Power    %
+--------------------------------------------------------------------------------
+cpu                                       4.406    0.000 3.81e+08  385.343 100.0
+  regfile_data_mux (mux_2_DATA_W32_2)     0.000    0.000    0.000    0.000   0.0
+  data_memory (sram_ADDR_W10_DATA_W32)    0.805    0.000 1.26e+07   13.396   3.5
+  alu (alu_DATA_W32)                      0.758    0.000 6.18e+07   62.555  16.2
+  alu_operand_mux (mux_2_DATA_W32_3)      0.000    0.000    0.000    0.000   0.0
+  alu_ctrl (alu_control)               3.74e-02    0.000 1.11e+06    1.145   0.3
+  register_file (register_file_DATA_W32)
+                                          1.043    0.000 2.89e+08  289.685  75.2
+  regfile_dest_mux (mux_2_DATA_W5)     3.77e-02    0.000 3.68e+05    0.406   0.1
+  control_unit (control_unit)          4.09e-03    0.000 1.82e+05    0.186   0.0
+  instruction_memory (sram_ADDR_W9_DATA_W32)
+                                          0.926    0.000 1.29e+07   13.872   3.6
+  program_counter (pc_DATA_W32)           0.224    0.000 3.23e+06    3.450   0.9
+    pc_register (reg_arstn_en_32_s00000000)
+                                          0.207    0.000 1.67e+06    1.874   0.5
+    mux_jump (mux_2_DATA_W32_0)           0.000    0.000    0.000    0.000   0.0
+    mux_branch (mux_2_DATA_W32_1)         0.000    0.000    0.000    0.000   0.0
+1
